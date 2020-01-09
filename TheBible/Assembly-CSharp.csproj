@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\BasicPhysics\Script\CameraController.cs" />
     <Compile Include="Assets\BasicPhysics\Script\PhysicsTest.cs" />
+    <None Include="Assets\BasicPhysics\PhysicsExample_README.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/dongh/Documents/TheBible/TheBible/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
