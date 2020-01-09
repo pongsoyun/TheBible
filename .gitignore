@@ -1,1 +1,5 @@
 .DS_Store
+Temp/
+Obj/
+UnityGenerated/
+Library/
