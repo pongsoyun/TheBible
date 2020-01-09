@@ -1,5 +1,7 @@
 .DS_Store
-Temp/
-Obj/
+[Tt]emp/
+[Oo]bj/
 UnityGenerated/
-Library/
+[Ll]ibrary/
+[Ll]ogs/
+.vs/
