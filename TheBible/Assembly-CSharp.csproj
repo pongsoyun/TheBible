@@ -64,6 +64,15 @@
   <ItemGroup>
     <Compile Include="Assets\BasicPhysics\Script\CameraController.cs" />
     <Compile Include="Assets\BasicPhysics\Script\PhysicsTest.cs" />
+    <Compile Include="Assets\CinemachineExamples\Scenes\Scripting\ScriptingExample.cs" />
+    <Compile Include="Assets\CinemachineExamples\Scenes\Trigger volumes\GenericTrigger.cs" />
+    <Compile Include="Assets\CinemachineExamples\Shared\Models\UnityCharacter\Scripts\CharacterMovement.cs" />
+    <Compile Include="Assets\CinemachineExamples\Shared\Models\UnityCharacter\Scripts\CharacterMovement2D.cs" />
+    <Compile Include="Assets\CinemachineExamples\Shared\Scripts\ActivateCameraWithDistance.cs" />
+    <Compile Include="Assets\CinemachineExamples\Shared\Scripts\ActivateCamOnPlay.cs" />
+    <Compile Include="Assets\CinemachineExamples\Shared\Scripts\ExampleHelpWindow.cs" />
+    <Compile Include="Assets\CinemachineExamples\Shared\Scripts\MixingCameraBlend.cs" />
+    <Compile Include="Assets\CinemachineExamples\Shared\Scripts\PlayerMove.cs" />
     <None Include="Assets\BasicPhysics\PhysicsExample_README.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/dongh/Documents/TheBible/TheBible/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
@@ -91,6 +100,12 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/dongh/Documents/TheBible/TheBible/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>C:/Users/dongh/Documents/TheBible/TheBible/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>C:/Users/dongh/Documents/TheBible/TheBible/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
