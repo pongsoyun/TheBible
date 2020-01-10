@@ -15,7 +15,7 @@
 
 ## 기술 스택
 
--   unity 19.2.14f1(2D)
+-   unity 19.2.4(2D)
 -   Platform : mobile(crossPlatform) || PC
 
 ## 주제 의식
