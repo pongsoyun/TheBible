@@ -352,6 +352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81261231b093b456f81cc5836ec385b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 618043627}
 --- !u!65 &481569281
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -542,6 +543,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 618043626}
+  - component: {fileID: 618043627}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -563,6 +565,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &618043627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618043625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5382f765caa84b67ae65baccd81ec79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talkPanel: {fileID: 1552535080}
+  TalkText: {fileID: 741317512}
+  scanObject: {fileID: 0}
+  isAction: 0
 --- !u!1 &621991796
 GameObject:
   m_ObjectHideFlags: 0
