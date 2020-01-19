@@ -7,6 +7,7 @@ public class InteractionExample : MonoBehaviour
 {
     [SerializeField]
     private Image FilledImage;
+
     // Update is called once per frame
     void Update()
     {
