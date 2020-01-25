@@ -4,8 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Examples/FileScript/FileScriptExample.unity
-    guid: 257ae9093f4f76643adbec7f74e9b610
+  m_Scenes: []
   m_configObjects: {}
