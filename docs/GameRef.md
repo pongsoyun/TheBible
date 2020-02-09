@@ -114,6 +114,8 @@ tutorial - stage 1, 2, 3 - ending 프로세스 중 **플레이 요소** 기획�
 
 ## 피해야하는 게임
 
+[Flappy bird](https://youtu.be/I69adfEqwC0)
+
 ## 원터치 게임
 
 ## Puzzle 게임
