@@ -5,6 +5,8 @@ using UnityEngine;
 public class CharacterMove : MonoBehaviour
 {
     public SpriteRenderer chracter;
+    public delegate void TestEvent();
+    public event TestEvent ActivateEvent;
 
     [SerializeField]
     private float runSpeed;
@@ -12,20 +14,22 @@ public class CharacterMove : MonoBehaviour
     private float walkSpeed;
 
     private float moveWeight;
-    Vector3 initPos;
+    public float jumpPower;
     float moveSide;
-    float moveForward;
-
-    public delegate void TestEvent();
-    public event TestEvent ActivateEvent;
+    Rigidbody2D CharacterBody;
+    bool isGround;
 
     private void Start()
     {
-        initPos = transform.position;
+        CharacterBody = GetComponent<Rigidbody2D>();
     }
+<<<<<<< HEAD
 
 
     // Update is called once per frame
+=======
+    
+>>>>>>> 0af24a65aa7d2fe19846ff18728ec4e41032fe79
     void Update()
     {
         MovingCharacter();
@@ -37,26 +41,58 @@ public class CharacterMove : MonoBehaviour
 
     void MovingCharacter()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
         {
+            Debug.Log("SpeedUp");
             moveWeight = runSpeed;
         }
         else
         {
             moveWeight = walkSpeed;
         }
-        moveForward += Input.GetAxis("Vertical") * Time.deltaTime * moveWeight;
-        moveSide += Input.GetAxis("Horizontal") * Time.deltaTime * moveWeight;
 
+<<<<<<< HEAD
         if (Input.GetAxis("Horizontal") < 0)
+=======
+        if (Input.GetKey(KeyCode.Space) && isGround)
+>>>>>>> 0af24a65aa7d2fe19846ff18728ec4e41032fe79
         {
-            chracter.flipX = true;
+            Debug.Log("CanJump!");
+            CharacterBody.AddForce(Vector3.up * jumpPower, ForceMode2D.Force);
         }
+<<<<<<< HEAD
         else if (Input.GetAxis("Horizontal") > 0)
         {
             chracter.flipX = false;
+=======
+        else if(isGround)
+        {
+            if (Input.GetAxis("Horizontal") < 0)
+                chracter.flipX = true;
+            else if (Input.GetAxis("Horizontal") > 0)
+                chracter.flipX = false;
+            moveSide = Input.GetAxis("Horizontal") * moveWeight;
+            CharacterBody.velocity = moveSide * transform.right;
+>>>>>>> 0af24a65aa7d2fe19846ff18728ec4e41032fe79
         }
 
-        transform.position = initPos + moveForward * transform.up + moveSide * transform.right;
+        
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            Debug.Log("isGround!");
+            isGround = true;
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            Debug.Log("NotGround!");
+            isGround = false;
+        }
     }
 }

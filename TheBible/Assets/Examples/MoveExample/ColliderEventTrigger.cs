@@ -8,7 +8,7 @@ public class ColliderEventTrigger : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        Player = GameObject.FindObjectOfType<CharacterMove>();
+        Player = FindObjectOfType<CharacterMove>();
     }
 
     void DebugEvent()
@@ -20,5 +20,11 @@ public class ColliderEventTrigger : MonoBehaviour
     {
         Debug.Log("EventEnter");
         Player.ActivateEvent += DebugEvent;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        Debug.Log("EventExit");
+        Player.ActivateEvent -= DebugEvent;
     }
 }
