@@ -5,6 +5,8 @@ using UnityEngine;
 public class CharacterMove : MonoBehaviour
 {
     public SpriteRenderer chracter;
+    public delegate void TestEvent();
+    public event TestEvent ActivateEvent;
 
     [SerializeField]
     private float runSpeed;
@@ -12,20 +14,16 @@ public class CharacterMove : MonoBehaviour
     private float walkSpeed;
 
     private float moveWeight;
-    Vector3 initPos;
+    public float jumpPower;
     float moveSide;
-    float moveForward;
-
-    public delegate void TestEvent();
-    public event TestEvent ActivateEvent;
+    Rigidbody2D CharacterBody;
+    bool isGround;
 
     private void Start()
     {
-        initPos = transform.position;
+        CharacterBody = GetComponent<Rigidbody2D>();
     }
     
-
-    // Update is called once per frame
     void Update()
     {
         MovingCharacter();
@@ -37,26 +35,48 @@ public class CharacterMove : MonoBehaviour
 
     void MovingCharacter()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
         {
+            Debug.Log("SpeedUp");
             moveWeight = runSpeed;
         }
         else
         {
             moveWeight = walkSpeed;
         }
-        moveForward += Input.GetAxis("Vertical") * Time.deltaTime * moveWeight;
-        moveSide += Input.GetAxis("Horizontal") * Time.deltaTime * moveWeight;
 
-        if(Input.GetAxis("Horizontal") < 0)
+        if (Input.GetKey(KeyCode.Space) && isGround)
         {
-            chracter.flipX = true;
+            Debug.Log("CanJump!");
+            CharacterBody.AddForce(Vector3.up * jumpPower, ForceMode2D.Force);
         }
-        else if(Input.GetAxis("Horizontal") > 0)
+        else if(isGround)
         {
-             chracter.flipX = false;
+            if (Input.GetAxis("Horizontal") < 0)
+                chracter.flipX = true;
+            else if (Input.GetAxis("Horizontal") > 0)
+                chracter.flipX = false;
+            moveSide = Input.GetAxis("Horizontal") * moveWeight;
+            CharacterBody.velocity = moveSide * transform.right;
         }
 
-        transform.position = initPos + moveForward * transform.up + moveSide * transform.right;
+        
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            Debug.Log("isGround!");
+            isGround = true;
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            Debug.Log("NotGround!");
+            isGround = false;
+        }
     }
 }
