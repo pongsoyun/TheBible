@@ -23,13 +23,7 @@ public class CharacterMove : MonoBehaviour
     {
         CharacterBody = GetComponent<Rigidbody2D>();
     }
-<<<<<<< HEAD
 
-
-    // Update is called once per frame
-=======
-    
->>>>>>> 0af24a65aa7d2fe19846ff18728ec4e41032fe79
     void Update()
     {
         MovingCharacter();
@@ -51,21 +45,12 @@ public class CharacterMove : MonoBehaviour
             moveWeight = walkSpeed;
         }
 
-<<<<<<< HEAD
-        if (Input.GetAxis("Horizontal") < 0)
-=======
         if (Input.GetKey(KeyCode.Space) && isGround)
->>>>>>> 0af24a65aa7d2fe19846ff18728ec4e41032fe79
         {
             Debug.Log("CanJump!");
             CharacterBody.AddForce(Vector3.up * jumpPower, ForceMode2D.Force);
         }
-<<<<<<< HEAD
-        else if (Input.GetAxis("Horizontal") > 0)
-        {
-            chracter.flipX = false;
-=======
-        else if(isGround)
+        else if (isGround)
         {
             if (Input.GetAxis("Horizontal") < 0)
                 chracter.flipX = true;
@@ -73,10 +58,9 @@ public class CharacterMove : MonoBehaviour
                 chracter.flipX = false;
             moveSide = Input.GetAxis("Horizontal") * moveWeight;
             CharacterBody.velocity = moveSide * transform.right;
->>>>>>> 0af24a65aa7d2fe19846ff18728ec4e41032fe79
         }
 
-        
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
