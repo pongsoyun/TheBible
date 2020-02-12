@@ -16,7 +16,6 @@ public class BasketRotation : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(transform.rotation.z);
         if (transform.rotation.z >= rotZ)
         {
             dirRight = false;
