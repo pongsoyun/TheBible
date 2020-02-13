@@ -4,36 +4,25 @@ using UnityEngine;
 
 public class BasketRotation : MonoBehaviour
 {
-    [SerializeField]
+    JointMotor2D motor;
+    HingeJoint2D hingeJoint2D;
 
-    [Range(0, 1)]
-    public float rotZ = 0.3f; // default : 0.3f
-
-    [Range(0, 40)]
-    public int rotSpeed = 20; // defalut : 20
-    public bool dirRight = true;
-
+    void Start()
+    {
+        hingeJoint2D = GetComponent<HingeJoint2D>();
+    }
 
     void Update()
     {
-        if (transform.rotation.z >= rotZ)
+        motor = hingeJoint2D.motor;
+        if(hingeJoint2D.jointAngle >= hingeJoint2D.limits.max)
         {
-            dirRight = false;
+            motor.motorSpeed *= -1;
         }
-        else if (transform.rotation.z <= -rotZ)
+        else if(hingeJoint2D.jointAngle <= hingeJoint2D.limits.min)
         {
-            dirRight = true;
+            motor.motorSpeed *= -1;
         }
-
-        if (dirRight == true)
-        {
-            transform.Rotate(new Vector3(0, 0, rotSpeed) * Time.deltaTime);
-        }
-        else
-        {
-            transform.Rotate(new Vector3(0, 0, -rotSpeed) * Time.deltaTime);
-        }
-
-
+        hingeJoint2D.motor = motor;
     }
 }
