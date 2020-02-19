@@ -6,10 +6,12 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public Text GameOverText;
+    // Tutorial
+    public bool isTutorial = true;
     // stage 1
     public GameObject Player;
     public float gameOverY = -30.0f;
-
+    
     void Start()
     {
         // GameEventManager.GameOver = true; // 추후에 상태로 관리할 예정이라면
