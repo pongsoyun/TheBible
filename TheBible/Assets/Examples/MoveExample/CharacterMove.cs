@@ -79,4 +79,9 @@ public class CharacterMove : MonoBehaviour
             isGround = false;
         }
     }
+
+    public void eventClear()
+    {
+        ActivateEvent = null;
+    }
 }
