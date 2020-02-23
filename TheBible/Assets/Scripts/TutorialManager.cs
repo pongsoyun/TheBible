@@ -22,29 +22,30 @@ public class TutorialManager : MonoBehaviour
 
     private void HighLightButton()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        for (int btnIndex = 0; btnIndex < onClickHighlight.Length; btnIndex++)
         {
-            onClickHighlight[0].Select();
+            onClickHighlight[btnIndex].image.color = Color.white;
         }
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKey(KeyCode.A))
         {
-            onClickHighlight[1].Select();
+            onClickHighlight[0].image.color = Color.red;
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey(KeyCode.D))
         {
-            onClickHighlight[2].Select();
+            onClickHighlight[1].image.color = Color.red;
         }
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKey(KeyCode.Space))
         {
-            onClickHighlight[3].Select();
+            onClickHighlight[2].image.color = Color.red;
         }
-        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+        if (Input.GetKey(KeyCode.E))
         {
-            onClickHighlight[4].Select();
+            onClickHighlight[3].image.color = Color.red;
         }
-        else
+        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
         {
+            onClickHighlight[4].image.color = Color.red;
+        }
 
-        }
     }
 }
