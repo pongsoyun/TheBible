@@ -14,7 +14,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
         {
             if (_isDestroy)
             {
-                Debug.LogWarning(string.Format("[Singleton] Instance '{0}' already destroyed."), typeof(T));
+                Debug.LogWarning(string.Format("[Singleton] Instance '{0}' already destroyed.", typeof(T)));
                 return null;
             }
 

@@ -11,7 +11,7 @@ public class CsCube : MonoBehaviour {
     float startTime;
     float shootTimeLeft;
 
-    MemoryPool pool = new MemoryPool();
+    // MemoryPool pool = new MemoryPool();
     GameObject[] missile;
 
     // Use this for initialization
@@ -19,7 +19,7 @@ public class CsCube : MonoBehaviour {
         startTime = Time.time;
 
         int poolCount = 10;
-        pool.Create(missilePrefab, poolCount);//메모리 풀 사용
+        // pool.Create(missilePrefab, poolCount);//메모리 풀 사용
         missile = new GameObject[poolCount];
         for (int i = 0; i < missile.Length; i++)
         {
@@ -28,7 +28,7 @@ public class CsCube : MonoBehaviour {
 	}
     void OnApplicationQuit()
     {
-        pool.Dispose();//메모리 풀 삭제
+        // pool.Dispose();//메모리 풀 삭제
     }
 
 	// Update is called once per frame
@@ -49,7 +49,7 @@ public class CsCube : MonoBehaviour {
                 {
                     if (missile[i] == null)
                     {
-                        missile[i] = pool.NewItem();
+                        // missile[i] = pool.NewItem();
                         missile[i].transform.position = transform.position;
                         break;
                     }
@@ -67,7 +67,7 @@ public class CsCube : MonoBehaviour {
             {
                 if (missile[i].transform.position.z > 20)
                 {
-                    pool.RemoveItem(missile[i]);
+                    // pool.RemoveItem(missile[i]);
                    // missile[i].GetComponent<CsMissile>().init();
                     missile[i] = null;
                 }
