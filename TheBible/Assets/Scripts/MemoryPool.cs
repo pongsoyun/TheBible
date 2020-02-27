@@ -21,7 +21,7 @@ public class MemoryPool : IEnumerable, System.IDisposable
 
     private List<GameObject> itemList;
     private Queue<GameObject> itemQueue;
-    private List<Rigidbody> rigidBodies;
+    private List<Rigidbody2D> rigidBodies;
 
     private bool isRigidBody = false;
     private bool isDispose = false;
@@ -33,12 +33,12 @@ public class MemoryPool : IEnumerable, System.IDisposable
 
         this.itemList = new List<GameObject>(maxCount);
         this.itemQueue = new Queue<GameObject>(maxCount);
-        if(prefab.GetComponent<Rigidbody>() != null)
+        if(prefab.GetComponent<Rigidbody2D>() != null)
         {
-            this.rigidBodies = new List<Rigidbody>(maxCount);
+            this.rigidBodies = new List<Rigidbody2D>(maxCount);
             isRigidBody = true;
         }
-
+        
         for(int i = 0; i < count && i < maxCount; i++)
         {
             var newItem = GameObject.Instantiate(prefab);
@@ -52,7 +52,7 @@ public class MemoryPool : IEnumerable, System.IDisposable
             itemQueue.Enqueue(newItem);
             if (isRigidBody)
             {
-                var newRigid = newItem.GetComponent<Rigidbody>();
+                var newRigid = newItem.GetComponent<Rigidbody2D>();
                 rigidBodies.Add(newRigid);
             }
         }
