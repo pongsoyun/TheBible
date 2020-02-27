@@ -23,7 +23,12 @@ public class WaveGameManager : Singleton<WaveGameManager> , IGameProcess
     GameObject EnemyPrefab;
     GameState state;
     public MemoryPool EnemyPool;
+    public List<MemoryPool> EnemyWavePool;
     public Transform SpawnPoint;
+    private int waveCount = 3;
+    private int enemyCount = 15;
+    private int killCount = 0;
+
     void Awake()
     {
         GameStart += InitializeGame;
@@ -40,8 +45,12 @@ public class WaveGameManager : Singleton<WaveGameManager> , IGameProcess
     // Update is called once per frame
     void Update()
     {
-        if(state.Equals(GameState.Start))
+        if (state.Equals(GameState.Start))
+        {
             state = GameState.OnGoing;
+            StartCoroutine(WaveSpawn());
+        }
+
         Debug.Log($"GameState : {state.ToString()}");
         WaveSpawn();
     }
@@ -51,8 +60,9 @@ public class WaveGameManager : Singleton<WaveGameManager> , IGameProcess
         DebugPanel.SetActive(true);
         state = GameState.Start;
         Debug.Log($"GameState : {state.ToString()}");
-        EnemyPool = new MemoryPool(EnemyPrefab, 5, 15);
-        StartCoroutine(WaveSpawn());
+        //EnemyPool = new MemoryPool(EnemyPrefab, 5, enemyCount);
+        EnemyWavePool = new List<MemoryPool>(waveCount);
+        EnemyWavePool[0] = new MemoryPool(EnemyPrefab, 5, enemyCount);
     }
 
     private void GameClear()
@@ -67,12 +77,33 @@ public class WaveGameManager : Singleton<WaveGameManager> , IGameProcess
 
     IEnumerator WaveSpawn()
     {
-        while(state.Equals(GameState.OnGoing))
+        for(int waveIndex = 0; waveIndex < waveCount;)
         {
-            EnemyPool.Respawn(SpawnPoint.position, gameObject.transform.rotation);
-            Debug.Log("Spawn Prefab");
-            yield return new WaitForSeconds(1.5f);
+            while (state.Equals(GameState.OnGoing) && killCount < (waveIndex + 1) * waveCount)
+            {
+                //EnemyPool.Respawn(SpawnPoint.position, gameObject.transform.rotation);
+                EnemyWavePool[waveIndex].Respawn(SpawnPoint.position, gameObject.transform.rotation);
+                Debug.Log($"Current Wave : {waveIndex}, Kill Count/End Line : {killCount}/{(waveIndex + 1) * waveCount} ,Spawn Prefab");
+                if (killCount.Equals((waveIndex + 1) * waveCount))
+                {
+                    DeleteWave(EnemyWavePool[waveIndex]);
+                    waveIndex++;
+                    InitializeWave(EnemyWavePool[waveIndex], waveIndex);
+                }
+                yield return new WaitForSeconds(waveCount - waveIndex);
+            }
         }
-        
     }
+
+    private void InitializeWave(MemoryPool enemyPool, int waveIndex)
+    {
+        enemyPool = new MemoryPool(EnemyPrefab, 5 * waveIndex, enemyCount * waveIndex);
+    }
+
+    private void DeleteWave(MemoryPool enemyPool)
+    {
+        enemyPool.AllDespawn();
+        enemyPool.Dispose();
+    }
+
 }
