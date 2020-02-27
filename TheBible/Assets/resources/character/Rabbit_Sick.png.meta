@@ -1,0 +1,799 @@
+fileFormatVersion: 2
+guid: 1f68fc68fa58346b1bf5734baa60861b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5611310189225196493
+    second: Rabbit_Sick_0
+  - first:
+      213: -5975190127219114462
+    second: Rabbit_Sick_1
+  - first:
+      213: 7338734935921030637
+    second: Rabbit_Sick_2
+  - first:
+      213: -4132819829202275858
+    second: Rabbit_Sick_3
+  - first:
+      213: 5836345166947313429
+    second: Rabbit_Sick_4
+  - first:
+      213: 2680036360101099122
+    second: Rabbit_Sick_5
+  - first:
+      213: 6860776165827604729
+    second: Rabbit_Sick_6
+  - first:
+      213: 6911365271304173742
+    second: Rabbit_Sick_7
+  - first:
+      213: 1833895886529065558
+    second: Rabbit_Sick_8
+  - first:
+      213: 4959333645026281131
+    second: Rabbit_Sick_9
+  - first:
+      213: 7376230688632642457
+    second: Rabbit_Sick_10
+  - first:
+      213: 360206519389131159
+    second: Rabbit_Sick_11
+  - first:
+      213: 2414978567449740986
+    second: Rabbit_Sick_12
+  - first:
+      213: -303373689785174500
+    second: Rabbit_Sick_13
+  - first:
+      213: -30650732283007801
+    second: Rabbit_Sick_14
+  - first:
+      213: 5135586099990044153
+    second: Rabbit_Sick_15
+  - first:
+      213: -6721558674851134598
+    second: Rabbit_Sick_16
+  - first:
+      213: 2050193238593717565
+    second: Rabbit_Sick_17
+  - first:
+      213: 2795675704127698956
+    second: Rabbit_Sick_18
+  - first:
+      213: 2261798315392164624
+    second: Rabbit_Sick_19
+  - first:
+      213: -5538812712214148856
+    second: Rabbit_Sick_20
+  - first:
+      213: -3286804304441927170
+    second: Rabbit_Sick_21
+  - first:
+      213: -5582351629605080588
+    second: Rabbit_Sick_22
+  - first:
+      213: 7203171659275909325
+    second: Rabbit_Sick_23
+  - first:
+      213: 270661582141844040
+    second: Rabbit_Sick_24
+  - first:
+      213: 4795128276190204131
+    second: Rabbit_Sick_25
+  - first:
+      213: 5174070345490889023
+    second: Rabbit_Sick_26
+  - first:
+      213: 8154245471180631011
+    second: Rabbit_Sick_27
+  - first:
+      213: 8851432543682460723
+    second: Rabbit_Sick_28
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rabbit_Sick_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2558
+        width: 441
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 312c729494e0f412eaa446b575467a1d
+      internalID: -5611310189225196493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_1
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 2558
+        width: 443
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11b0f385c7b94c72863e3ce4f76b3cf
+      internalID: -5975190127219114462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2558
+        width: 443
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3bcf1c7bf104e39b8b1dad06e4e1a5
+      internalID: 7338734935921030637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_3
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 2558
+        width: 445
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6786fbc9d95e14d928ede46d57515424
+      internalID: -4132819829202275858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_4
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 2558
+        width: 446
+        height: 365
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464170cb324da49f7993ce776220bb6b
+      internalID: 5836345166947313429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2047
+        width: 445
+        height: 363
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b68b8d0bbf914defb43ebb167f30994
+      internalID: 2680036360101099122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_6
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 2047
+        width: 447
+        height: 363
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22aab9c674a7946dcbeaa3053bf7f263
+      internalID: 6860776165827604729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_7
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 2047
+        width: 450
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad48bdbac3b2f4ab5a08dc73723e2fe6
+      internalID: 6911365271304173742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_8
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 2047
+        width: 451
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de26b4784b7346cf9e1ab6867dbf74e
+      internalID: 1833895886529065558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_9
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 2047
+        width: 450
+        height: 359
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e11a3c784254428b84463c4f223c545
+      internalID: 4959333645026281131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1534
+        width: 450
+        height: 359
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc8ebba2418e4c618e5e682e7343233
+      internalID: 7376230688632642457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_11
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1534
+        width: 452
+        height: 357
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b203d84c8ef24234b331c134d40d73b
+      internalID: 360206519389131159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_12
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1534
+        width: 452
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4720d7601ce44bd49b249ef2fc0ca4e
+      internalID: 2414978567449740986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_13
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 1534
+        width: 452
+        height: 354
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f4667a69006742a5807f75c7576c6d0
+      internalID: -303373689785174500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_14
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 1534
+        width: 513
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54348633d45434e3f94cb7aaa04c3028
+      internalID: -30650732283007801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1022
+        width: 451
+        height: 352
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13db5fb0b453c4308816a07ff73d9703
+      internalID: 5135586099990044153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_16
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1022
+        width: 452
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7962e92fe0bdc4f38bc6c0ddd015e138
+      internalID: -6721558674851134598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_17
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1022
+        width: 450
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dcdf2a7b6c434b6e84c3b6ecca7e79c
+      internalID: 2050193238593717565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_18
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 1022
+        width: 451
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea5eaa4dea9d42b8a6a0b2ec14ad7c9
+      internalID: 2795675704127698956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_19
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 1022
+        width: 449
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9536e49d087ee4d55a6da2271049aaac
+      internalID: 2261798315392164624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 511
+        width: 447
+        height: 348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b9fab2bc6dfb49ecb5e815f6cc8faef
+      internalID: -5538812712214148856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_21
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 511
+        width: 447
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e014e01795e427e811ec7737e43536
+      internalID: -3286804304441927170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_22
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 511
+        width: 446
+        height: 351
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f26e39f8a87e49f088b0a49e38529e3
+      internalID: -5582351629605080588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_23
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 511
+        width: 445
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59bf83828fdca4e9cb977ea95b3fd96c
+      internalID: 7203171659275909325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_24
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 511
+        width: 444
+        height: 354
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef7c5325df2a4e16b965869854bd30b
+      internalID: 270661582141844040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 442
+        height: 355
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 999277ccacd15464c8595d855bdf541a
+      internalID: 4795128276190204131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_26
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 0
+        width: 441
+        height: 358
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af62399f55e774e1eae92b76cfee686a
+      internalID: 5174070345490889023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_27
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 441
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5ac6338aac74e3698afaed6f014008
+      internalID: 8154245471180631011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Sick_28
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 0
+        width: 442
+        height: 361
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11579b4c130a847feb7adbb32901b916
+      internalID: 8851432543682460723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

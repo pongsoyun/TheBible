@@ -19,9 +19,12 @@ public class CharacterMove : MonoBehaviour
     Rigidbody2D CharacterBody;
     bool isGround;
 
+    private Animator animator;
     private void Start()
     {
         CharacterBody = GetComponent<Rigidbody2D>();
+
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -58,6 +61,8 @@ public class CharacterMove : MonoBehaviour
                 chracter.flipX = false;
             moveSide = Input.GetAxis("Horizontal") * moveWeight;
             CharacterBody.velocity = moveSide * transform.right;
+
+            animator.SetFloat("speed", Mathf.Abs(Input.GetAxis("Horizontal")));
         }
 
 
