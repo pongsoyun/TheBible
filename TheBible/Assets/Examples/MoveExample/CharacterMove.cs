@@ -23,7 +23,6 @@ public class CharacterMove : MonoBehaviour
     private void Start()
     {
         CharacterBody = GetComponent<Rigidbody2D>();
-
         animator = GetComponent<Animator>();
     }
 
