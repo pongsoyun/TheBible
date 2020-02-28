@@ -10,7 +10,7 @@ public class EnemyPrefab : MonoBehaviour, IDespawnable
     // Start is called before the first frame update
     void Start()
     {
-        OnDespawn += testDespawn;
+        OnDespawn += KillDespawn;
     }
 
     // Update is called once per frame
@@ -23,11 +23,13 @@ public class EnemyPrefab : MonoBehaviour, IDespawnable
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            WaveGameManager.instance.EnemyPool.Despawn(gameObject);
+            WaveGameManager.instance.killCount++;
+            Debug.Log($"KillDespawn Event! KillCount Added! {WaveGameManager.instance.killCount}");
+            WaveGameManager.instance.EnemyWavePool.Despawn(gameObject);
         }
     }
 
-    private void testDespawn(GameObject prefab)
+    private void KillDespawn(GameObject prefab)
     {
 
     }
