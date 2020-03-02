@@ -351,7 +351,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410196464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 582.43713, y: 93.861, z: -172.937}
+  m_LocalPosition: {x: 590.352, y: 93.861, z: -172.937}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -375,7 +375,6 @@ MonoBehaviour:
     type: 3}
   SpawnPoint: {fileID: 410196465}
   killCount: 0
-  waveIndex: 0
 --- !u!1 &567068791
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,7 +695,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1393364062}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 582.43713, y: 93.861, z: -172.937}
+  m_LocalPosition: {x: 584.43, y: 93.861, z: -175.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
