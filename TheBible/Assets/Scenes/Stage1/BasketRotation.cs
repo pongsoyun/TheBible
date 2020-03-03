@@ -15,11 +15,11 @@ public class BasketRotation : MonoBehaviour
     void Update()
     {
         motor = hingeJoint2D.motor;
-        if(hingeJoint2D.jointAngle >= hingeJoint2D.limits.max - 1)
+        if (hingeJoint2D.jointAngle >= hingeJoint2D.limits.max - 1)
         {
             motor.motorSpeed *= -1;
         }
-        else if(hingeJoint2D.jointAngle <= hingeJoint2D.limits.min + 1)
+        else if (hingeJoint2D.jointAngle <= hingeJoint2D.limits.min + 1)
         {
             motor.motorSpeed *= -1;
         }
