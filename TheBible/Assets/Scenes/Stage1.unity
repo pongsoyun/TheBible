@@ -12180,7 +12180,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 716083031}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.9, y: -106.7, z: 0}
+  m_LocalPosition: {x: -0.99, y: -106.7, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 92499731}
@@ -12216,7 +12216,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.56998444, y: -14.139278}
+  m_ConnectedAnchor: {x: 0.56998444, y: -15.049282}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 50
@@ -26357,6 +26357,11 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3348378452565217409, guid: 8517044ea68914c2c9b4a822a34ce5d7,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3348378452565217410, guid: 8517044ea68914c2c9b4a822a34ce5d7,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -26380,7 +26385,7 @@ PrefabInstance:
     - target: {fileID: 3348378452565217468, guid: 8517044ea68914c2c9b4a822a34ce5d7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -240.1
+      value: -16.4
       objectReference: {fileID: 0}
     - target: {fileID: 3348378452565217468, guid: 8517044ea68914c2c9b4a822a34ce5d7,
         type: 3}
