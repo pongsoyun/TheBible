@@ -1,34 +1,55 @@
 fileFormatVersion: 2
-guid: 56f9a2709ac594d67a5a7a273df04348
+guid: f3b8e1230395f4a0fa2b100487bd954a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2752584300984662343
-    second: Rabbit_Idle_0
+      213: -8814800386678197492
+    second: MainChar_Magic_0
   - first:
-      213: 5257862053885382874
-    second: Rabbit_Idle_1
+      213: -6555033820690095518
+    second: MainChar_Magic_1
   - first:
-      213: 3876158037475033542
-    second: Rabbit_Idle_2
+      213: -652249276067428392
+    second: MainChar_Magic_2
   - first:
-      213: -3181089850856105909
-    second: Rabbit_Idle_3
+      213: -8486556484136152670
+    second: MainChar_Magic_3
   - first:
-      213: 8818030280374883648
-    second: Rabbit_Idle_4
+      213: 2991560155580347808
+    second: MainChar_Magic_4
   - first:
-      213: -4246310382185399000
-    second: Rabbit_Idle_5
+      213: -1808988182819850685
+    second: MainChar_Magic_5
   - first:
-      213: 8399433135289160604
-    second: Rabbit_Idle_6
+      213: -7846522001542295790
+    second: MainChar_Magic_6
   - first:
-      213: 4315005861993101521
-    second: Rabbit_Idle_7
+      213: 5633221527110809864
+    second: MainChar_Magic_7
   - first:
-      213: 6179190639582012705
-    second: Rabbit_Idle_8
+      213: 7192943346433629512
+    second: MainChar_Magic_8
+  - first:
+      213: 5256581511060571838
+    second: MainChar_Magic_9
+  - first:
+      213: 3407945797548151752
+    second: MainChar_Magic_10
+  - first:
+      213: -3734305544494385636
+    second: MainChar_Magic_11
+  - first:
+      213: 6743934213187153463
+    second: MainChar_Magic_12
+  - first:
+      213: -3581569824222533739
+    second: MainChar_Magic_13
+  - first:
+      213: 1791057840389261427
+    second: MainChar_Magic_14
+  - first:
+      213: -7584671239782932583
+    second: MainChar_Magic_15
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -113,7 +134,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rabbit_Idle_0
+      name: MainChar_Magic_0
       rect:
         serializedVersion: 2
         x: 0
@@ -121,41 +142,41 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96adfc50a8bc94918a61890fb0603e92
-      internalID: -2752584300984662343
+      spriteID: 7ecb2bf1e8690413aa1f5a437f3daaf9
+      internalID: -8814800386678197492
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rabbit_Idle_1
+      name: MainChar_Magic_1
       rect:
         serializedVersion: 2
-        x: 512
+        x: 509
         y: 1024
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67c5b7aea2d9645f0af4c5b3e40a2096
-      internalID: 5257862053885382874
+      spriteID: 2a226fd3c482f46cdb3a08d105ca2d14
+      internalID: -6555033820690095518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rabbit_Idle_2
+      name: MainChar_Magic_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -163,20 +184,62 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f081cd9902ab4b01be38a219b9122f2
-      internalID: 3876158037475033542
+      spriteID: c56b5421843204abb88484650de9c20e
+      internalID: -652249276067428392
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rabbit_Idle_3
+      name: MainChar_Magic_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed73824bb59c4ebe931d618a877e8bd
+      internalID: -8486556484136152670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Magic_4
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99822aa65a37c4c80bb9fb05067bc2ad
+      internalID: 2991560155580347808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Magic_5
       rect:
         serializedVersion: 2
         x: 0
@@ -184,20 +247,20 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aab11dbe339f044c1a6acf5c4dcdd0cb
-      internalID: -3181089850856105909
+      spriteID: dea8d6baa2fa34a658804b0c2712e754
+      internalID: -1808988182819850685
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rabbit_Idle_4
+      name: MainChar_Magic_6
       rect:
         serializedVersion: 2
         x: 512
@@ -205,20 +268,20 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ca8f88b8ae084a84ab022cf9d3df53e
-      internalID: 8818030280374883648
+      spriteID: ebc02626902064f9181b74088c11fb8c
+      internalID: -7846522001542295790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rabbit_Idle_5
+      name: MainChar_Magic_7
       rect:
         serializedVersion: 2
         x: 1024
@@ -226,20 +289,62 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab26d405dfa4a4e099452e8bab9a1454
-      internalID: -4246310382185399000
+      spriteID: 4f3fc87a80a8d449d969888037300f45
+      internalID: 5633221527110809864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rabbit_Idle_6
+      name: MainChar_Magic_8
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 509
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775e3f8361ff04880882800203bacc12
+      internalID: 7192943346433629512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Magic_9
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 598d36b8807e546dcb9d3cfe7fbb3be7
+      internalID: 5256581511060571838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Magic_10
       rect:
         serializedVersion: 2
         x: 0
@@ -247,41 +352,41 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 059980e6a758a49fab1c6a32a138f50e
-      internalID: 8399433135289160604
+      spriteID: 3957aa101ef124f819a8e6b4e0425573
+      internalID: 3407945797548151752
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rabbit_Idle_7
+      name: MainChar_Magic_11
       rect:
         serializedVersion: 2
-        x: 512
+        x: 509
         y: 0
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a01a12978a2a48f2bd8abc13d34012f
-      internalID: 4315005861993101521
+      spriteID: 98e56d1ed26ef48f1907da3f824bb59b
+      internalID: -3734305544494385636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rabbit_Idle_8
+      name: MainChar_Magic_12
       rect:
         serializedVersion: 2
         x: 1024
@@ -289,14 +394,56 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f9319cd257d94fc3b30732c085df03e
-      internalID: 6179190639582012705
+      spriteID: cea37b365706b4ecfbbc375011383f6d
+      internalID: 6743934213187153463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Magic_13
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff850da766ed4699a3e7da3390517e4
+      internalID: -3581569824222533739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Magic_14
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 098374baa240a487ab7e182a718a50f2
+      internalID: 1791057840389261427
       vertices: []
       indices: 
       edges: []

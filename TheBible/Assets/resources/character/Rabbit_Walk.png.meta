@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ef8f4acb3771e4637adfbbcbcbb8c439
+guid: a772ae8fe468e4bd5a4d4042ea158e35
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -35,6 +35,12 @@ TextureImporter:
   - first:
       213: -1201274768180076707
     second: Rabbit_Walk_10
+  - first:
+      213: -837499972321390512
+    second: Rabbit_Walk_11
+  - first:
+      213: -8105886639944380316
+    second: Rabbit_Walk_12
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -127,13 +133,13 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59450cee6eab8401d90d0f5bc3436c1e
+      spriteID: 630e21a744b4c48baae714f8e3f87b34
       internalID: 2642927384365530612
       vertices: []
       indices: 
@@ -148,13 +154,13 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e310f2bd9dc214680bf8f61d072b848b
+      spriteID: dc16de4e33c734c56bfd240a08d2a064
       internalID: -972876132561042138
       vertices: []
       indices: 
@@ -169,13 +175,13 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b68d8f3b5b28a4b40817b5fe471c03db
+      spriteID: be7f90ac940c94bcd92d832529dd35bc
       internalID: 820867409916574736
       vertices: []
       indices: 
@@ -190,13 +196,13 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec8a516064b1240bdacfe4d41ad63d26
+      spriteID: b5b2759dc323843c9b52a81de0003812
       internalID: -6082952951945002494
       vertices: []
       indices: 
@@ -206,18 +212,18 @@ TextureImporter:
       name: Rabbit_Walk_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 512
+        x: 2048
+        y: 1024
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c96c5c321da734f51928f9d02ee64348
+      spriteID: 5ed44323833804fbd8e6ef685086eaa2
       internalID: 2648287191614940717
       vertices: []
       indices: 
@@ -227,18 +233,18 @@ TextureImporter:
       name: Rabbit_Walk_5
       rect:
         serializedVersion: 2
-        x: 512
+        x: 0
         y: 512
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 702590f211c6b418e9b314774fb3107c
+      spriteID: f08e6b67db96e41239e7f9319e213724
       internalID: -1841365403535942246
       vertices: []
       indices: 
@@ -248,18 +254,18 @@ TextureImporter:
       name: Rabbit_Walk_6
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 512
         y: 512
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24b43b69a282f4599bad69a7c4452469
+      spriteID: ca4e903105f13406cbd3b5cb6080c38a
       internalID: 2308422930902044863
       vertices: []
       indices: 
@@ -269,18 +275,18 @@ TextureImporter:
       name: Rabbit_Walk_7
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 1024
         y: 512
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba1777b46e62547739245e7d6d04634f
+      spriteID: f8a6d55f856154f048080833f66421cb
       internalID: 8964193406174810992
       vertices: []
       indices: 
@@ -290,18 +296,18 @@ TextureImporter:
       name: Rabbit_Walk_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1536
+        y: 512
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8272197c596743d68f80c924a005be2
+      spriteID: af14a1b6a34964dbb9937eed63a31599
       internalID: -2069974037055247746
       vertices: []
       indices: 
@@ -311,18 +317,18 @@ TextureImporter:
       name: Rabbit_Walk_9
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
+        x: 2048
+        y: 512
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85678e003325f47f2ac143f019a56456
+      spriteID: e7d34f37a434f423abbb76fb69f33711
       internalID: 7941833474186702065
       vertices: []
       indices: 
@@ -332,19 +338,61 @@ TextureImporter:
       name: Rabbit_Walk_10
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 0
         y: 0
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c1fb5491d96f4b3db36a774573d843d
+      spriteID: a92081cc1ecf3410a9a11b8ee9a3c844
       internalID: -1201274768180076707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Walk_11
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd5ebde4c08b14ff4857f69d7e920cd6
+      internalID: -837499972321390512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Walk_12
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7a513766afb4bd48de9092f0bfbd00
+      internalID: -8105886639944380316
       vertices: []
       indices: 
       edges: []
