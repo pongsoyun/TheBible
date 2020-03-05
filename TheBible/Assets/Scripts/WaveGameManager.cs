@@ -25,10 +25,11 @@ public class WaveGameManager : Singleton<WaveGameManager> , IGameProcess
     public MemoryPool EnemyWavePool;
     public Transform SpawnPoint;
     public int killCount = 0;
+    public int ActiveEnemyCount = 0;
     private int waveIndex;
     private int waveCount = 3;
     private int enemyCount = 15;
-
+    private int waveLimit;
 
     void Awake()
     {
@@ -76,30 +77,29 @@ public class WaveGameManager : Singleton<WaveGameManager> , IGameProcess
 
     IEnumerator WaveSpawn()
     {
-        while (state.Equals(GameState.OnGoing) && waveIndex <= waveCount && killCount <= (waveIndex + 1) * waveCount)
+        while (state.Equals(GameState.OnGoing))
         {
-            EnemyWavePool.Respawn(SpawnPoint.position, gameObject.transform.rotation);
-            Debug.Log($"Current Wave : {waveIndex}, Kill Count/End Line : {killCount}/{(waveIndex + 1) * waveCount} ,Spawn Prefab");
-            if (killCount.Equals((waveIndex + 1) * waveCount))
+            waveLimit = (waveIndex + 1) * waveCount;
+            if (killCount < waveLimit && ActiveEnemyCount < waveLimit)
             {
-                killCount = 0;
-                waveIndex++;
-                Debug.Log($"Next Wave : {waveIndex}, Kill Count/End Line : {killCount}/{(waveIndex + 1) * waveCount}");
+                EnemyWavePool.Respawn(SpawnPoint.position, gameObject.transform.rotation);
+                Debug.Log($"Current Wave : {waveIndex}, Kill Count/End Line : {killCount}/{waveLimit} ,Spawn Prefab");
+
+                yield return new WaitForSeconds(waveCount + 1 - waveIndex);
             }
-            yield return new WaitForSeconds(waveCount + 1 - waveIndex);
+            else
+            {
+                Debug.Log("WaitForEndWave");
+                if (killCount.Equals(waveLimit))
+                {
+                    killCount = 0;
+                    waveIndex++;
+                    Debug.Log($"Next Wave : {waveIndex}, Kill Count/End Line : {killCount}/{(waveIndex + 1) * waveCount}");
+                }
+                yield return new WaitForEndOfFrame();
+            }
         }
         Debug.Log("End Coroutine!");
     }
-
-    //private void InitializeWave(MemoryPool enemyPool, int waveIndex)
-    //{
-    //    enemyPool = new MemoryPool(EnemyPrefab, 5 * waveIndex, enemyCount * waveIndex);
-    //}
-
-    //private void DeleteWave(MemoryPool enemyPool)
-    //{
-    //    enemyPool.AllDespawn();
-    //    enemyPool.Dispose();
-    //}
 
 }

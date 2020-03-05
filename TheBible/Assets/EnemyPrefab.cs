@@ -11,6 +11,8 @@ public class EnemyPrefab : MonoBehaviour, IDespawnable
     void Start()
     {
         OnDespawn += KillDespawn;
+        WaveGameManager.instance.ActiveEnemyCount++;
+        Debug.Log($"Active Enemy Count++! :{ WaveGameManager.instance.ActiveEnemyCount} ");
     }
 
     // Update is called once per frame
@@ -21,10 +23,10 @@ public class EnemyPrefab : MonoBehaviour, IDespawnable
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("TestEndZone"))
         {
             WaveGameManager.instance.killCount++;
-            Debug.Log($"KillDespawn Event! KillCount Added! {WaveGameManager.instance.killCount}");
+            WaveGameManager.instance.ActiveEnemyCount--;
             WaveGameManager.instance.EnemyWavePool.Despawn(gameObject);
         }
     }
