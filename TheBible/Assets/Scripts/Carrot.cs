@@ -12,18 +12,18 @@ public class Carrot : MonoBehaviour, IDespawnable
     {
         
     }
-
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            
+
         }
 
         else if (collision.gameObject.CompareTag("Enemy"))
         {
-            //gameObject.GetComponent<클래스명>.체력--;
+            collision.gameObject.GetComponent<EnemyPrefab>().hp--;
+            gameObject.SetActive(false);
+            Debug.Log($"Carrot Eat! hp : {collision.gameObject.GetComponent<EnemyPrefab>().hp}");
             //Despawn;
         }
     }

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EnemyFox : MonoBehaviour, IDespawnable
 {
-    public int hp;
+    public int hp = 2;
     public bool isAngry = false;
     private int speed = 1;
 

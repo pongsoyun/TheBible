@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 9002660575955991796}
   m_Layer: 0
   m_Name: Test3DCube
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,6 +93,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6be239cef40790540a271a40f139998e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 2
+  isAngry: 0
 --- !u!50 &1832876334174736034
 Rigidbody2D:
   serializedVersion: 4

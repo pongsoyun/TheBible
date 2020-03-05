@@ -58,6 +58,7 @@ public class CharacterMove : MonoBehaviour
                 chracter.flipX = true;
             else if (Input.GetAxis("Horizontal") > 0)
                 chracter.flipX = false;
+
             moveSide = Input.GetAxis("Horizontal") * moveWeight;
             CharacterBody.velocity = moveSide * transform.right;
 

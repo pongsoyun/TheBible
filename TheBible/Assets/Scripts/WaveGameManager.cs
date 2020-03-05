@@ -83,7 +83,7 @@ public class WaveGameManager : Singleton<WaveGameManager> , IGameProcess
             if (killCount < waveLimit && ActiveEnemyCount < waveLimit)
             {
                 EnemyWavePool.Respawn(SpawnPoint.position, gameObject.transform.rotation);
-                Debug.Log($"Current Wave : {waveIndex}, Kill Count/End Line : {killCount}/{waveLimit} ,Spawn Prefab");
+                Debug.Log($"WaveIndex : {waveIndex}, Kill Count/End Line : {killCount}/{waveLimit}");
 
                 yield return new WaitForSeconds(waveCount + 1 - waveIndex);
             }
@@ -94,7 +94,7 @@ public class WaveGameManager : Singleton<WaveGameManager> , IGameProcess
                 {
                     killCount = 0;
                     waveIndex++;
-                    Debug.Log($"Next Wave : {waveIndex}, Kill Count/End Line : {killCount}/{(waveIndex + 1) * waveCount}");
+                    Debug.Log($"Next Wave : {waveIndex}, Kill Count/End Line : {killCount}/{waveLimit}");
                 }
                 yield return new WaitForEndOfFrame();
             }

@@ -7,27 +7,13 @@ public class Stone : MonoBehaviour, IDespawnable
 {
     public event Action<GameObject> OnDespawn;
 
-    event Action<GameObject> IDespawnable.OnDespawn
-    {
-        add
-        {
-            throw new NotImplementedException();
-        }
-
-        remove
-        {
-            throw new NotImplementedException();
-        }
-    }
-
     // Start is called before the first frame update
     void Start()
     {
 
     }
 
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -36,8 +22,10 @@ public class Stone : MonoBehaviour, IDespawnable
 
         else if (collision.gameObject.CompareTag("Enemy"))
         {
-            //gameObject.GetComponent<클래스명>.분노 = true;
-            //Despawn;
+            Debug.Log("Stone Eat!");
+            collision.gameObject.GetComponent<EnemyPrefab>().isAngry = true;
+            gameObject.SetActive(false);
+            //OnDespawn();
         }
     }
 }

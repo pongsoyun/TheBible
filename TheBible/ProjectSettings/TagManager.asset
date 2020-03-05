@@ -9,6 +9,7 @@ TagManager:
   - Collision
   - Ground
   - TestEndZone
+  - Enemy
   layers:
   - Default
   - TransparentFX
