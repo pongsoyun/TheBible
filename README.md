@@ -16,8 +16,14 @@
 ## 기술 스택
 
 -   unity 19.2.4(2D)
--   Platform : mobile(crossPlatform) || PC
+-   Platform : PC
 
 ## 주제 의식
 
-왜곡된 표현과 수용을 통해 만들어진 현대사회(스토리텔링: 변화하는 사회의 양상)를 표현함으로써 사회인이 가져야 할 태도가 무엇일지를 주도적으로 생각하게 만든다 는 근원적인 주제를 게임 플레이를 통해 표현하려한다.
+사회와 사람에 대한 이야기를 하려합니다.
+
+선과 악은 정확하게 나눠지지 않고, 기준이 존재하지 않습니다. 저희는 이 사회를 살아가면서 서로 대립해서 살아가야하는 이유에 대해 끊임없이 의문을 품어야합니다. 그를 통해 사회에서 발생한 두려움에 대해 생각하고 생각이 다른 사람들이라도 서로 소통하려는 노력, 사회를 회피하지 않고 정확하게 바라보는 태도 등이 필요하다는 복합적인 메시지를 전달하고자합니다.
+
+## Material
+- [작품설명 PPT](https://docs.google.com/presentation/d/1oGr24NKRcPTz7BM5bg3ZgSq_kmFQCUlNKneUfxepSmg/edit?usp=sharing)
+- [연출 + 스토리보드](https://github.com/pongsoyun/TheBible/blob/master/docs/production%2BStorytelling.md)
