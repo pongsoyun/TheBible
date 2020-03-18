@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Stage1.unity
+    guid: b33e360919a6f4054a99a5fb59f27256
+  - enabled: 1
+    path: Assets/Scenes/WaveGame.unity
+    guid: 63ed0a38d547c1f429355c6585f5d7d4
   m_configObjects: {}
