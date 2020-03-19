@@ -16552,6 +16552,11 @@ PrefabInstance:
       propertyPath: Aura
       value: 
       objectReference: {fileID: 1117912960}
+    - target: {fileID: 2162022732274282134, guid: 32abe5461dfbf413e99d3a3b07188fa2,
+        type: 3}
+      propertyPath: ActionParticle
+      value: 
+      objectReference: {fileID: 837866637}
     - target: {fileID: 2162022732274282138, guid: 32abe5461dfbf413e99d3a3b07188fa2,
         type: 3}
       propertyPath: m_Name
@@ -19030,7 +19035,7 @@ ParticleSystem:
   m_GameObject: {fileID: 837866634}
   serializedVersion: 6
   lengthInSec: 1
-  simulationSpeed: 0.5
+  simulationSpeed: 3
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
@@ -19733,7 +19738,7 @@ ParticleSystem:
     m_TextureBilinearFiltering: 0
     randomDirectionAmount: 0
     sphericalDirectionAmount: 0
-    randomPositionAmount: 0
+    randomPositionAmount: 0.5
     radius:
       value: 1.8
       mode: 0
@@ -35682,6 +35687,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sign
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162022732274282138, guid: 32abe5461dfbf413e99d3a3b07188fa2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2162022732274282139, guid: 32abe5461dfbf413e99d3a3b07188fa2,
         type: 3}

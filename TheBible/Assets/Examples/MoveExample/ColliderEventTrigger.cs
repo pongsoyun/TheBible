@@ -8,10 +8,21 @@ public class ColliderEventTrigger : MonoBehaviour
     CharacterMove Player;
     [SerializeField]
     private Image FilledImage;
+
+    public ParticleSystem Aura;
+    public ParticleSystem ActionParticle;
+
+
     // Start is called before the first frame update
     void Awake()
     {
         Player = FindObjectOfType<CharacterMove>();
+    }
+
+    void Start()
+    {
+        Aura.Stop();
+        ActionParticle.Stop();
     }
 
     void DebugEvent()
@@ -20,7 +31,15 @@ public class ColliderEventTrigger : MonoBehaviour
         if (Input.GetKey(KeyCode.E))
         {
             FilledImage.fillAmount += 0.01f;
+            Aura.Emit(1);
+            ActionParticle.Emit(1);
         }
+        else
+        {
+            Aura.Stop();
+            ActionParticle.Stop();
+        }
+
         if (FilledImage.fillAmount >= 1.0f)
         {
             Debug.Log("FilledImage Reset 1.0 to 0!");
@@ -37,8 +56,8 @@ public class ColliderEventTrigger : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-       //Debug.Log("EventExit");
-       //Player.ActivateEvent -= DebugEvent;
+        //Debug.Log("EventExit");
+        //Player.ActivateEvent -= DebugEvent;
         FilledImage.fillAmount = 1f;
     }
 }
