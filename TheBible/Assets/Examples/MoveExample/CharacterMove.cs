@@ -20,6 +20,11 @@ public class CharacterMove : MonoBehaviour
     bool isGround;
 
     private Animator animator;
+
+    public ParticleSystem Aura;
+    public ParticleSystem ActionParticle;
+
+
     private void Start()
     {
         CharacterBody = GetComponent<Rigidbody2D>();
@@ -32,6 +37,11 @@ public class CharacterMove : MonoBehaviour
         if (Input.GetKey(KeyCode.E))
         {
             ActivateEvent?.Invoke();
+            Aura.Emit(1);
+            ActionParticle.Emit(1);
+        }else {
+            Aura.Stop();
+            ActionParticle.Stop();
         }
     }
 
