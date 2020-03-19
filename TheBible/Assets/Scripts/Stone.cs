@@ -7,11 +7,20 @@ public class Stone : MonoBehaviour, IDespawnable
 {
     public event Action<GameObject> OnDespawn;
 
+    private Vector2 power;
     // Start is called before the first frame update
     void Start()
     {
-
+        transform.SetParent(null);
+        power = GamePlayerMove.throwPower;
+        power *= 5f;
+        gameObject.GetComponent<Rigidbody2D>().velocity = power;
     }
+
+    //void Update()
+    //{
+
+    //}
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
