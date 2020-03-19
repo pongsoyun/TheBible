@@ -13,7 +13,7 @@ public class Stone : MonoBehaviour, IDespawnable
     {
         transform.SetParent(null);
         power = GamePlayerMove.throwPower;
-        power *= 5f;
+        power *= 8f;
         gameObject.GetComponent<Rigidbody2D>().velocity = power;
     }
 
@@ -28,13 +28,17 @@ public class Stone : MonoBehaviour, IDespawnable
         {
 
         }
-
         else if (collision.gameObject.CompareTag("Enemy"))
         {
             Debug.Log("Stone Eat!");
             collision.gameObject.GetComponent<EnemyPrefab>().isAngry = true;
-            gameObject.SetActive(false);
+
             //OnDespawn();
+        }
+        else if (collision.gameObject.CompareTag("Ground"))
+        {
+            Debug.Log("Ground Destroy");
+            GamePlayerMove.instance.throwObjectPool[(int)ThrowType.Stone].Despawn(gameObject);
         }
     }
 }

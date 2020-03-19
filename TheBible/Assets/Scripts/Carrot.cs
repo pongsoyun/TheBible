@@ -13,7 +13,7 @@ public class Carrot : MonoBehaviour, IDespawnable
     {
         transform.SetParent(null);
         power = GamePlayerMove.throwPower;
-        power *= 5f;
+        power *= 8f;
         gameObject.GetComponent<Rigidbody2D>().velocity = power;
     }
 
@@ -28,13 +28,16 @@ public class Carrot : MonoBehaviour, IDespawnable
         {
 
         }
-
         else if (collision.gameObject.CompareTag("Enemy"))
         {
             collision.gameObject.GetComponent<EnemyPrefab>().hp--;
-            gameObject.SetActive(false);
+            GamePlayerMove.instance.throwObjectPool[(int)ThrowType.Carrot].Despawn(gameObject);
             Debug.Log($"Carrot Eat! hp : {collision.gameObject.GetComponent<EnemyPrefab>().hp}");
-            //Despawn;
+        }
+        else if (collision.gameObject.CompareTag("Ground"))
+        {
+            Debug.Log("Ground Destroy");
+            GamePlayerMove.instance.throwObjectPool[(int)ThrowType.Carrot].Despawn(gameObject);
         }
     }
 }

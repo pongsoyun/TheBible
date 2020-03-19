@@ -2,7 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GamePlayerMove : MonoBehaviour
+public enum ThrowType
+{
+    Carrot,
+    Stone
+}
+public class GamePlayerMove : Singleton<GamePlayerMove>
 {
     //Add Force로 프리팹 던지기
     //프리팹 선정기준은 랜덤? 확률로 결정
@@ -15,15 +20,20 @@ public class GamePlayerMove : MonoBehaviour
 
     public Vector3 rotateAngle;
     static public Vector2 throwPower;
+    public MemoryPool[] throwObjectPool;
     void Awake()
     {
-
+        throwObjectPool = new MemoryPool[throwObjects.Length];
+        for (int index = 0; index < throwObjects.Length; index++)
+        {
+            throwObjectPool[index] = new MemoryPool(throwObjects[index], 5, 15);
+        }
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -34,7 +44,7 @@ public class GamePlayerMove : MonoBehaviour
             throwPower = TargetObject.transform.position - gameObject.transform.position;
             throwPower.Normalize();
             //Debug.Log($"Normalize Power : {throwPower}");
-            Instantiate(throwObjects[Random.Range(0, throwObjects.Length)], gameObject.transform);
+            Instantiate(throwObjectPool[Random.Range(0, throwObjects.Length)].Respawn(gameObject.transform.position, gameObject.transform.rotation), gameObject.transform);
         }
         if (Input.GetKey(KeyCode.W))
         {
