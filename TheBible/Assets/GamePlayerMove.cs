@@ -44,7 +44,7 @@ public class GamePlayerMove : Singleton<GamePlayerMove>
             throwPower = TargetObject.transform.position - gameObject.transform.position;
             throwPower.Normalize();
             //Debug.Log($"Normalize Power : {throwPower}");
-            Instantiate(throwObjectPool[Random.Range(0, throwObjects.Length)].Respawn(gameObject.transform.position, gameObject.transform.rotation), gameObject.transform);
+            throwObjectPool[Random.Range(0, throwObjects.Length)].Respawn(gameObject.transform.position, gameObject.transform.rotation);
         }
         if (Input.GetKey(KeyCode.W))
         {

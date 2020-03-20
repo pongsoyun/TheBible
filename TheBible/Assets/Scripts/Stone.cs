@@ -9,7 +9,7 @@ public class Stone : MonoBehaviour, IDespawnable
 
     private Vector2 power;
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
         transform.SetParent(null);
         power = GamePlayerMove.throwPower;
