@@ -3,22 +3,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyPrefab : MonoBehaviour, IDespawnable
+public class EnemyBigRabbit : EnemyRabbit, IDespawnable
 {
     public event Action<GameObject> OnDespawn;
-    private Rigidbody2D prefabRigidBody2D;
-    public int hp = 2;
-    public bool isAngry = false;
-    private int speed = -1;
 
+    private Rigidbody2D prefabRigidBody2D;
     // Start is called before the first frame update
     void Start()
     {
+        base.hp = 4;
         prefabRigidBody2D = GetComponent<Rigidbody2D>();
         OnDespawn += KillDespawn;
         WaveGameManager.instance.ActiveEnemyCount++;
-        Debug.Log($"Active Enemy Count++! :{ WaveGameManager.instance.ActiveEnemyCount} ");
-
+        Debug.Log($"{nameof(gameObject)} Count++! :{ WaveGameManager.instance.ActiveEnemyCount} ");
     }
 
     // Update is called once per frame
@@ -27,11 +24,11 @@ public class EnemyPrefab : MonoBehaviour, IDespawnable
         if (isAngry)
         {
             Debug.Log("EnemyFox is Angry");
-            speed = 2;
+            speed = 1;
         }
         else
         {
-            speed = 1;
+            speed = 0.5f;
         }
         prefabRigidBody2D.velocity = transform.right * speed * -1;// Go to Left
         if (hp <= 0)
@@ -44,13 +41,19 @@ public class EnemyPrefab : MonoBehaviour, IDespawnable
         {
             WaveGameManager.instance.killCount++;
             WaveGameManager.instance.ActiveEnemyCount--;
-            WaveGameManager.instance.EnemyWavePool.Despawn(gameObject);
+            WaveGameManager.instance.EnemyWavePool[1].Despawn(gameObject);
+        }
+        else if (collision.gameObject.CompareTag("Player"))
+        {
+            OnDespawn(gameObject);
+            GamePlayerMove.instance.playerHP--;
+            Debug.Log("Player Hit!");
         }
     }
 
     private void KillDespawn(GameObject prefab)
     {
         Debug.Log("Kill Called");
-        WaveGameManager.instance.EnemyWavePool.Despawn(prefab);
+        WaveGameManager.instance.EnemyWavePool[1].Despawn(prefab);
     }
 }

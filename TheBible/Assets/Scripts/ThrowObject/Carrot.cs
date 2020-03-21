@@ -3,19 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Carrot : MonoBehaviour, IDespawnable
+public class Carrot : ThrowObject, IDespawnable
 {
     public event Action<GameObject> OnDespawn;
-
-    private Vector2 power;
-    // Start is called before the first frame update
-    void OnEnable()
-    {
-        transform.SetParent(null);
-        power = GamePlayerMove.throwPower;
-        power *= 8f;
-        gameObject.GetComponent<Rigidbody2D>().velocity = power;
-    }
 
     //void Update()
     //{
@@ -30,9 +20,9 @@ public class Carrot : MonoBehaviour, IDespawnable
         }
         else if (collision.gameObject.CompareTag("Enemy"))
         {
-            collision.gameObject.GetComponent<EnemyPrefab>().hp--;
+            collision.gameObject.GetComponent<EnemyRabbit>().hp--;
             GamePlayerMove.instance.throwObjectPool[(int)ThrowType.Carrot].Despawn(gameObject);
-            Debug.Log($"Carrot Eat! hp : {collision.gameObject.GetComponent<EnemyPrefab>().hp}");
+            Debug.Log($"Carrot Eat! hp : {collision.gameObject.GetComponent<EnemyRabbit>().hp}");
         }
         else if (collision.gameObject.CompareTag("Ground"))
         {

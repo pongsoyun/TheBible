@@ -1,26 +1,34 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum ThrowType
 {
     Carrot,
     Stone
 }
+
 public class GamePlayerMove : Singleton<GamePlayerMove>
 {
-    //Add Force로 프리팹 던지기
-    //프리팹 선정기준은 랜덤? 확률로 결정
-    //웨이브1 일땐 100% 2일땐 80 3일땐 70
-    //던지는 키는 E? 마우스? 마우스가 조작감이 훨씬 나을거 같음 어차피 마우스 관련된 것도 있고
-    [SerializeField]
+    [SerializeField, Header("About Throw")]
     private GameObject[] throwObjects;
     [SerializeField]
     private GameObject TargetObject;
 
-    public Vector3 rotateAngle;
-    static public Vector2 throwPower;
+    [SerializeField, Header("About Preview")]
+    private Image PreviewObject;
+    [SerializeField]
+    private Sprite[] PreviewSprites;
+
+    [Header("ETC")]
     public MemoryPool[] throwObjectPool;
+    public Vector3 rotateAngle;
+    public int playerHP = 10;
+    static public Vector2 throwPower;
+
+    int throwIndex = 0;
+
     void Awake()
     {
         throwObjectPool = new MemoryPool[throwObjects.Length];
@@ -30,21 +38,24 @@ public class GamePlayerMove : Singleton<GamePlayerMove>
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    //// Start is called before the first frame update
+    //void Start()
+    //{
 
-    }
+    //}
 
     // Update is called once per frame
     void Update()
     {
+        PreviewObject.sprite = PreviewSprites[throwIndex];
+        
         if (Input.GetMouseButtonDown(0))
         {
             throwPower = TargetObject.transform.position - gameObject.transform.position;
             throwPower.Normalize();
             //Debug.Log($"Normalize Power : {throwPower}");
-            throwObjectPool[Random.Range(0, throwObjects.Length)].Respawn(gameObject.transform.position, gameObject.transform.rotation);
+            throwObjectPool[throwIndex].Respawn(gameObject.transform.position, gameObject.transform.rotation);
+            throwIndex = Random.Range(0, throwObjects.Length);
         }
         if (Input.GetKey(KeyCode.W))
         {

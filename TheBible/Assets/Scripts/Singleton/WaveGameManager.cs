@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
+
 public enum GameState
 {
     Start,
@@ -21,9 +23,9 @@ public class WaveGameManager : Singleton<WaveGameManager> , IGameProcess
     private GameObject DebugPanel;
     public Text DebugText;
     [SerializeField]
-    GameObject EnemyPrefab;
+    GameObject[] EnemyPrefab;
     GameState state;
-    public MemoryPool EnemyWavePool;
+    public MemoryPool[] EnemyWavePool;
     public Transform SpawnPoint;
     public int killCount = 0;
     public int ActiveEnemyCount = 0;
@@ -56,6 +58,7 @@ public class WaveGameManager : Singleton<WaveGameManager> , IGameProcess
 
         Debug.Log($"GameState : {state.ToString()}");
         WaveSpawn();
+        RenderPlayerHp();
     }
 
     private void InitializeGame()
@@ -63,7 +66,9 @@ public class WaveGameManager : Singleton<WaveGameManager> , IGameProcess
         DebugPanel.SetActive(true);
         state = GameState.Start;
         Debug.Log($"GameState : {state.ToString()}");
-        EnemyWavePool = new MemoryPool(EnemyPrefab, 5, enemyCount * waveCount * 3);
+        EnemyWavePool = new MemoryPool[EnemyPrefab.Length];
+        EnemyWavePool[0] = new MemoryPool(EnemyPrefab[0], 5, enemyCount * waveCount * 3);
+        EnemyWavePool[1] = new MemoryPool(EnemyPrefab[1], 5, enemyCount * waveCount * 3);
     }
 
     private void GameClear()
@@ -81,9 +86,10 @@ public class WaveGameManager : Singleton<WaveGameManager> , IGameProcess
         while (state.Equals(GameState.OnGoing))
         {
             waveLimit = (waveIndex + 1) * waveCount;
+            int rabbitSize = Random.Range(0, EnemyPrefab.Length);
             if (killCount < waveLimit && ActiveEnemyCount < waveLimit)
             {
-                EnemyWavePool.Respawn(SpawnPoint.position, gameObject.transform.rotation);
+                EnemyWavePool[rabbitSize].Respawn(SpawnPoint.position, gameObject.transform.rotation);
                 //Debug.Log($"WaveIndex : {waveIndex}, Kill Count/End Line : {killCount}/{waveLimit}");
 
                 yield return new WaitForSeconds(waveCount + 1 - waveIndex);
@@ -103,7 +109,19 @@ public class WaveGameManager : Singleton<WaveGameManager> , IGameProcess
         Debug.Log("End Coroutine!");
         //SceneManager.LoadScene("WaveGame", LoadSceneMode.Additive);
         //SceneManager.SetActiveScene(SceneManager.GetSceneByName("WaveGame"));
-        SceneManager.UnloadSceneAsync("WaveGame");
+        //SceneManager.UnloadSceneAsync("WaveGame");
     }
 
+    private void RenderPlayerHp()
+    {
+        int playerHp = GamePlayerMove.instance.playerHP;
+
+        if (playerHp <= 0)
+        {
+            DebugText.text = "Game Over!";
+            state = GameState.Fail;
+            return;
+        }
+        DebugText.text = $"Player Hp : {playerHp}";
+    }
 }

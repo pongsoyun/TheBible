@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 9002660575955991801}
   - component: {fileID: 9002660575955991802}
   - component: {fileID: 9002660575955991803}
-  - component: {fileID: 3731159459724601403}
   - component: {fileID: 1832876334174736034}
   - component: {fileID: 9002660575955991796}
+  - component: {fileID: 3731159459724601403}
   m_Layer: 0
-  m_Name: Test3DCube
+  m_Name: SmallRabbit
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,20 +81,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &3731159459724601403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9002660575955991797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6be239cef40790540a271a40f139998e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 2
-  isAngry: 0
 --- !u!50 &1832876334174736034
 Rigidbody2D:
   serializedVersion: 4
@@ -115,7 +101,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &9002660575955991796
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -142,3 +128,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3731159459724601403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9002660575955991797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6be239cef40790540a271a40f139998e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 2
+  isAngry: 0
