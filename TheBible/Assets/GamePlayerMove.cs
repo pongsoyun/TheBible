@@ -8,7 +8,11 @@ public enum ThrowType
     Carrot,
     Stone
 }
-
+public enum RabbitType
+{
+    SmallRabbit,
+    BigRabbit
+}
 public class GamePlayerMove : Singleton<GamePlayerMove>
 {
     [SerializeField, Header("About Throw")]

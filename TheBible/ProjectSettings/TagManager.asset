@@ -10,6 +10,7 @@ TagManager:
   - Ground
   - TestEndZone
   - Enemy
+  - EndZone
   layers:
   - Default
   - TransparentFX

@@ -15,7 +15,6 @@ public class EnemySmallRabbit : EnemyRabbit, IDespawnable
         OnDespawn += KillDespawn;
         WaveGameManager.instance.ActiveEnemyCount++;
         Debug.Log($"{nameof(gameObject)} Count++! :{ WaveGameManager.instance.ActiveEnemyCount} ");
-
     }
 
     // Update is called once per frame
@@ -34,26 +33,24 @@ public class EnemySmallRabbit : EnemyRabbit, IDespawnable
         if (hp <= 0)
             OnDespawn(gameObject);
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("TestEndZone"))
-        {
-            WaveGameManager.instance.killCount++;
-            WaveGameManager.instance.ActiveEnemyCount--;
-            WaveGameManager.instance.EnemyWavePool[0].Despawn(gameObject);
-        }
-        else if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             OnDespawn(gameObject);
             GamePlayerMove.instance.playerHP--;
             Debug.Log("Player Hit!");
+        }
+        if (collision.gameObject.CompareTag("EndZone"))
+        {
+            WaveGameManager.instance.EnemyWavePool[(int)RabbitType.SmallRabbit].Despawn(gameObject);
         }
     }
 
     private void KillDespawn(GameObject prefab)
     {
         Debug.Log("Kill Called");
-        WaveGameManager.instance.EnemyWavePool[0].Despawn(prefab);
+        WaveGameManager.instance.killCount++;
+        WaveGameManager.instance.EnemyWavePool[(int)RabbitType.SmallRabbit].Despawn(prefab);
     }
 }

@@ -78,7 +78,7 @@ public class WaveGameManager : Singleton<WaveGameManager> , IGameProcess
 
     private void GameFail()
     {
-
+        SceneManager.UnloadSceneAsync("WaveGame");
     }
 
     IEnumerator WaveSpawn()

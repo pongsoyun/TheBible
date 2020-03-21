@@ -11,8 +11,7 @@ public class Stone : ThrowObject, IDespawnable
     //{
 
     //}
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -30,5 +29,9 @@ public class Stone : ThrowObject, IDespawnable
             Debug.Log("Ground Destroy");
             GamePlayerMove.instance.throwObjectPool[(int)ThrowType.Stone].Despawn(gameObject);
         }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+
     }
 }
