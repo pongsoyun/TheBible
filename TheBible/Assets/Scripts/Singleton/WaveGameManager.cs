@@ -106,7 +106,7 @@ public class WaveGameManager : Singleton<WaveGameManager> , IGameProcess
                 yield return new WaitForEndOfFrame();
             }
         }
-        Debug.Log("End Coroutine!");
+        Debug.Log($"{gameObject.name} : End Coroutine!");
         //SceneManager.LoadScene("WaveGame", LoadSceneMode.Additive);
         //SceneManager.SetActiveScene(SceneManager.GetSceneByName("WaveGame"));
         //SceneManager.UnloadSceneAsync("WaveGame");

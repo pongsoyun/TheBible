@@ -11,12 +11,15 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
 
     [SerializeField]
     private GameObject StonePrefab;
+    [SerializeField]
+    private GameObject TargetObject;
     GameState state;
     public MemoryPool StonePool;
 
     public int waveLimit;
     public int killCount;
-
+    public Vector2 throwPower;
+    public Vector3 rotateAngle;
     void Awake()
     {
         GameStart += InitializeGame;
@@ -28,20 +31,21 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
     void Start()
     {
         GameStart();
-        StonePool = new MemoryPool(StonePrefab, 10, 20);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        StoneSpawn();
     }
 
     private void InitializeGame()
     {
         state = GameState.Start;
+        state = GameState.OnGoing;
         waveLimit = 40;
         killCount = 0;
+        StonePool = new MemoryPool(StonePrefab, 10, 20);
         StartCoroutine(StoneSpawn());
     }
 
@@ -63,8 +67,13 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
         {
             if (killCount < waveLimit)
             {
+                rotateAngle.z = UnityEngine.Random.Range(-15.0f, 15.0f);
+                gameObject.transform.Rotate(rotateAngle);
+                //gameObject.transform.eulerAngles = new Vector3(0f, 0f, Mathf.Clamp(gameObject.transform.eulerAngles.z, -45f, -75f));
+                throwPower = TargetObject.transform.position - gameObject.transform.position;
+                throwPower.Normalize();
                 StonePool.Respawn(transform.position, transform.rotation);
-                yield return new WaitForSeconds(0.2f);
+                yield return new WaitForSeconds(1f);
             }
             else
             {
