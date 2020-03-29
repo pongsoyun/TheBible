@@ -7,10 +7,6 @@ public class Carrot : ThrowObject, IDespawnable
 {
     public event Action<GameObject> OnDespawn;
 
-    //void Update()
-    //{
-
-    //}
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -29,6 +25,7 @@ public class Carrot : ThrowObject, IDespawnable
             GamePlayerMove.instance.throwObjectPool[(int)ThrowType.Carrot].Despawn(gameObject);
         }
     }
+
     //private void OnCollisionEnter2D(Collision2D collision)
     //{
     //    if (collision.gameObject.CompareTag("Player"))

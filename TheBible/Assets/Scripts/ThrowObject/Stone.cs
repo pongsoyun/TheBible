@@ -7,10 +7,6 @@ public class Stone : ThrowObject, IDespawnable
 {
     public event Action<GameObject> OnDespawn;
 
-    //void Update()
-    //{
-
-    //}
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
