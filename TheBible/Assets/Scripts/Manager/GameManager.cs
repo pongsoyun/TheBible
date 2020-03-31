@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public GameObject Player;
     public float gameOverY = -30.0f;
 
-    public Transform Flag1;
+    public Transform FlagStart;
 
     public bool isGameOver;
 
@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
 
     private void MovingSpawnSpot()
     {
-        Player.transform.position = new Vector3(Flag1.position.x, Flag1.position.y, Flag1.position.z);
+        Player.transform.position = new Vector3(FlagStart.position.x, FlagStart.position.y, FlagStart.position.z);
         isGameOver = false;
         GameOverText.enabled = false;
 
