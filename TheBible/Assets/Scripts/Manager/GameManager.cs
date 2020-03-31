@@ -13,7 +13,6 @@ public class GameManager : MonoBehaviour
     public float gameOverY = -30.0f;
 
     public Transform Flag1;
-    // public Transform Flag1Down;
 
     public bool isGameOver;
 
@@ -39,16 +38,14 @@ public class GameManager : MonoBehaviour
     {
         isGameOver = true;
         GameOverText.enabled = true;
-        Invoke("Wait3Sec", 3f);
+        Invoke("MovingSpawnSpot", 3f);
     }
 
-    private void Wait3Sec()
+    private void MovingSpawnSpot()
     {
-        Debug.Log("restart");
         Player.transform.position = new Vector3(Flag1.position.x, Flag1.position.y, Flag1.position.z);
         isGameOver = false;
         GameOverText.enabled = false;
-
 
         // 좀 더 부드럽게 가져오려 했는데 우선은,,, 기본구현부터푸쉬,, 
         // Vector3 flag1Down = new Vector3(Flag1Down.position.x, Flag1Down.position.y, Flag1Down.position.z);
