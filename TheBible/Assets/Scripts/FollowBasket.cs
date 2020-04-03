@@ -14,7 +14,6 @@ public class FollowBasket : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // transform.position = new Vector3(BasketBack.position.x, BasketBack.position.y, transform.position.z);
         transform.position = new Vector3(BasketBack.position.x, BasketBack.position.y, transform.position.z);
     }
 }
