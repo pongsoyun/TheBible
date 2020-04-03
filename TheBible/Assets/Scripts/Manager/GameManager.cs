@@ -10,9 +10,16 @@ public class GameManager : MonoBehaviour
     public bool isTutorial = true;
     // stage 1
     public GameObject Player;
+
+    public float gameOverX;
     public float gameOverY = -30.0f;
 
-    public Transform FlagStart;
+    public Transform FlagPond;
+    public Transform FlagCliff;
+    public Transform FlagTown;
+    public Transform FlagMiniGame1;
+    public Transform FlagMiniGame2;
+    public Transform FlagBigHouse;
 
     public bool isGameOver;
 
@@ -27,23 +34,46 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         // GameOver
-        if (!isGameOver && Player.transform.localPosition.y < gameOverY)
+        if (!isGameOver && (Player.transform.localPosition.y < this.gameOverY))
         {
             Debug.Log("gameover");
-            GameOver();
+            GameOver(Player.transform.localPosition.x);
         }
     }
 
-    private void GameOver()
+    private void GameOver(float gameOverX)
     {
+        this.gameOverX = gameOverX;
         isGameOver = true;
         GameOverText.enabled = true;
+
         Invoke("MovingSpawnSpot", 3f);
     }
 
     private void MovingSpawnSpot()
     {
-        Player.transform.position = new Vector3(FlagStart.position.x, FlagStart.position.y, FlagStart.position.z);
+        if (gameOverX < FlagCliff.position.x)
+        {
+            // FlagPond에서 죽었을 경우
+            Player.transform.position = new Vector3(FlagPond.position.x, FlagPond.position.y, FlagPond.position.z);
+        }
+        else if (gameOverX < FlagTown.position.x)
+        {
+            // FlagCliff에서 죽었을 경우
+            Player.transform.position = new Vector3(FlagCliff.position.x, FlagCliff.position.y, FlagCliff.position.z);
+        }
+        else if (gameOverX < FlagMiniGame2.position.x)
+        {
+            // FlagMiniGame1에서 죽었을 경우
+            Player.transform.position = new Vector3(FlagMiniGame1.position.x, FlagMiniGame1.position.y, FlagMiniGame1.position.z);
+        }
+        else if (gameOverX < FlagBigHouse.position.x)
+        {
+            // FlagMiniGame2에서 죽었을 경우
+            Player.transform.position = new Vector3(FlagMiniGame2.position.x, FlagMiniGame2.position.y, FlagMiniGame2.position.z);
+        }
+
+        // Player.transform.position = new Vector3(FlagStart.position.x, FlagStart.position.y, FlagStart.position.z);
         isGameOver = false;
         GameOverText.enabled = false;
 
