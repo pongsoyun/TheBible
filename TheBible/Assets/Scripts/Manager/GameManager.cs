@@ -52,6 +52,7 @@ public class GameManager : MonoBehaviour
 
     private void MovingSpawnSpot()
     {
+
         if (gameOverX < FlagCliff.position.x)
         {
             // FlagPond에서 죽었을 경우
