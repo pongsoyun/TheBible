@@ -34,6 +34,7 @@ public class WaveGameManager : Singleton<WaveGameManager> , IGameProcess
     private int enemyCount = 15;
     private int waveLimit;
 
+    private bool sceneEnd = false;
     void Awake()
     {
         GameStart += InitializeGame;
@@ -50,15 +51,29 @@ public class WaveGameManager : Singleton<WaveGameManager> , IGameProcess
     // Update is called once per frame
     void Update()
     {
-        if (state.Equals(GameState.Start))
-        {
-            state = GameState.OnGoing;
-            StartCoroutine(WaveSpawn());
-        }
+        //if (state.Equals(GameState.Start))
+        //{
+        //    state = GameState.OnGoing;
+        //    StartCoroutine(WaveSpawn());
+        //}
 
-        Debug.Log($"GameState : {state.ToString()}");
-        WaveSpawn();
-        RenderPlayerHp();
+        //Debug.Log($"GameState : {state.ToString()}");
+        //WaveSpawn();
+        //RenderPlayerHp();
+
+        //Test Code
+        if (!sceneEnd && Input.GetMouseButtonDown(1))//마우스 우클릭
+        {
+            sceneEnd = true;
+            Debug.Log($"SceneEnd : {sceneEnd}");
+            //LoadingScene.LoadScene("Stage1");
+            foreach(var pool in EnemyWavePool)
+            {
+                //pool.AllDespawn();
+                pool.Dispose();
+            }
+            SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("WaveGame"));
+        }
     }
 
     private void InitializeGame()

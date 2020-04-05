@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
 {
@@ -20,6 +21,9 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
     public int killCount;
     public Vector2 throwPower;
     public Vector3 rotateAngle;
+
+    bool sceneEnd = false;
+
     void Awake()
     {
         GameStart += InitializeGame;
@@ -37,6 +41,16 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
     void Update()
     {
         StoneSpawn();
+        //Test Code
+        if (!sceneEnd && Input.GetMouseButtonDown(1))//마우스 우클릭
+        {
+            sceneEnd = true;
+            Debug.Log($"SceneEnd : {sceneEnd}");
+            //LoadingScene.LoadScene("Stage1");
+            //StonePool.AllDespawn();
+            StonePool.Dispose();
+            SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("MouseClickGame"));
+        }
     }
 
     private void InitializeGame()
