@@ -52,7 +52,7 @@ public class GamePlayerMove : Singleton<GamePlayerMove>
     void Update()
     {
         PreviewObject.sprite = PreviewSprites[throwIndex];
-        
+
         if (Input.GetMouseButtonDown(0))
         {
             throwPower = TargetObject.transform.position - gameObject.transform.position;

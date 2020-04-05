@@ -13,7 +13,7 @@ public enum GameState
     Clear,
     Fail
 }
-public class WaveGameManager : Singleton<WaveGameManager> , IGameProcess
+public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
 {
     public event Action GameStart;
     public event Action GameComplete;
@@ -51,15 +51,16 @@ public class WaveGameManager : Singleton<WaveGameManager> , IGameProcess
     // Update is called once per frame
     void Update()
     {
-        //if (state.Equals(GameState.Start))
-        //{
-        //    state = GameState.OnGoing;
-        //    StartCoroutine(WaveSpawn());
-        //}
+        // Game Start
+        if (state.Equals(GameState.Start))
+        {
+            state = GameState.OnGoing;
+            StartCoroutine(WaveSpawn());
+        }
 
-        //Debug.Log($"GameState : {state.ToString()}");
-        //WaveSpawn();
-        //RenderPlayerHp();
+        Debug.Log($"GameState : {state.ToString()}");
+        WaveSpawn();
+        RenderPlayerHp();
 
         //Test Code
         if (!sceneEnd && Input.GetMouseButtonDown(1))//마우스 우클릭
@@ -67,7 +68,7 @@ public class WaveGameManager : Singleton<WaveGameManager> , IGameProcess
             sceneEnd = true;
             Debug.Log($"SceneEnd : {sceneEnd}");
             //LoadingScene.LoadScene("Stage1");
-            foreach(var pool in EnemyWavePool)
+            foreach (var pool in EnemyWavePool)
             {
                 //pool.AllDespawn();
                 pool.Dispose();
