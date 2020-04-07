@@ -67348,7 +67348,6 @@ GameObject:
   - component: {fileID: 1390866335}
   - component: {fileID: 1390866334}
   - component: {fileID: 1390866333}
-  - component: {fileID: 1390866332}
   m_Layer: 0
   m_Name: basketF
   m_TagString: Ground
@@ -67370,19 +67369,6 @@ Transform:
   m_Father: {fileID: 1448289576}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!114 &1390866332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390866330}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50beb0d9e33ce47f48c1e10998c7f99d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BasketBack: {fileID: 0}
 --- !u!233 &1390866333
 HingeJoint2D:
   m_ObjectHideFlags: 0
