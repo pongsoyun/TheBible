@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("gameover");
             GameOver(Player.transform.localPosition.x);
         }
+        
     }
 
     private void GameOver(float gameOverX)

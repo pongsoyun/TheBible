@@ -64,7 +64,7 @@ public class TutorialManager : Singleton<TutorialManager>
         int completeTutorial = btnClicked.Length;
         for(int index = 0; index < completeTutorial; index++)
         {
-            if(btnClicked[index] >= 400)
+            if(btnClicked[index] >= 100)
             {
                 result = true;
             }

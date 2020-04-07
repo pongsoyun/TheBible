@@ -20,10 +20,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - MainUI
+  - WaveUI
+  - MouseGameUI
+  - BigHouseUI
   - 
   - 
   - 
