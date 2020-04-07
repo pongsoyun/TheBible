@@ -5,7 +5,7 @@ using UnityEngine;
 public class ThrowObject : MonoBehaviour
 {
     protected Vector2 power = Vector2.zero;
-    
+
 
     protected virtual void OnEnable()
     {
@@ -21,6 +21,6 @@ public class ThrowObject : MonoBehaviour
     protected virtual void PowerSet()
     {
         //For WaveGame
-        power = GamePlayerMove.throwPower * 8f;
+        power = GamePlayerMove.throwPower * 12f;
     }
 }

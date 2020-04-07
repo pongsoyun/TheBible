@@ -24,11 +24,11 @@ public class EnemyBigRabbit : EnemyRabbit, IDespawnable
         if (isAngry)
         {
             Debug.Log("EnemyFox is Angry");
-            speed = 1;
+            speed = 3;
         }
         else
         {
-            speed = 0.5f;
+            speed = 1.5f;
         }
 
         prefabRigidBody2D.velocity = transform.right * speed * -1;// Go to Left

@@ -23,11 +23,11 @@ public class EnemySmallRabbit : EnemyRabbit, IDespawnable
         if (isAngry)
         {
             Debug.Log($"{nameof(gameObject)} is Angry");
-            speed = 2;
+            speed = 4;
         }
         else
         {
-            speed = 1;
+            speed = 2;
         }
         prefabRigidBody2D.velocity = transform.right * speed * -1;// Go to Left
         if (hp <= 0)
