@@ -29518,12 +29518,22 @@ PrefabInstance:
     - target: {fileID: 2162022732274282133, guid: 32abe5461dfbf413e99d3a3b07188fa2,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 2.08
+      value: 5.12
       objectReference: {fileID: 0}
     - target: {fileID: 2162022732274282133, guid: 32abe5461dfbf413e99d3a3b07188fa2,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 2.02
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162022732274282133, guid: 32abe5461dfbf413e99d3a3b07188fa2,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162022732274282133, guid: 32abe5461dfbf413e99d3a3b07188fa2,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 5.12
       objectReference: {fileID: 0}
     - target: {fileID: 2162022732274282134, guid: 32abe5461dfbf413e99d3a3b07188fa2,
         type: 3}
@@ -29540,6 +29550,16 @@ PrefabInstance:
       propertyPath: ActionParticle
       value: 
       objectReference: {fileID: 837866637}
+    - target: {fileID: 2162022732274282134, guid: 32abe5461dfbf413e99d3a3b07188fa2,
+        type: 3}
+      propertyPath: MiniRbAnim
+      value: 
+      objectReference: {fileID: 770433365}
+    - target: {fileID: 2162022732274282134, guid: 32abe5461dfbf413e99d3a3b07188fa2,
+        type: 3}
+      propertyPath: PlayerAnim
+      value: 
+      objectReference: {fileID: 1115337225}
     - target: {fileID: 2162022732274282138, guid: 32abe5461dfbf413e99d3a3b07188fa2,
         type: 3}
       propertyPath: m_Name
@@ -29560,6 +29580,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.y
       value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162022732274282139, guid: 32abe5461dfbf413e99d3a3b07188fa2,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32abe5461dfbf413e99d3a3b07188fa2, type: 3}

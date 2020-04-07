@@ -12,18 +12,29 @@ public class ColliderEventTrigger : MonoBehaviour
     public ParticleSystem Aura;
     public ParticleSystem ActionParticle;
 
-    public Animator animator;
+    public Animator MiniRbAnim;
+    public Animator PlayerAnim;
+
+    bool isPet = false;
     // Start is called before the first frame update
     void Awake()
     {
         Player = FindObjectOfType<CharacterMove>();
-        animator = GetComponent<Animator>();
+        //  animator = GetComponent<Animator>();
     }
 
     void Start()
     {
         Aura.Stop();
         ActionParticle.Stop();
+    }
+
+    void Update()
+    {
+        if (isPet)
+        {
+            transform.position = new Vector3(Player.transform.position.x - 1f, Player.transform.position.y, transform.transform.position.z);
+        }
     }
 
     void DebugEvent()
@@ -34,6 +45,8 @@ public class ColliderEventTrigger : MonoBehaviour
             FilledImage.fillAmount += 0.01f;
             Aura.Emit(1);
             ActionParticle.Emit(1);
+            Debug.Log("isMagicTrue");
+            isMagicTrue();
         }
         else
         {
@@ -51,9 +64,11 @@ public class ColliderEventTrigger : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("EventEnter");
-        animator.SetBool("Cure", true);
+        MiniRbAnim.SetBool("Cure", true);
         Player.eventClear();
         Player.ActivateEvent += DebugEvent;
+        Invoke("isPetTrue", 1f);
+        // isPet = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -61,5 +76,22 @@ public class ColliderEventTrigger : MonoBehaviour
         //Debug.Log("EventExit");
         //Player.ActivateEvent -= DebugEvent;
         FilledImage.fillAmount = 1f;
+    }
+
+    void isPetTrue()
+    {
+        isPet = true;
+    }
+
+    void isMagicTrue()
+    {
+        PlayerAnim.SetBool("magic", true);
+        Invoke("isMagicFalse", 1f);
+    }
+
+    void isMagicFalse()
+    {
+        Debug.Log("magic 멈춰!!");
+        PlayerAnim.SetBool("magic", false);
     }
 }
