@@ -12,11 +12,12 @@ public class ColliderEventTrigger : MonoBehaviour
     public ParticleSystem Aura;
     public ParticleSystem ActionParticle;
 
-
+    public Animator animator;
     // Start is called before the first frame update
     void Awake()
     {
         Player = FindObjectOfType<CharacterMove>();
+        animator = GetComponent<Animator>();
     }
 
     void Start()
@@ -50,6 +51,7 @@ public class ColliderEventTrigger : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("EventEnter");
+        animator.SetBool("Cure", true);
         Player.eventClear();
         Player.ActivateEvent += DebugEvent;
     }
