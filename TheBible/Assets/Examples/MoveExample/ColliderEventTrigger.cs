@@ -15,7 +15,8 @@ public class ColliderEventTrigger : MonoBehaviour
     public Animator MiniRbAnim;
     public Animator PlayerAnim;
 
-    bool isPet = false;
+    bool isPet = false; // position을 위함. Player따라다닐 RB
+    bool isFirstEvent = true;  // 일단.. 긴급 처방.. 
     // Start is called before the first frame update
     void Awake()
     {
@@ -31,9 +32,20 @@ public class ColliderEventTrigger : MonoBehaviour
 
     void Update()
     {
+        // miniRB position
         if (isPet)
         {
-            transform.position = new Vector3(Player.transform.position.x - 1f, Player.transform.position.y, transform.transform.position.z);
+            transform.position = new Vector3(Player.transform.position.x - 1f, Player.transform.position.y - 0.25f, transform.transform.position.z);
+        }
+
+        // Animation - magic
+        if (!Input.GetKey(KeyCode.E))
+        {
+            PlayerAnim.SetBool("magic", false);
+        }
+        else
+        {
+            PlayerAnim.SetBool("magic", true);
         }
     }
 
@@ -45,53 +57,38 @@ public class ColliderEventTrigger : MonoBehaviour
             FilledImage.fillAmount += 0.01f;
             Aura.Emit(1);
             ActionParticle.Emit(1);
-            Debug.Log("isMagicTrue");
-            isMagicTrue();
-        }
-        else
-        {
-            Aura.Stop();
-            ActionParticle.Stop();
         }
 
         if (FilledImage.fillAmount >= 1.0f)
         {
+            // 이게 최초에 한번 호출이 되네요..
             Debug.Log("FilledImage Reset 1.0 to 0!");
+            if (isFirstEvent)
+            {
+                isFirstEvent = false;
+            }
+            else
+            {
+                Debug.Log("isPet True!");
+                isPet = true; // 따라다니기
+                MiniRbAnim.SetBool("Cure", true); // animation 변경(Cured RB으로)
+            }
             FilledImage.fillAmount = 0;
+
         }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("EventEnter");
-        MiniRbAnim.SetBool("Cure", true);
         Player.eventClear();
         Player.ActivateEvent += DebugEvent;
-        Invoke("isPetTrue", 1f);
-        // isPet = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        //Debug.Log("EventExit");
+        // Debug.Log("EventExit");
         //Player.ActivateEvent -= DebugEvent;
         FilledImage.fillAmount = 1f;
-    }
-
-    void isPetTrue()
-    {
-        isPet = true;
-    }
-
-    void isMagicTrue()
-    {
-        PlayerAnim.SetBool("magic", true);
-        Invoke("isMagicFalse", 1f);
-    }
-
-    void isMagicFalse()
-    {
-        Debug.Log("magic 멈춰!!");
-        PlayerAnim.SetBool("magic", false);
     }
 }
