@@ -33,6 +33,8 @@ public class GamePlayerMove : Singleton<GamePlayerMove>
 
     int throwIndex = 0;
 
+    public ParticleSystem ActionParticle;
+
     void Awake()
     {
         throwObjectPool = new MemoryPool[throwObjects.Length];
@@ -40,6 +42,7 @@ public class GamePlayerMove : Singleton<GamePlayerMove>
         {
             throwObjectPool[index] = new MemoryPool(throwObjects[index], 5, 15);
         }
+        ActionParticle.Stop();
     }
 
     //// Start is called before the first frame update
@@ -60,6 +63,8 @@ public class GamePlayerMove : Singleton<GamePlayerMove>
             //Debug.Log($"Normalize Power : {throwPower}");
             throwObjectPool[throwIndex].Respawn(gameObject.transform.position, gameObject.transform.rotation);
             throwIndex = Random.Range(0, throwObjects.Length);
+
+            ActionParticle.Emit(1);
         }
         if (Input.GetKey(KeyCode.W))
         {

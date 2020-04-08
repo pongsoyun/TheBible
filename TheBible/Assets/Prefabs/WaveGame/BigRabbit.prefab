@@ -97,6 +97,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 2
   isAngry: 0
+  ActionParticle: {fileID: 5147551210228926052, guid: 08810027abc0340b495b95bb8f9eae16,
+    type: 3}
 --- !u!111 &4728303009293655634
 Animation:
   m_ObjectHideFlags: 0
