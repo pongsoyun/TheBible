@@ -45743,6 +45743,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60fb33e1a9cef4e42bc347705175e269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPortalScene: 1
   sceneName: CptHome
 --- !u!61 &992359575
 BoxCollider2D:
@@ -75481,6 +75482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60fb33e1a9cef4e42bc347705175e269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPortalScene: 0
   sceneName: WaveGame
 --- !u!50 &1554309669
 Rigidbody2D:
@@ -82522,6 +82524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60fb33e1a9cef4e42bc347705175e269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPortalScene: 0
   sceneName: MouseClickGame
 --- !u!50 &1764812908
 Rigidbody2D:
