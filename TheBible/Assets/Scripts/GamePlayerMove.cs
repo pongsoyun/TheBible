@@ -66,6 +66,11 @@ public class GamePlayerMove : Singleton<GamePlayerMove>
 
             ActionParticle.Emit(1);
         }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            //Index 재설정 던지기
+            throwIndex = Random.Range(0, throwObjects.Length);
+        }
         if (Input.GetKey(KeyCode.W))
         {
             transform.Rotate(rotateAngle * Time.deltaTime);

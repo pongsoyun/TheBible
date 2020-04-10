@@ -29,12 +29,12 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
     public Transform SpawnPoint;
     public int killCount = 0;
     public int ActiveEnemyCount = 0;
-    private int waveIndex;
-    private int waveCount = 3;
+
     private int enemyCount = 15;
     private int waveLimit;
-
+    private WaitForSeconds waitTime = new WaitForSeconds(2.5f);
     private bool sceneEnd = false;
+
     void Awake()
     {
         GameStart += InitializeGame;
@@ -57,10 +57,17 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
             state = GameState.OnGoing;
             StartCoroutine(WaveSpawn());
         }
+        else if (state.Equals(GameState.OnGoing))
+        {
+            WaveSpawn();
+            RenderPlayerHp();
+        }
+        else if (state.Equals(GameState.Fail))
+        {
+            Invoke("GameFail", 5f);
+        }
 
         Debug.Log($"GameState : {state.ToString()}");
-        WaveSpawn();
-        RenderPlayerHp();
 
         //Test Code
         if (!sceneEnd && Input.GetMouseButtonDown(1))//마우스 우클릭
@@ -83,8 +90,8 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
         state = GameState.Start;
         Debug.Log($"GameState : {state.ToString()}");
         EnemyWavePool = new MemoryPool[EnemyPrefab.Length];
-        EnemyWavePool[0] = new MemoryPool(EnemyPrefab[0], 5, enemyCount * waveCount * 3);
-        EnemyWavePool[1] = new MemoryPool(EnemyPrefab[1], 5, enemyCount * waveCount * 3);
+        EnemyWavePool[0] = new MemoryPool(EnemyPrefab[0], 5, enemyCount * 2);
+        EnemyWavePool[1] = new MemoryPool(EnemyPrefab[1], 5, enemyCount);
     }
 
     private void GameClear()
@@ -101,31 +108,19 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
     {
         while (state.Equals(GameState.OnGoing))
         {
-            waveLimit = (waveIndex + 1) * waveCount;
+            waveLimit = 30;
             int rabbitSize = Random.Range(0, EnemyPrefab.Length);
             if (killCount < waveLimit && ActiveEnemyCount < waveLimit)
             {
                 EnemyWavePool[rabbitSize].Respawn(SpawnPoint.position, gameObject.transform.rotation);
-                //Debug.Log($"WaveIndex : {waveIndex}, Kill Count/End Line : {killCount}/{waveLimit}");
-
-                yield return new WaitForSeconds(waveCount + 1 - waveIndex);
+                yield return waitTime;
             }
             else
             {
-                Debug.Log("WaitForEndWave");
-                if (killCount.Equals(waveLimit))
-                {
-                    killCount = 0;
-                    waveIndex++;
-                    //Debug.Log($"Next Wave : {waveIndex}, Kill Count/End Line : {killCount}/{waveLimit}");
-                }
-                yield return new WaitForEndOfFrame();
+                state = GameState.Clear;
             }
         }
         Debug.Log($"{gameObject.name} : End Coroutine!");
-        //SceneManager.LoadScene("WaveGame", LoadSceneMode.Additive);
-        //SceneManager.SetActiveScene(SceneManager.GetSceneByName("WaveGame"));
-        //SceneManager.UnloadSceneAsync("WaveGame");
     }
 
     private void RenderPlayerHp()
