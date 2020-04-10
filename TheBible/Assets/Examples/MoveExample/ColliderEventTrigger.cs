@@ -17,11 +17,15 @@ public class ColliderEventTrigger : MonoBehaviour
 
     bool isPet = false; // position을 위함. Player따라다닐 RB
     bool isFirstEvent = true;  // 일단.. 긴급 처방.. 
+
+    /* King Animation Event 처리 */
+    // public Animator KingAnim;
+    // bool isKingCure;
+
     // Start is called before the first frame update
     void Awake()
     {
         Player = FindObjectOfType<CharacterMove>();
-        //  animator = GetComponent<Animator>();
     }
 
     void Start()
@@ -35,7 +39,7 @@ public class ColliderEventTrigger : MonoBehaviour
         // miniRB position
         if (isPet)
         {
-            transform.position = new Vector3(Player.transform.position.x - 1f, Player.transform.position.y - 0.25f, transform.transform.position.z);
+            transform.position = new Vector3(Player.transform.position.x - 1.5f, Player.transform.position.y + 0.2f, transform.transform.position.z);
         }
 
         // Animation - magic
@@ -68,7 +72,9 @@ public class ColliderEventTrigger : MonoBehaviour
             {
                 Debug.Log("isPet True!");
                 isPet = true; // 따라다니기
-                MiniRbAnim.SetBool("Cure", true); // animation 변경(Cured RB으로)
+                MiniRbAnim.SetBool("Cure", true);
+
+                // isKingCure = true;
             }
             FilledImage.fillAmount = 0;
 
@@ -80,6 +86,12 @@ public class ColliderEventTrigger : MonoBehaviour
         Debug.Log("EventEnter");
         Player.eventClear();
         Player.ActivateEvent += DebugEvent;
+        if (collision.gameObject.CompareTag("NoPet"))
+        {
+            Debug.Log("NoPet");
+            isPet = false;
+            // PET 오브젝트 destroy
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
