@@ -11,6 +11,7 @@ TagManager:
   - TestEndZone
   - Enemy
   - EndZone
+  - MoviePlay
   layers:
   - Default
   - TransparentFX
