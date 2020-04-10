@@ -43,10 +43,6 @@ public class ColliderEventTrigger : MonoBehaviour
         {
             PlayerAnim.SetBool("magic", false);
         }
-        else
-        {
-            PlayerAnim.SetBool("magic", true);
-        }
     }
 
     void DebugEvent()
@@ -57,6 +53,7 @@ public class ColliderEventTrigger : MonoBehaviour
             FilledImage.fillAmount += 0.01f;
             Aura.Emit(1);
             ActionParticle.Emit(1);
+            PlayerAnim.SetBool("magic", true);
         }
 
         if (FilledImage.fillAmount >= 1.0f)
