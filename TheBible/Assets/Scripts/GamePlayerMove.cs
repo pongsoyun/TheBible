@@ -69,7 +69,7 @@ public class GamePlayerMove : Singleton<GamePlayerMove>
         if (Input.GetKeyDown(KeyCode.E))
         {
             //Index 재설정 던지기
-            throwIndex = Random.Range(0, throwObjects.Length);
+            throwIndex = 0;
         }
         if (Input.GetKey(KeyCode.W))
         {

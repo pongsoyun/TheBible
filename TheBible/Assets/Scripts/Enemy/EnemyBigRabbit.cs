@@ -8,6 +8,7 @@ public class EnemyBigRabbit : EnemyRabbit, IDespawnable
     public event Action<GameObject> OnDespawn;
 
     private Rigidbody2D prefabRigidBody2D;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,12 @@ public class EnemyBigRabbit : EnemyRabbit, IDespawnable
         OnDespawn += KillDespawn;
         WaveGameManager.instance.ActiveEnemyCount++;
         Debug.Log($"{nameof(gameObject)} Count++! :{ WaveGameManager.instance.ActiveEnemyCount} ");
+    }
+
+    void OnEnable()
+    {
+        hp = 4;
+        isAngry = false;
     }
 
     // Update is called once per frame
@@ -53,6 +60,7 @@ public class EnemyBigRabbit : EnemyRabbit, IDespawnable
     {
         Debug.Log("Kill Called");
         WaveGameManager.instance.killCount++;
+        WaveGameManager.instance.ParticlePool.Respawn(prefab.transform.position, prefab.transform.rotation);
         WaveGameManager.instance.EnemyWavePool[(int)RabbitType.BigRabbit].Despawn(prefab);
     }
 }

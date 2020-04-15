@@ -18,14 +18,18 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
     public event Action GameStart;
     public event Action GameComplete;
     public event Action GameOver;
+    public Text DebugText;
 
     [SerializeField]
     private GameObject DebugPanel;
-    public Text DebugText;
     [SerializeField]
     GameObject[] EnemyPrefab;
+    [SerializeField]
+    GameObject ParticlePrefab;
+
     GameState state;
     public MemoryPool[] EnemyWavePool;
+    public MemoryPool ParticlePool;
     public Transform SpawnPoint;
     public int killCount = 0;
     public int ActiveEnemyCount = 0;
@@ -94,8 +98,9 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
         state = GameState.Start;
         Debug.Log($"GameState : {state.ToString()}");
         EnemyWavePool = new MemoryPool[EnemyPrefab.Length];
-        EnemyWavePool[0] = new MemoryPool(EnemyPrefab[0], 5, enemyCount * 2);
+        EnemyWavePool[0] = new MemoryPool(EnemyPrefab[0], 5, enemyCount);
         EnemyWavePool[1] = new MemoryPool(EnemyPrefab[1], 5, enemyCount);
+        ParticlePool = new MemoryPool(ParticlePrefab, 5, enemyCount * 2);
     }
 
     private void GameClear()

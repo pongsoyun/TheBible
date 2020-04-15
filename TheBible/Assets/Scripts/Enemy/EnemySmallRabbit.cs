@@ -16,7 +16,11 @@ public class EnemySmallRabbit : EnemyRabbit, IDespawnable
         WaveGameManager.instance.ActiveEnemyCount++;
         Debug.Log($"{nameof(gameObject)} Count++! :{ WaveGameManager.instance.ActiveEnemyCount} ");
     }
-
+    void OnEnable()
+    {
+        hp = 2;
+        isAngry = false;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -33,6 +37,7 @@ public class EnemySmallRabbit : EnemyRabbit, IDespawnable
         if (hp <= 0)
             OnDespawn(gameObject);
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -51,6 +56,8 @@ public class EnemySmallRabbit : EnemyRabbit, IDespawnable
     {
         Debug.Log("Kill Called");
         WaveGameManager.instance.killCount++;
+        WaveGameManager.instance.ParticlePool.Respawn(prefab.transform.position, prefab.transform.rotation);
         WaveGameManager.instance.EnemyWavePool[(int)RabbitType.SmallRabbit].Despawn(prefab);
+
     }
 }

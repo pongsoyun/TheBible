@@ -620,11 +620,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8210e6e4a57d5b3438eaf9916015541d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DebugPanel: {fileID: 317019056}
   DebugText: {fileID: 763161648}
+  DebugPanel: {fileID: 317019056}
   EnemyPrefab:
   - {fileID: 9002660575955991797, guid: 508c9f5a41b9d5b4f91036b7777cf9c5, type: 3}
   - {fileID: 7195782904904088711, guid: c21461ab23b11784a99ffe07b49294b6, type: 3}
+  ParticlePrefab: {fileID: 5147551210228926050, guid: 08810027abc0340b495b95bb8f9eae16,
+    type: 3}
   SpawnPoint: {fileID: 410196465}
   killCount: 0
   ActiveEnemyCount: 0
@@ -2260,3 +2262,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08810027abc0340b495b95bb8f9eae16, type: 3}
+--- !u!1 &5147551210276609938 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5147551210228926050, guid: 08810027abc0340b495b95bb8f9eae16,
+    type: 3}
+  m_PrefabInstance: {fileID: 5147551210276609937}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5147551210276609939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5147551210276609938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c24691c96fd249709d038624ec323e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
