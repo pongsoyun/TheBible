@@ -66,7 +66,11 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
         {
             Invoke("GameFail", 5f);
         }
-
+        else if (state.Equals(GameState.Clear))
+        {
+            DebugText.text = "Game Clear!";
+            Invoke("GameClear", 5f);
+        }
         Debug.Log($"GameState : {state.ToString()}");
 
         //Test Code
@@ -96,12 +100,18 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
 
     private void GameClear()
     {
-
+        sceneEnd = true;
     }
 
     private void GameFail()
     {
-        SceneManager.UnloadSceneAsync("WaveGame");
+        sceneEnd = true;
+        Debug.Log($"SceneEnd : {sceneEnd}");
+        foreach (var pool in EnemyWavePool)
+        {
+            pool.Dispose();
+        }
+        SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("WaveGame"));
     }
 
     IEnumerator WaveSpawn()

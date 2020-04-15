@@ -39,7 +39,8 @@ public class StoneMouse : ThrowObject, IDespawnable
 
         else if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Player Hit!");
+            MouseGameManager.instance.playerHp--;
+            Debug.Log($"Player Hit! Hp : {MouseGameManager.instance.playerHp}");
             MouseGameManager.instance.StonePool.Despawn(gameObject);
         }
     }

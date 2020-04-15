@@ -12,6 +12,7 @@ TagManager:
   - Enemy
   - EndZone
   - MoviePlay
+  - ThrowObject
   layers:
   - Default
   - TransparentFX

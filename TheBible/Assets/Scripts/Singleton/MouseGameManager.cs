@@ -17,6 +17,7 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
     GameState state;
     public MemoryPool StonePool;
 
+    public int playerHp;
     public int waveLimit;
     public int killCount;
     public Vector2 throwPower;
@@ -51,6 +52,10 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
             StonePool.Dispose();
             SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("MouseClickGame"));
         }
+        if (!sceneEnd && playerHp <= 0)
+        {
+            GameFail();
+        }
     }
 
     private void InitializeGame()
@@ -59,6 +64,7 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
         state = GameState.OnGoing;
         waveLimit = 40;
         killCount = 0;
+        playerHp = 10;
         StonePool = new MemoryPool(StonePrefab, 10, 20);
         StartCoroutine(StoneSpawn());
     }
@@ -73,6 +79,10 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
     {
         state = GameState.Fail;
         StopCoroutine(StoneSpawn());
+        sceneEnd = true;
+        Debug.Log($"SceneEnd : {sceneEnd}");
+        StonePool.Dispose();
+        SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("MouseClickGame"));
     }
 
     IEnumerator StoneSpawn()
