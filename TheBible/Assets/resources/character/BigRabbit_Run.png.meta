@@ -1,67 +1,37 @@
 fileFormatVersion: 2
-guid: 6914605d0f2614308ab4d875f1e2c058
+guid: 18359cbce6dc348ccb3b389e807318eb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5563673639701790799
-    second: BigRabbit_Throw_0
+      213: -8500704916567024611
+    second: BigRabbit_Run_0
   - first:
-      213: 8372748586434938682
-    second: BigRabbit_Throw_1
+      213: 7736860804616518211
+    second: BigRabbit_Run_1
   - first:
-      213: -180651645674869578
-    second: BigRabbit_Throw_2
+      213: 7553029150801164605
+    second: BigRabbit_Run_2
   - first:
-      213: 8257061195743762184
-    second: BigRabbit_Throw_3
+      213: 3467365304462000310
+    second: BigRabbit_Run_3
   - first:
-      213: 2595247080760111590
-    second: BigRabbit_Throw_4
+      213: 1075527998753270905
+    second: BigRabbit_Run_4
   - first:
-      213: 2916938844761819315
-    second: BigRabbit_Throw_5
+      213: -4755869737723169007
+    second: BigRabbit_Run_5
   - first:
-      213: -2011496564513138452
-    second: BigRabbit_Throw_6
+      213: -6689460839197414399
+    second: BigRabbit_Run_6
   - first:
-      213: 8269609729021795112
-    second: BigRabbit_Throw_7
+      213: -1404093589180301606
+    second: BigRabbit_Run_7
   - first:
-      213: 3058713089553543569
-    second: BigRabbit_Throw_8
+      213: -5280839370778461090
+    second: BigRabbit_Run_8
   - first:
-      213: 4989840687679955526
-    second: BigRabbit_Throw_9
-  - first:
-      213: 3001380804047741574
-    second: BigRabbit_Throw_10
-  - first:
-      213: -6523367186430351697
-    second: BigRabbit_Throw_11
-  - first:
-      213: 6530164553790761679
-    second: BigRabbit_Throw_12
-  - first:
-      213: 3355503238873000390
-    second: BigRabbit_Throw_13
-  - first:
-      213: -5741761882575952502
-    second: BigRabbit_Throw_14
-  - first:
-      213: -433478427761875500
-    second: BigRabbit_Throw_15
-  - first:
-      213: 8168817434697183291
-    second: BigRabbit_Throw_16
-  - first:
-      213: 4039821519180015815
-    second: BigRabbit_Throw_17
-  - first:
-      213: 2270307453282751208
-    second: BigRabbit_Throw_18
-  - first:
-      213: -2635777415608980689
-    second: BigRabbit_Throw_19
+      213: -4192835644295506372
+    second: BigRabbit_Run_9
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -146,91 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BigRabbit_Throw_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2048
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: becb0ba46cf524a3180e2810e604f93b
-      internalID: -5563673639701790799
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BigRabbit_Throw_1
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 2048
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e268eb380863343a292fa3791a5de9f7
-      internalID: 8372748586434938682
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BigRabbit_Throw_2
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 2048
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81aebd14bc2d744ad9615ef692c64383
-      internalID: -180651645674869578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BigRabbit_Throw_3
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 2048
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f66d4c151a5c841b29c3f9165d2d7c2b
-      internalID: 8257061195743762184
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BigRabbit_Throw_4
+      name: BigRabbit_Run_0
       rect:
         serializedVersion: 2
         x: 0
@@ -244,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d85ef70d7078346bba4cf0c5823dd74c
-      internalID: 2595247080760111590
+      spriteID: 79904e0390ab345568483abd0f055233
+      internalID: -8500704916567024611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigRabbit_Throw_5
+      name: BigRabbit_Run_1
       rect:
         serializedVersion: 2
         x: 512
@@ -265,14 +151,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b7c7651c82874284be88137b441e41b
-      internalID: 2916938844761819315
+      spriteID: fe569d720f1f544c1ad3dec38d4d0954
+      internalID: 7736860804616518211
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigRabbit_Throw_6
+      name: BigRabbit_Run_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -286,35 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a49d76d38aca488990c1643a7a90922
-      internalID: -2011496564513138452
+      spriteID: e5e7ae309c9254c0ebde722dfa6aa1cc
+      internalID: 7553029150801164605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigRabbit_Throw_7
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 1536
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0907aed24944c4c7691860804e369ab5
-      internalID: 8269609729021795112
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BigRabbit_Throw_8
+      name: BigRabbit_Run_3
       rect:
         serializedVersion: 2
         x: 0
@@ -328,14 +193,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6e47b4147cd34aa88cf644887ee9781
-      internalID: 3058713089553543569
+      spriteID: 55fb6f27eb34f474f853e8b3f44d9416
+      internalID: 3467365304462000310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigRabbit_Throw_9
+      name: BigRabbit_Run_4
       rect:
         serializedVersion: 2
         x: 512
@@ -349,14 +214,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa367512236f14c9e8b92816d9e04243
-      internalID: 4989840687679955526
+      spriteID: e709bb20e52b445f681b657f26abb756
+      internalID: 1075527998753270905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigRabbit_Throw_10
+      name: BigRabbit_Run_5
       rect:
         serializedVersion: 2
         x: 1024
@@ -370,35 +235,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd7c11609a21c437588f6ab0ac88cda2
-      internalID: 3001380804047741574
+      spriteID: 288d46e07c96348f795d0f1f9b086c01
+      internalID: -4755869737723169007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigRabbit_Throw_11
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 1024
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48630805e0fee46ebae4c98a4bc7a7bd
-      internalID: -6523367186430351697
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BigRabbit_Throw_12
+      name: BigRabbit_Run_6
       rect:
         serializedVersion: 2
         x: 0
@@ -412,14 +256,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02b35046b69a34da3899df1c9a438313
-      internalID: 6530164553790761679
+      spriteID: 86191cd3ff15240fe9fbbe4e57b16aeb
+      internalID: -6689460839197414399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigRabbit_Throw_13
+      name: BigRabbit_Run_7
       rect:
         serializedVersion: 2
         x: 512
@@ -433,14 +277,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66b5a157d018b4d92a765ca3bec1b24c
-      internalID: 3355503238873000390
+      spriteID: 21afbc960db1540d888d387976d1ef94
+      internalID: -1404093589180301606
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigRabbit_Throw_14
+      name: BigRabbit_Run_8
       rect:
         serializedVersion: 2
         x: 1024
@@ -454,35 +298,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6d53372d941b4c00919f0a06881a359
-      internalID: -5741761882575952502
+      spriteID: 7a94877d2fb9548f0906914665caf110
+      internalID: -5280839370778461090
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigRabbit_Throw_15
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 512
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b27f29d6892e4d36b37d46bfbee8da9
-      internalID: -433478427761875500
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BigRabbit_Throw_16
+      name: BigRabbit_Run_9
       rect:
         serializedVersion: 2
         x: 0
@@ -496,8 +319,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e10a697c07a2b47a28821e95b9347883
-      internalID: 8168817434697183291
+      spriteID: fe0078ded837d4a3f876607b74b69384
+      internalID: -4192835644295506372
       vertices: []
       indices: 
       edges: []
@@ -505,7 +328,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7e2c69ab7f10d490c9705e72413c94fc
+    spriteID: b59fb8a038d3f4652b3ba2e8e98e0f03
     internalID: 0
     vertices: []
     indices: 

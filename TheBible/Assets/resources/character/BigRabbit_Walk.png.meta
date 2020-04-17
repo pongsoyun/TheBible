@@ -1,67 +1,55 @@
 fileFormatVersion: 2
-guid: 6914605d0f2614308ab4d875f1e2c058
+guid: d70a1481b812f44b6bc3cf5037e80072
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5563673639701790799
-    second: BigRabbit_Throw_0
+      213: 7501151637610669477
+    second: BigRabbit_Walk_0
   - first:
-      213: 8372748586434938682
-    second: BigRabbit_Throw_1
+      213: -5959112615068765725
+    second: BigRabbit_Walk_1
   - first:
-      213: -180651645674869578
-    second: BigRabbit_Throw_2
+      213: 1060193209577639551
+    second: BigRabbit_Walk_2
   - first:
-      213: 8257061195743762184
-    second: BigRabbit_Throw_3
+      213: 712770348341076571
+    second: BigRabbit_Walk_3
   - first:
-      213: 2595247080760111590
-    second: BigRabbit_Throw_4
+      213: 5520977939171686820
+    second: BigRabbit_Walk_4
   - first:
-      213: 2916938844761819315
-    second: BigRabbit_Throw_5
+      213: 8539198475104372302
+    second: BigRabbit_Walk_5
   - first:
-      213: -2011496564513138452
-    second: BigRabbit_Throw_6
+      213: 8366278147152778200
+    second: BigRabbit_Walk_6
   - first:
-      213: 8269609729021795112
-    second: BigRabbit_Throw_7
+      213: 8249786944395616634
+    second: BigRabbit_Walk_7
   - first:
-      213: 3058713089553543569
-    second: BigRabbit_Throw_8
+      213: 288101321870691433
+    second: BigRabbit_Walk_8
   - first:
-      213: 4989840687679955526
-    second: BigRabbit_Throw_9
+      213: 5908046789165860937
+    second: BigRabbit_Walk_9
   - first:
-      213: 3001380804047741574
-    second: BigRabbit_Throw_10
+      213: -8812866276034844188
+    second: BigRabbit_Walk_10
   - first:
-      213: -6523367186430351697
-    second: BigRabbit_Throw_11
+      213: -4653960937408207603
+    second: BigRabbit_Walk_11
   - first:
-      213: 6530164553790761679
-    second: BigRabbit_Throw_12
+      213: -1509397352673183784
+    second: BigRabbit_Walk_12
   - first:
-      213: 3355503238873000390
-    second: BigRabbit_Throw_13
+      213: -553604968205180055
+    second: BigRabbit_Walk_13
   - first:
-      213: -5741761882575952502
-    second: BigRabbit_Throw_14
+      213: -1827453135823826534
+    second: BigRabbit_Walk_14
   - first:
-      213: -433478427761875500
-    second: BigRabbit_Throw_15
-  - first:
-      213: 8168817434697183291
-    second: BigRabbit_Throw_16
-  - first:
-      213: 4039821519180015815
-    second: BigRabbit_Throw_17
-  - first:
-      213: 2270307453282751208
-    second: BigRabbit_Throw_18
-  - first:
-      213: -2635777415608980689
-    second: BigRabbit_Throw_19
+      213: -8653732354669422017
+    second: BigRabbit_Walk_15
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -146,91 +134,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BigRabbit_Throw_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2048
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: becb0ba46cf524a3180e2810e604f93b
-      internalID: -5563673639701790799
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BigRabbit_Throw_1
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 2048
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e268eb380863343a292fa3791a5de9f7
-      internalID: 8372748586434938682
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BigRabbit_Throw_2
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 2048
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81aebd14bc2d744ad9615ef692c64383
-      internalID: -180651645674869578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BigRabbit_Throw_3
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 2048
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f66d4c151a5c841b29c3f9165d2d7c2b
-      internalID: 8257061195743762184
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BigRabbit_Throw_4
+      name: BigRabbit_Walk_0
       rect:
         serializedVersion: 2
         x: 0
@@ -244,14 +148,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d85ef70d7078346bba4cf0c5823dd74c
-      internalID: 2595247080760111590
+      spriteID: 62c475462ee16403eb94fb7cd188b2ba
+      internalID: 7501151637610669477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigRabbit_Throw_5
+      name: BigRabbit_Walk_1
       rect:
         serializedVersion: 2
         x: 512
@@ -265,14 +169,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b7c7651c82874284be88137b441e41b
-      internalID: 2916938844761819315
+      spriteID: 1d8398a69fe884efea9df085edbb8bbf
+      internalID: -5959112615068765725
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigRabbit_Throw_6
+      name: BigRabbit_Walk_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -286,14 +190,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a49d76d38aca488990c1643a7a90922
-      internalID: -2011496564513138452
+      spriteID: d4d4e4bdf0fd243f7a3ab0561b0e74df
+      internalID: 1060193209577639551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigRabbit_Throw_7
+      name: BigRabbit_Walk_3
       rect:
         serializedVersion: 2
         x: 1536
@@ -307,14 +211,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0907aed24944c4c7691860804e369ab5
-      internalID: 8269609729021795112
+      spriteID: e8212bfcfc28646eabd629216eb88fcf
+      internalID: 712770348341076571
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigRabbit_Throw_8
+      name: BigRabbit_Walk_4
       rect:
         serializedVersion: 2
         x: 0
@@ -328,14 +232,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6e47b4147cd34aa88cf644887ee9781
-      internalID: 3058713089553543569
+      spriteID: 189679555c6404eee802a9cb627b2549
+      internalID: 5520977939171686820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigRabbit_Throw_9
+      name: BigRabbit_Walk_5
       rect:
         serializedVersion: 2
         x: 512
@@ -349,14 +253,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa367512236f14c9e8b92816d9e04243
-      internalID: 4989840687679955526
+      spriteID: 6ef01271f118d43ac8402fa6b898e03f
+      internalID: 8539198475104372302
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigRabbit_Throw_10
+      name: BigRabbit_Walk_6
       rect:
         serializedVersion: 2
         x: 1024
@@ -370,14 +274,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd7c11609a21c437588f6ab0ac88cda2
-      internalID: 3001380804047741574
+      spriteID: d28ca9a96c1054745a385f1dfe52c4cd
+      internalID: 8366278147152778200
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigRabbit_Throw_11
+      name: BigRabbit_Walk_7
       rect:
         serializedVersion: 2
         x: 1536
@@ -391,14 +295,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48630805e0fee46ebae4c98a4bc7a7bd
-      internalID: -6523367186430351697
+      spriteID: 765a57c64cbc44b0eac00039c1df5e31
+      internalID: 8249786944395616634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigRabbit_Throw_12
+      name: BigRabbit_Walk_8
       rect:
         serializedVersion: 2
         x: 0
@@ -412,14 +316,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02b35046b69a34da3899df1c9a438313
-      internalID: 6530164553790761679
+      spriteID: 2a57d90e3f62c4b25874ad8899156d0e
+      internalID: 288101321870691433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigRabbit_Throw_13
+      name: BigRabbit_Walk_9
       rect:
         serializedVersion: 2
         x: 512
@@ -433,14 +337,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66b5a157d018b4d92a765ca3bec1b24c
-      internalID: 3355503238873000390
+      spriteID: ff4ce9318a9f94101ba950347d150e36
+      internalID: 5908046789165860937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigRabbit_Throw_14
+      name: BigRabbit_Walk_10
       rect:
         serializedVersion: 2
         x: 1024
@@ -454,14 +358,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6d53372d941b4c00919f0a06881a359
-      internalID: -5741761882575952502
+      spriteID: d42ec84b909644d778f6a4aec1d05916
+      internalID: -8812866276034844188
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigRabbit_Throw_15
+      name: BigRabbit_Walk_11
       rect:
         serializedVersion: 2
         x: 1536
@@ -475,14 +379,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b27f29d6892e4d36b37d46bfbee8da9
-      internalID: -433478427761875500
+      spriteID: cd690528efb794fd2a31eda01f446a69
+      internalID: -4653960937408207603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigRabbit_Throw_16
+      name: BigRabbit_Walk_12
       rect:
         serializedVersion: 2
         x: 0
@@ -496,8 +400,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e10a697c07a2b47a28821e95b9347883
-      internalID: 8168817434697183291
+      spriteID: 2c07c44317194448aa0c0f2aa9f968f5
+      internalID: -1509397352673183784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigRabbit_Walk_13
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2fe26f3cd264f0aa83e98ba2c17b9b
+      internalID: -553604968205180055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigRabbit_Walk_14
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b9d53c62d8844d9b6ce8eb35db4a07
+      internalID: -1827453135823826534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigRabbit_Walk_15
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d09d45db81ab42b4befab4968eae5e1
+      internalID: -8653732354669422017
       vertices: []
       indices: 
       edges: []
@@ -505,7 +472,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7e2c69ab7f10d490c9705e72413c94fc
+    spriteID: 0a0b2cdac76304b0aaae279b3dcb70e1
     internalID: 0
     vertices: []
     indices: 

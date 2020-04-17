@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7195782904904088714}
   - component: {fileID: 7195782904904088710}
   - component: {fileID: 7195782904904088717}
-  - component: {fileID: 4728303009293655634}
   - component: {fileID: 2142259782581476236}
   - component: {fileID: -1715299229849217339}
   m_Layer: 0
@@ -97,23 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 2
   isAngry: 0
-  ActionParticle: {fileID: 5147551210228926052, guid: 08810027abc0340b495b95bb8f9eae16,
-    type: 3}
---- !u!111 &4728303009293655634
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7195782904904088711}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 4e8c19dcc402a4088a152ef8999da6a3, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  BigRbAnim: {fileID: 2142259782581476236}
 --- !u!95 &2142259782581476236
 Animator:
   serializedVersion: 3
@@ -124,7 +107,7 @@ Animator:
   m_GameObject: {fileID: 7195782904904088711}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 17d6cdb28f70044a6a6e8b03e935d3e7, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5f64320d5158c4c08bf5bc00e922f7ed, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
