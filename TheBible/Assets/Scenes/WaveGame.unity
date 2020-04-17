@@ -627,6 +627,7 @@ MonoBehaviour:
   - {fileID: 7195782904904088711, guid: c21461ab23b11784a99ffe07b49294b6, type: 3}
   ParticlePrefab: {fileID: 5147551210228926050, guid: 08810027abc0340b495b95bb8f9eae16,
     type: 3}
+  waveLimit: 10
   SpawnPoint: {fileID: 410196465}
   killCount: 0
   ActiveEnemyCount: 0

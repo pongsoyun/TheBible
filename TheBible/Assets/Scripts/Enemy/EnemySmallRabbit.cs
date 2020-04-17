@@ -12,7 +12,7 @@ public class EnemySmallRabbit : EnemyRabbit, IDespawnable
     void Start()
     {
         prefabRigidBody2D = GetComponent<Rigidbody2D>();
-        OnDespawn += KillDespawn;
+        OnDespawn += Despawn;
         WaveGameManager.instance.ActiveEnemyCount++;
         Debug.Log($"{nameof(gameObject)} Count++! :{ WaveGameManager.instance.ActiveEnemyCount} ");
     }
@@ -35,16 +35,21 @@ public class EnemySmallRabbit : EnemyRabbit, IDespawnable
         }
         prefabRigidBody2D.velocity = transform.right * speed * -1;// Go to Left
         if (hp <= 0)
+        {
+            WaveGameManager.instance.killCount++;
             OnDespawn(gameObject);
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            OnDespawn(gameObject);
+            Debug.Log("Kill Called");
             GamePlayerMove.instance.playerHP--;
             Debug.Log("Player Hit!");
+            OnDespawn(gameObject);
         }
         if (collision.gameObject.CompareTag("EndZone"))
         {
@@ -52,12 +57,9 @@ public class EnemySmallRabbit : EnemyRabbit, IDespawnable
         }
     }
 
-    private void KillDespawn(GameObject prefab)
+    private void Despawn(GameObject prefab)
     {
-        Debug.Log("Kill Called");
-        WaveGameManager.instance.killCount++;
         WaveGameManager.instance.ParticlePool.Respawn(prefab.transform.position, prefab.transform.rotation);
         WaveGameManager.instance.EnemyWavePool[(int)RabbitType.SmallRabbit].Despawn(prefab);
-
     }
 }

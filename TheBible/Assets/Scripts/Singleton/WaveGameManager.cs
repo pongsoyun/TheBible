@@ -26,6 +26,8 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
     GameObject[] EnemyPrefab;
     [SerializeField]
     GameObject ParticlePrefab;
+    [SerializeField]
+    private int waveLimit;
 
     GameState state;
     public MemoryPool[] EnemyWavePool;
@@ -35,7 +37,6 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
     public int ActiveEnemyCount = 0;
 
     private int enemyCount = 15;
-    private int waveLimit;
     private WaitForSeconds waitTime = new WaitForSeconds(2.5f);
     private bool sceneEnd = false;
 
@@ -101,6 +102,7 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
         EnemyWavePool[0] = new MemoryPool(EnemyPrefab[0], 5, enemyCount);
         EnemyWavePool[1] = new MemoryPool(EnemyPrefab[1], 5, enemyCount);
         ParticlePool = new MemoryPool(ParticlePrefab, 5, enemyCount * 2);
+        waveLimit = 10;
     }
 
     private void GameClear()
@@ -123,7 +125,6 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
     {
         while (state.Equals(GameState.OnGoing))
         {
-            waveLimit = 30;
             int rabbitSize = Random.Range(0, EnemyPrefab.Length);
             if (killCount < waveLimit && ActiveEnemyCount < waveLimit)
             {
