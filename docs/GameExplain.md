@@ -1,22 +1,23 @@
 # 전시 도록 Detail Contents
 
 contents
-    1. 디지털 도록 (600~1000자)
-    2. 전시작품안내 설명서 (200~300자)
+
+1. 디지털 도록 (600~1000자)
+2. 전시작품안내 설명서 (200~300자)
 
 # 1. 디지털 도록
 
 # #1
 
-방소윤  팀장, 개발  [sallybang@naver.com](mailto:sallybang@naver.com)	010-4578-9714
-신동호  개발  [dongho5309@naver.com](mailto:dongho5309@naver.com)	010-8411-5309
-박지성  디자인  [jspark5697@naver.com](mailto:jspark5697@naver.com)	010-4186-5697‬
+방소윤 팀장, 개발 [sallybang@naver.com](mailto:sallybang@naver.com) 010-4578-9714
+신동호 개발 [dongho5309@naver.com](mailto:dongho5309@naver.com) 010-8411-5309
+박지성 디자인 [jspark5697@naver.com](mailto:jspark5697@naver.com) 010-4186-5697‬
 
 # #2
 
 ## 작품명 : The Bible
 
-한줄 코멘트 : 
+한줄 코멘트 :
 
 > 이제는 서로 마주보고 이야기 해야할 때입니다.
 
@@ -38,7 +39,7 @@ contents
 
 이러한 의문은 사회를 정확하게 회피하지 않고 바라보려는 노력이 부족했고, 그저 두려움 때문에 마녀사냥을 하게 된 것입니다. 현대 사회를 살아가는 우리 모두는 더 단순한 표현의 두려움, 존재의 두려움을 덮고 살것이 아니라 먼저 맞닿들이는것이 우선시되어야합니다.
 
-그 다음 더 늦어버리기 전에 서로를 바라보고, 이야기 하고, 서로를 믿을 수 있는 사회가 되었으면 좋겠다는 바람을 담아, 저희의 방식대로 이야기합니다. 
+그 다음 더 늦어버리기 전에 서로를 바라보고, 이야기 하고, 서로를 믿을 수 있는 사회가 되었으면 좋겠다는 바람을 담아, 저희의 방식대로 이야기합니다.
 
 ## The Bible ?
 
@@ -46,9 +47,9 @@ contents
 
 ## Tech Stack
 
-- C#, Unity
-- Illustrator, AfterEffect, Photoshop
-- Git, Github
+-   C#, Unity
+-   AfterEffect, Photoshop
+-   Git, Github
 
 마지막
 
