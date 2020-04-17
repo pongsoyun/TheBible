@@ -7,27 +7,42 @@ public class Stone : ThrowObject, IDespawnable
 {
     public event Action<GameObject> OnDespawn;
 
+    protected override void OnEnable()
+    {
+        base.OnEnable();
+        Invoke("Despawn", 3f);
+    }
+
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("ThrowObject"))
         {
-
+            CancelInvoke();
+            Despawn();
         }
         else if (collision.gameObject.CompareTag("Enemy"))
         {
             Debug.Log("Stone Eat!");
             collision.gameObject.GetComponent<EnemyRabbit>().isAngry = true;
-
-            //OnDespawn();
+            CancelInvoke();
+            Despawn();
         }
         else if (collision.gameObject.CompareTag("Ground"))
         {
             Debug.Log("Ground Destroy");
-            GamePlayerMove.instance.throwObjectPool[(int)ThrowType.Stone].Despawn(gameObject);
+            CancelInvoke();
+            Despawn();
         }
+       
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
 
+    private void Despawn()
+    {
+        GamePlayerMove.instance.throwObjectPool[(int)ThrowType.Stone].Despawn(gameObject);
     }
+
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+
+    //}
 }

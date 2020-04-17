@@ -7,25 +7,39 @@ public class Carrot : ThrowObject, IDespawnable
 {
     public event Action<GameObject> OnDespawn;
 
+    protected override void OnEnable()
+    {
+        base.OnEnable();
+        Invoke("Despawn", 3f);
+    }
+
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("ThrowObject"))
         {
-
+            CancelInvoke();
+            Despawn();
         }
         else if (collision.gameObject.CompareTag("Enemy"))
         {
             collision.gameObject.GetComponent<EnemyRabbit>().hp--;
-            GamePlayerMove.instance.throwObjectPool[(int)ThrowType.Carrot].Despawn(gameObject);
+            CancelInvoke();
             Debug.Log($"Carrot Eat! hp : {collision.gameObject.GetComponent<EnemyRabbit>().hp}");
+            Despawn();
+
         }
         else if (collision.gameObject.CompareTag("Ground"))
         {
             Debug.Log("Ground Destroy");
-            GamePlayerMove.instance.throwObjectPool[(int)ThrowType.Carrot].Despawn(gameObject);
+            CancelInvoke();
+            Despawn();
         }
     }
 
+    private void Despawn()
+    {
+        GamePlayerMove.instance.throwObjectPool[(int)ThrowType.Carrot].Despawn(gameObject);
+    }
     //private void OnCollisionEnter2D(Collision2D collision)
     //{
     //    if (collision.gameObject.CompareTag("Player"))
