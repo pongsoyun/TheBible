@@ -18,7 +18,7 @@ public class StoneMouse : ThrowObject, IDespawnable
 
     protected override void PowerSet()
     {
-        powerWeight = 16f;
+        powerWeight = 11f;
         MouseGameManager.instance.throwPower *= powerWeight;
     }
 

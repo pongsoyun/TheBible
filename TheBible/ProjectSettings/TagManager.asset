@@ -13,6 +13,7 @@ TagManager:
   - EndZone
   - MoviePlay
   - ThrowObject
+  - Stone2
   layers:
   - Default
   - TransparentFX

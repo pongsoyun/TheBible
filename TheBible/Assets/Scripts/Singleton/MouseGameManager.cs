@@ -91,7 +91,7 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
         {
             if (killCount < waveLimit)
             {
-                rotateAngle.z = UnityEngine.Random.Range(-15.0f, 15.0f);
+                rotateAngle.z = UnityEngine.Random.Range(-5.0f, 5.0f);
                 gameObject.transform.Rotate(rotateAngle);
                 //gameObject.transform.eulerAngles = new Vector3(0f, 0f, Mathf.Clamp(gameObject.transform.eulerAngles.z, -45f, -75f));
                 throwPower = TargetObject.transform.position - gameObject.transform.position;

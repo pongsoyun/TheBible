@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 5847665272959417314}
   - component: {fileID: 5847665272959417318}
   m_Layer: 0
-  m_Name: ClickTestCube
-  m_TagString: Untagged
+  m_Name: MouseStone
+  m_TagString: Stone2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
