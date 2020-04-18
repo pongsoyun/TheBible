@@ -9,6 +9,8 @@ public class EnemyBigRabbit : EnemyRabbit, IDespawnable
 
     private Rigidbody2D prefabRigidBody2D;
 
+    public Animator BigRbAnim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,12 +32,14 @@ public class EnemyBigRabbit : EnemyRabbit, IDespawnable
     {
         if (isAngry)
         {
+            BigRbAnim.SetBool("Angry", true);
             Debug.Log("EnemyFox is Angry");
             speed = 3;
         }
         else
         {
             speed = 1.5f;
+            BigRbAnim.SetBool("Angry", false);
         }
 
         prefabRigidBody2D.velocity = transform.right * speed * -1;// Go to Left

@@ -113,18 +113,18 @@ TextureImporter:
       name: giveMeCarrot_0
       rect:
         serializedVersion: 2
-        x: 213
-        y: 1023
-        width: 686
-        height: 1025
+        x: 0
+        y: 1024
+        width: 1024
+        height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc1c9917be2c844b7953031f47f42d21
+      spriteID: 11e0a167cf4734de1a47e69fb9a4ed76
       internalID: 7799914390009184858
       vertices: []
       indices: 
@@ -134,18 +134,18 @@ TextureImporter:
       name: giveMeCarrot_1
       rect:
         serializedVersion: 2
-        x: 1233
-        y: 1023
-        width: 670
-        height: 1025
+        x: 1024
+        y: 1024
+        width: 1024
+        height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44205f1d1ed2741438b06b85e998f7b3
+      spriteID: 9dda44c5143cd4ebea87c81c777f595f
       internalID: 1658574990525755290
       vertices: []
       indices: 
@@ -155,18 +155,18 @@ TextureImporter:
       name: giveMeCarrot_2
       rect:
         serializedVersion: 2
-        x: 2253
-        y: 1020
-        width: 690
-        height: 1025
+        x: 2048
+        y: 1024
+        width: 1024
+        height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6977e0faa91143a296d30e366d49886
+      spriteID: d89d7453e1f2c48e098b28be3f034c93
       internalID: -7924028026370095307
       vertices: []
       indices: 
@@ -176,18 +176,18 @@ TextureImporter:
       name: giveMeCarrot_3
       rect:
         serializedVersion: 2
-        x: 3275
-        y: 1023
-        width: 656
-        height: 1025
+        x: 3072
+        y: 1024
+        width: 1024
+        height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c3c13766398849b2b6d56de190d522e
+      spriteID: f4b4881e028374539afff6d645db95a4
       internalID: -6581310228403009320
       vertices: []
       indices: 
@@ -197,18 +197,18 @@ TextureImporter:
       name: giveMeCarrot_4
       rect:
         serializedVersion: 2
-        x: 199
+        x: 0
         y: 0
-        width: 662
-        height: 707
+        width: 1024
+        height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c55fe4d86ff5949ffa66cba202d968f4
+      spriteID: 163b67234a1c343429d5cdb2c81890d8
       internalID: -1608688728705755064
       vertices: []
       indices: 
@@ -218,18 +218,18 @@ TextureImporter:
       name: giveMeCarrot_5
       rect:
         serializedVersion: 2
-        x: 1235
+        x: 1024
         y: 0
-        width: 668
-        height: 733
+        width: 1024
+        height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ccc52a3558c44d95854831b2a263203
+      spriteID: 30e57afe8ca794a47bd8c90ff121b245
       internalID: -3274658814329356369
       vertices: []
       indices: 
@@ -239,18 +239,18 @@ TextureImporter:
       name: giveMeCarrot_6
       rect:
         serializedVersion: 2
-        x: 2273
+        x: 2048
         y: 0
-        width: 666
-        height: 773
+        width: 1024
+        height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48f702314ee284ee592896c263cbbc23
+      spriteID: a4287246cb1f74e95b9cdef09228e22c
       internalID: 4144182484185356712
       vertices: []
       indices: 
@@ -260,18 +260,18 @@ TextureImporter:
       name: giveMeCarrot_7
       rect:
         serializedVersion: 2
-        x: 3297
+        x: 3072
         y: 0
-        width: 655
-        height: 737
+        width: 1024
+        height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02dac88543bd2460d87b2ab106960141
+      spriteID: 31cc8039a6b2a42bc8a18b3925a1f8e9
       internalID: -2145914200816827235
       vertices: []
       indices: 
