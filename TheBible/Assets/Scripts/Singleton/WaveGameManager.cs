@@ -13,6 +13,7 @@ public enum GameState
     Clear,
     Fail
 }
+
 public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
 {
     public event Action GameStart;
@@ -69,12 +70,12 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
         }
         else if (state.Equals(GameState.Fail))
         {
-            Invoke("GameFail", 5f);
+            Invoke("GameFail", 2f);
         }
         else if (state.Equals(GameState.Clear))
         {
             DebugText.text = "Game Clear!";
-            Invoke("GameClear", 5f);
+            Invoke("GameClear", 2f);
         }
         Debug.Log($"GameState : {state.ToString()}");
 
@@ -83,10 +84,9 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
         {
             sceneEnd = true;
             Debug.Log($"SceneEnd : {sceneEnd}");
-            //LoadingScene.LoadScene("Stage1");
             foreach (var pool in EnemyWavePool)
             {
-                //pool.AllDespawn();
+                pool.AllDespawn();
                 pool.Dispose();
             }
             SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("WaveGame"));
@@ -108,16 +108,15 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
     private void GameClear()
     {
         sceneEnd = true;
+        DisposeAllPool();
+        SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("WaveGame"));
     }
 
     private void GameFail()
     {
         sceneEnd = true;
         Debug.Log($"SceneEnd : {sceneEnd}");
-        foreach (var pool in EnemyWavePool)
-        {
-            pool.Dispose();
-        }
+        DisposeAllPool();
         SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("WaveGame"));
     }
 
@@ -131,9 +130,16 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
                 EnemyWavePool[rabbitSize].Respawn(SpawnPoint.position, gameObject.transform.rotation);
                 yield return waitTime;
             }
+            else if(killCount >= waveLimit)
+            {
+                DebugText.text = "Game Over!";
+                state = GameState.Clear;
+                yield return new WaitForEndOfFrame();
+            }
             else
             {
-                state = GameState.Clear;
+                Debug.Log("Coroutine return null");
+                yield return null;
             }
         }
         Debug.Log($"{gameObject.name} : End Coroutine!");
@@ -150,5 +156,19 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
             return;
         }
         DebugText.text = $"Player Hp : {playerHp}";
+    }
+
+    private void DisposeAllPool()
+    {
+        foreach (var pool in EnemyWavePool)
+        {
+            pool.AllDespawn();
+            pool.Dispose();
+        }
+        foreach (var pool in GamePlayerMove.instance.throwObjectPool)
+        {
+            pool.AllDespawn();
+            pool.Dispose();
+        }
     }
 }

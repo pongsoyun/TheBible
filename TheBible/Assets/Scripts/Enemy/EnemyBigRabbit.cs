@@ -12,7 +12,7 @@ public class EnemyBigRabbit : EnemyRabbit, IDespawnable
     // Start is called before the first frame update
     void Start()
     {
-        base.hp = 4;
+        hp = 4;
         prefabRigidBody2D = GetComponent<Rigidbody2D>();
         OnDespawn += Despawn;
         WaveGameManager.instance.ActiveEnemyCount++;
