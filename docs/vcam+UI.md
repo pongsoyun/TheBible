@@ -11,6 +11,8 @@
 -   `cm_`로 시작하는 오브젝트는 모두 camera flag 입니다.
 -   `bubble_`로 시작하는 오브젝트는 모두 후 UI 작업시 처리가 들어가야할 말풍선(ThinkingBubble) flag입니다.
 
+더 읽기 편한 링크는 요기-> [스프레드시트 바로가기🔗](https://docs.google.com/spreadsheets/d/1AngKgUCzgy_YrrC_FqnD0_GW8WS3ce1WxyS2qF8st6I/edit#gid=0)
+
 <table>
   <tr>
    <td>구현여부
@@ -241,5 +243,3 @@
    </td>
   </tr>
 </table>
-
-<!-- Docs to Markdown version 1.0β22 -->
