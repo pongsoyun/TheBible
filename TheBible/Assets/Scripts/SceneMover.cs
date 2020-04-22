@@ -10,16 +10,17 @@ public class SceneMover : MonoBehaviour
     string sceneName;
 
     bool sceneStart = false;
+    public GameObject MGIntroObjs;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -27,7 +28,8 @@ public class SceneMover : MonoBehaviour
         if (!sceneStart && !isPortalScene && collision.gameObject.CompareTag("Player"))
         {
             sceneStart = true;
-            LoadingScene.LoadScene(sceneName);
+            MGIntroObjs.SetActive(false);
+            // LoadingScene.LoadScene(sceneName);
         }
     }
 

@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CsCube : MonoBehaviour {
+public class CsCube : MonoBehaviour
+{
 
     public float speed = 2.0f;
     public GameObject missilePrefab;
@@ -15,7 +16,8 @@ public class CsCube : MonoBehaviour {
     GameObject[] missile;
 
     // Use this for initialization
-	void Start () {
+    void Start()
+    {
         startTime = Time.time;
 
         int poolCount = 10;
@@ -25,14 +27,15 @@ public class CsCube : MonoBehaviour {
         {
             missile[i] = null;
         }
-	}
+    }
     void OnApplicationQuit()
     {
         // pool.Dispose();//메모리 풀 삭제
     }
 
-	// Update is called once per frame
-	void Update () {
+    // Update is called once per frame
+    void Update()
+    {
 
         float amtMove = speed * Time.deltaTime;
         float key = Input.GetAxis("Horizontal");
@@ -68,14 +71,14 @@ public class CsCube : MonoBehaviour {
                 if (missile[i].transform.position.z > 20)
                 {
                     // pool.RemoveItem(missile[i]);
-                   // missile[i].GetComponent<CsMissile>().init();
+                    // missile[i].GetComponent<CsMissile>().init();
                     missile[i] = null;
                 }
             }
         }
 
 
-	}
+    }
 
 
 
