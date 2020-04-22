@@ -41,6 +41,8 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
     private WaitForSeconds waitTime = new WaitForSeconds(2.5f);
     private bool sceneEnd = false;
 
+    public Animator MainCharAnim;
+
     void Awake()
     {
         GameStart += InitializeGame;
@@ -74,6 +76,7 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
         }
         else if (state.Equals(GameState.Clear))
         {
+            MainCharAnim.SetBool("throw", false);
             DebugText.text = "Game Clear!";
             Invoke("GameClear", 2f);
         }
@@ -130,7 +133,7 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
                 EnemyWavePool[rabbitSize].Respawn(SpawnPoint.position, gameObject.transform.rotation);
                 yield return waitTime;
             }
-            else if(killCount >= waveLimit)
+            else if (killCount >= waveLimit)
             {
                 DebugText.text = "Game Over!";
                 state = GameState.Clear;

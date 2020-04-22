@@ -35,6 +35,7 @@ public class GamePlayerMove : Singleton<GamePlayerMove>
 
     public ParticleSystem ActionParticle;
 
+    public Animator MainCharAnim;
     void Awake()
     {
         throwObjectPool = new MemoryPool[throwObjects.Length];
@@ -58,6 +59,8 @@ public class GamePlayerMove : Singleton<GamePlayerMove>
 
         if (Input.GetMouseButtonDown(0))
         {
+            MainCharAnim.SetBool("throw", true);
+
             throwPower = TargetObject.transform.position - gameObject.transform.position;
             throwPower.Normalize();
             //Debug.Log($"Normalize Power : {throwPower}");

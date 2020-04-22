@@ -631,6 +631,7 @@ MonoBehaviour:
   SpawnPoint: {fileID: 410196465}
   killCount: 0
   ActiveEnemyCount: 0
+  MainCharAnim: {fileID: 621768380}
 --- !u!1 &553603627
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,7 +759,6 @@ GameObject:
   m_Component:
   - component: {fileID: 621768383}
   - component: {fileID: 621768382}
-  - component: {fileID: 621768381}
   - component: {fileID: 621768380}
   m_Layer: 0
   m_Name: PlayerBody
@@ -777,7 +777,7 @@ Animator:
   m_GameObject: {fileID: 621768379}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e8293bd5086b945b3a497aba737de9fd, type: 2}
+  m_Controller: {fileID: 9100000, guid: 86cd97f99253f4dc193a5ca867b5b54e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -786,21 +786,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!111 &621768381
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 621768379}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: ef9e80e2138c442299ff0a9be6fd7dda, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!212 &621768382
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -839,7 +824,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8814800386678197492, guid: f3b8e1230395f4a0fa2b100487bd954a,
+  m_Sprite: {fileID: 2294963092328563486, guid: 4ec39af7aee8f4af6bbdddb3f786a831,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1939,6 +1924,7 @@ MonoBehaviour:
   rotateAngle: {x: 0, y: 0, z: 30}
   playerHP: 10
   ActionParticle: {fileID: 58235381}
+  MainCharAnim: {fileID: 621768380}
 --- !u!50 &2104360256
 Rigidbody2D:
   serializedVersion: 4
