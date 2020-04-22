@@ -41,8 +41,6 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
     private WaitForSeconds waitTime = new WaitForSeconds(2.5f);
     private bool sceneEnd = false;
 
-    public Animator MainCharAnim;
-
     void Awake()
     {
         GameStart += InitializeGame;
@@ -76,7 +74,6 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
         }
         else if (state.Equals(GameState.Clear))
         {
-            MainCharAnim.SetBool("throw", false);
             DebugText.text = "Game Clear!";
             Invoke("GameClear", 2f);
         }

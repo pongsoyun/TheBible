@@ -25,6 +25,10 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
 
     bool sceneEnd = false;
 
+    public Animator MainCharAnim;
+    public Animator MiniRBAnim1;
+    public Animator MiniRBAnim2;
+    bool isMainCharMagic = false;
     void Awake()
     {
         GameStart += InitializeGame;
@@ -93,6 +97,13 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
     {
         while (state.Equals(GameState.OnGoing))
         {
+            if (!isMainCharMagic)
+            {
+                isMainCharMagic = true;
+                MainCharAnim.SetBool("magic", true);
+                MiniRBAnim1.SetBool("clear", false);
+                MiniRBAnim2.SetBool("clear", false);
+            }
             if (killCount < waveLimit)
             {
                 rotateAngle.z = UnityEngine.Random.Range(-5.0f, 5.0f);
@@ -105,6 +116,10 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
             }
             else
             {
+                MainCharAnim.SetBool("magic", false);
+                MiniRBAnim1.SetBool("clear", true);
+                MiniRBAnim2.SetBool("clear", true);
+                isMainCharMagic = false;
                 Debug.Log("GameEnd!");
                 GameClear();
                 yield return new WaitForEndOfFrame();
