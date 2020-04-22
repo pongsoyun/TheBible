@@ -7430,7 +7430,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 264697860}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -271.8118, y: -15.926105, z: 40.25006}
+  m_LocalPosition: {x: -271.80798, y: -15.9261675, z: 40.25003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -21355,7 +21355,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 663096846}
   m_LocalRotation: {x: -0.07523801, y: -0.0038919086, z: 0.0002935206, w: -0.99715793}
-  m_LocalPosition: {x: -271.80804, y: -15.245309, z: 40.25006}
+  m_LocalPosition: {x: -271.80423, y: -15.245309, z: 40.25003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 343923931}
@@ -41120,8 +41120,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1023527716}
   - component: {fileID: 1023527717}
-  - component: {fileID: 1023527719}
   - component: {fileID: 1023527718}
+  - component: {fileID: 1023527719}
   m_Layer: 0
   m_Name: Ring
   m_TagString: Untagged
@@ -41181,7 +41181,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b006216207ca548ca92eafa1a410ec4e, type: 3}
+  m_Sprite: {fileID: -1801735411788782058, guid: 1ac3d8fd822b548fc8322b394c15eda4,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -41220,7 +41221,7 @@ Animation:
   m_GameObject: {fileID: 1023527715}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: d14f4294903014236ac004f86703180f, type: 2}
+  m_Animation: {fileID: 7400000, guid: f02513fbc3eb84464b3529efb9c5ba01, type: 2}
   m_Animations: []
   m_WrapMode: 0
   m_PlayAutomatically: 1
