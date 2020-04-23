@@ -18,7 +18,7 @@ public class SkyScroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        offset += Time.deltaTime * speed / 20;
+        offset += Time.deltaTime * speed / 120;
         render.material.mainTextureOffset = new Vector2(offset, 0);
     }
 }

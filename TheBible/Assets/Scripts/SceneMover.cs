@@ -29,7 +29,7 @@ public class SceneMover : MonoBehaviour
         {
             sceneStart = true;
             MGIntroObjs.SetActive(false);
-            // LoadingScene.LoadScene(sceneName);
+            LoadingScene.LoadScene(sceneName);
         }
     }
 
