@@ -20,6 +20,12 @@ public class CharacterMove : MonoBehaviour
     bool isGround;
 
     private Animator animator;
+
+    private void OnEnable()
+    {
+        TutorialManager.instance.tutorialPanel.SetActive(true);
+    }
+
     private void Start()
     {
         CharacterBody = GetComponent<Rigidbody2D>();

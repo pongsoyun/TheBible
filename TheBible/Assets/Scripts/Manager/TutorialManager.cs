@@ -12,17 +12,12 @@ public class TutorialManager : Singleton<TutorialManager>
     void Start()
     {
         btnClicked = new int[onClickHighlight.Length];
-        tutorialPanel.SetActive(true);
     }
 
 
     void Update()
     {
         HighLightButton();
-        if (TutorialEnd())
-        {
-            tutorialPanel.SetActive(false);
-        }
     }
 
     private void HighLightButton()
@@ -58,21 +53,8 @@ public class TutorialManager : Singleton<TutorialManager>
         }
     }
 
-    private bool TutorialEnd()
+    public void TutorialEnd()
     {
-        bool result = false;
-        int completeTutorial = btnClicked.Length;
-        for(int index = 0; index < completeTutorial; index++)
-        {
-            if(btnClicked[index] >= 100)
-            {
-                result = true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-        return result;
+        tutorialPanel.SetActive(false);
     }
 }
