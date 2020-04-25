@@ -21987,6 +21987,7 @@ MonoBehaviour:
   - {fileID: 337729860}
   - {fileID: 876679918}
   tutorialPanel: {fileID: 1296544206}
+  tutorialEnd: 0
 --- !u!1 &792151123
 GameObject:
   m_ObjectHideFlags: 0
@@ -29596,7 +29597,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 791954093}
-        m_MethodName: TutorialEnd
+        m_MethodName: FinishTutorial
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

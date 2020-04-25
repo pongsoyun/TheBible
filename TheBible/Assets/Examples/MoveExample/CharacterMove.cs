@@ -23,7 +23,10 @@ public class CharacterMove : MonoBehaviour
 
     private void OnEnable()
     {
-        TutorialManager.instance.tutorialPanel.SetActive(true);
+        if (!TutorialManager.instance.tutorialEnd)
+        {
+            TutorialManager.instance.tutorialPanel.SetActive(true);
+        }
     }
 
     private void Start()

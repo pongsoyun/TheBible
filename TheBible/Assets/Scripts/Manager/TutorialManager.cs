@@ -8,6 +8,7 @@ public class TutorialManager : Singleton<TutorialManager>
     public Button[] onClickHighlight;
     public GameObject tutorialPanel;
     private int[] btnClicked;
+    public bool tutorialEnd = false;
 
     void Start()
     {
@@ -53,8 +54,9 @@ public class TutorialManager : Singleton<TutorialManager>
         }
     }
 
-    public void TutorialEnd()
+    public void FinishTutorial()
     {
+        tutorialEnd = true;
         tutorialPanel.SetActive(false);
     }
 }
