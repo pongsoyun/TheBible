@@ -8,13 +8,13 @@ public class ActivateCM : MonoBehaviour
     [SerializeField]
     PlayableDirector director;
     [SerializeField]
-    string tagName;
+    string tagName = "Player";
 
     bool isPlayOnce = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(!isPlayOnce && collision.CompareTag(tagName))
+        if (!isPlayOnce && collision.CompareTag(tagName))
         {
             isPlayOnce = true;
             director.Play();
