@@ -18023,7 +18023,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 663096846}
   m_LocalRotation: {x: -0.07523801, y: -0.0038919086, z: 0.0002935206, w: -0.99715793}
-  m_LocalPosition: {x: -271.80823, y: -15.245309, z: 40.25006}
+  m_LocalPosition: {x: -271.80698, y: -15.245309, z: 40.250053}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 343923931}
@@ -70430,6 +70430,9 @@ MonoBehaviour:
   chracter: {fileID: 3348378451606534440}
   runSpeed: 8
   walkSpeed: 5
+  particleSystems:
+  - {fileID: 1117912960}
+  - {fileID: 837866637}
   jumpPower: 330
 --- !u!61 &3348378451606534423
 BoxCollider2D:
@@ -70545,7 +70548,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1001 &4599016980531507792
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -12,6 +12,8 @@ public class CharacterMove : MonoBehaviour
     private float runSpeed;
     [SerializeField]
     private float walkSpeed;
+    [SerializeField]
+    private ParticleSystem[] particleSystems;
 
     private float moveWeight;
     public float jumpPower;
@@ -26,6 +28,10 @@ public class CharacterMove : MonoBehaviour
         if (!TutorialManager.instance.tutorialEnd)
         {
             TutorialManager.instance.tutorialPanel.SetActive(true);
+        }
+        foreach(var particle in particleSystems)
+        {
+            particle.Stop();
         }
     }
 
