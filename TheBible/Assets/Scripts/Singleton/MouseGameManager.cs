@@ -75,10 +75,10 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
     {
         state = GameState.Clear;
         Debug.Log($"{state}");
-        Invoke("UnloadScene", 5f);
-        StonePool.AllDespawn();
+        //StonePool.AllDespawn();
         StonePool.Dispose();
         StopCoroutine(StoneSpawn());
+        Invoke("UnloadScene", 5f);
     }
 
     private void GameFail()
@@ -87,10 +87,9 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
         StopCoroutine(StoneSpawn());
         sceneEnd = true;
         Debug.Log($"SceneEnd : {sceneEnd}, GameState.{state}");
-        StonePool.AllDespawn();
+        //StonePool.AllDespawn();
         StonePool.Dispose();
         Invoke("UnloadScene", 5f);
-        Debug.Log("UnloadScene Call!");
     }
 
     IEnumerator StoneSpawn()
@@ -129,6 +128,7 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
 
     private void UnloadScene()
     {
+        Debug.Log("UnloadScene Call!");
         SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("MouseClickGame"));
     }
 }
