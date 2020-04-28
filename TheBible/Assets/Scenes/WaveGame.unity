@@ -1655,10 +1655,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2104360254}
+  - component: {fileID: 2104360257}
   - component: {fileID: 2104360255}
   - component: {fileID: 2104360256}
   - component: {fileID: 2104360251}
-  - component: {fileID: 2104360257}
   - component: {fileID: 2104360253}
   - component: {fileID: 2104360252}
   m_Layer: 0
@@ -1766,7 +1766,6 @@ MonoBehaviour:
   - {fileID: -7783508678558990478, guid: 79941b449a1dc4ad78e2dd0cc6a825a0, type: 3}
   rotateAngle: {x: 0, y: 0, z: 30}
   playerHP: 10
-  ActionParticle: {fileID: 0}
   MainCharAnim: {fileID: 621768380}
 --- !u!50 &2104360256
 Rigidbody2D:
