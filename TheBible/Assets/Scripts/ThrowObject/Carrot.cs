@@ -38,7 +38,15 @@ public class Carrot : ThrowObject, IDespawnable
 
     private void Despawn()
     {
-        GamePlayerMove.instance.throwObjectPool[(int)ThrowType.Carrot].Despawn(gameObject);
+        try
+        {
+            GamePlayerMove.instance.throwObjectPool[(int)ThrowType.Carrot].Despawn(gameObject);
+        }
+        catch(ArgumentOutOfRangeException arguException)
+        {
+            Debug.Log($"예외 발생!");
+            Destroy(gameObject);
+        }
     }
     //private void OnCollisionEnter2D(Collision2D collision)
     //{

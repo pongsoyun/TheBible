@@ -14,7 +14,7 @@ public class EnemySmallRabbit : EnemyRabbit, IDespawnable
         prefabRigidBody2D = GetComponent<Rigidbody2D>();
         OnDespawn += Despawn;
         WaveGameManager.instance.ActiveEnemyCount++;
-        Debug.Log($"{nameof(gameObject)} Count++! :{ WaveGameManager.instance.ActiveEnemyCount} ");
+        //Debug.Log($"{nameof(gameObject)} Count++! :{ WaveGameManager.instance.ActiveEnemyCount} ");
     }
     void OnEnable()
     {
@@ -26,7 +26,7 @@ public class EnemySmallRabbit : EnemyRabbit, IDespawnable
     {
         if (isAngry)
         {
-            Debug.Log($"{nameof(gameObject)} is Angry");
+            //Debug.Log($"{nameof(gameObject)} is Angry");
             speed = 4;
         }
         else

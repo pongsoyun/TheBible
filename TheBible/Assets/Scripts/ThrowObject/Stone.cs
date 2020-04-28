@@ -38,7 +38,15 @@ public class Stone : ThrowObject, IDespawnable
 
     private void Despawn()
     {
-        GamePlayerMove.instance.throwObjectPool[(int)ThrowType.Stone].Despawn(gameObject);
+        try
+        {
+            GamePlayerMove.instance.throwObjectPool[(int)ThrowType.Stone].Despawn(gameObject);
+        }
+        catch (ArgumentOutOfRangeException arguException)
+        {
+            Debug.Log($"예외 발생!");
+            Destroy(gameObject);
+        }
     }
 
     //private void OnCollisionEnter2D(Collision2D collision)
