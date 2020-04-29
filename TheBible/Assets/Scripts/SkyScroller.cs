@@ -9,12 +9,6 @@ public class SkyScroller : MonoBehaviour
     public float speed;
     private float offset;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        render = GetComponent<MeshRenderer>();
-    }
-
     // Update is called once per frame
     void Update()
     {
