@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class ColliderEventTrigger : MonoBehaviour
 {
+    [SerializeField]
     CharacterMove Player;
     [SerializeField]
     private Image FilledImage;
@@ -18,11 +19,11 @@ public class ColliderEventTrigger : MonoBehaviour
     bool isPet = false; // position을 위함. Player따라다닐 RB
     bool isFirstEvent = true;  // 일단.. 긴급 처방.. 
     // Start is called before the first frame update
-    void Awake()
-    {
-        Player = FindObjectOfType<CharacterMove>();
-        //  animator = GetComponent<Animator>();
-    }
+    //void Awake()
+    //{
+    //    Player = FindObjectOfType<CharacterMove>();
+    //    //  animator = GetComponent<Animator>();
+    //}
 
     void Start()
     {
