@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class SickRabbit : MonoBehaviour
 {
-    CharacterMove Player;
+    //CharacterMove Player;
     [SerializeField]
     private Image FilledImage;
 
@@ -19,7 +19,7 @@ public class SickRabbit : MonoBehaviour
 
     void Awake()
     {
-        Player = FindObjectOfType<CharacterMove>();
+        //Player = FindObjectOfType<CharacterMove>();
         //  animator = GetComponent<Animator>();
     }
     void Start()
