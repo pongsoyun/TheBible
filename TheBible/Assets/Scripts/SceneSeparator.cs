@@ -13,10 +13,12 @@ public class SceneSeparator : MonoBehaviour
     public bool isBeforeCpt = true;
     private bool isPlayOnceBefore = false;
     private bool isPlayOnceAfter = false;
+
     void Start()
     {
         MGEndingObjs.SetActive(false);
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!isPlayOnceBefore && isBeforeCpt && collision.CompareTag("Player"))
