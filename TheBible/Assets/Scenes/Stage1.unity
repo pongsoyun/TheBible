@@ -2893,7 +2893,6 @@ GameObject:
   - component: {fileID: 155749510}
   - component: {fileID: 155749511}
   - component: {fileID: 155749513}
-  - component: {fileID: 155749512}
   m_Layer: 0
   m_Name: CM_CptHouse
   m_TagString: Untagged
@@ -2951,25 +2950,6 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 889013852}
---- !u!95 &155749512
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 155749509}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!320 &155749513
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -31408,7 +31388,6 @@ GameObject:
   - component: {fileID: 1126662036}
   - component: {fileID: 1126662035}
   - component: {fileID: 1126662034}
-  - component: {fileID: 1126662033}
   m_Layer: 0
   m_Name: CM_EndingSmallTalking
   m_TagString: Untagged
@@ -31416,25 +31395,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &1126662033
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1126662032}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!320 &1126662034
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -36793,7 +36753,6 @@ GameObject:
   - component: {fileID: 1389880319}
   - component: {fileID: 1389880322}
   - component: {fileID: 1389880321}
-  - component: {fileID: 1389880320}
   m_Layer: 0
   m_Name: CM_MG2IntroDIsplay
   m_TagString: Untagged
@@ -36816,25 +36775,6 @@ Transform:
   m_Father: {fileID: 1466480691}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1389880320
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1389880318}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!320 &1389880321
 PlayableDirector:
   m_ObjectHideFlags: 0
