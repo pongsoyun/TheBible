@@ -25,14 +25,14 @@ public class EndingStone : ThrowObject, IDespawnable
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        try
-        {
-            endingObj.StonePool.Despawn(gameObject);
-        }
-        catch (ArgumentOutOfRangeException e)
-        {
-            Debug.Log($"예외 발생!");
-            Destroy(gameObject);
-        }
+        //try
+        //{
+        //    endingObj.StonePool.Despawn(gameObject);
+        //}
+        //catch (ArgumentOutOfRangeException e)
+        //{
+        //    Debug.Log($"예외 발생!");
+        //    Destroy(gameObject);
+        //}
     }
 }
