@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class SickRabbit : MonoBehaviour
 {
@@ -15,18 +16,15 @@ public class SickRabbit : MonoBehaviour
     public Animator PlayerAnim;
     public bool isAbleCure;
     public bool isFirstEvent = true;  // 일단.. 긴급 처방.. 
-    // Start is called before the first frame update
 
-    void Awake()
-    {
-        //Player = FindObjectOfType<CharacterMove>();
-        //  animator = GetComponent<Animator>();
-    }
+    public VideoPlayer videoPlayer;
+    public RawImage rawImage;
     void Start()
     {
         Aura.Stop();
         ActionParticle.Stop();
-        // CureKingAnim.SetBool("Cure", false);
+
+        StartCoroutine(PlayVideo());
     }
 
     void Update()
@@ -51,7 +49,6 @@ public class SickRabbit : MonoBehaviour
 
         if (FilledImage.fillAmount >= 1.0f)
         {
-
             // 이게 최초에 한번 호출이 되네요..
             Debug.Log("FilledImage Reset 1.0 to 0!");
             if (isFirstEvent)
@@ -60,26 +57,23 @@ public class SickRabbit : MonoBehaviour
             }
             else
             {
-                CureKingAnim.SetBool("Cure", true); // animation 변경(Cured RB으로)    
+                CureKingAnim.SetBool("Cure", true);
+                // Invoke(1000, "TogetherPlay");
+                videoPlayer.Play();
             }
             FilledImage.fillAmount = 0;
 
         }
     }
-
-    // void OnTriggerEnter2D(Collider2D collision)
-    // {
-    //     Debug.Log("EventEnter");
-    //     Player.eventClear();
-    //     Player.ActivateEvent += DebugEvent;
-    // }
-
-    // private void OnTriggerExit2D(Collider2D collision)
-    // {
-    //     if (collision.gameObject.CompareTag("Player"))
-    //     {
-    //         isAbleCure = true;
-    //     }
-    //     FilledImage.fillAmount = 1f;
-    // }
+    IEnumerator PlayVideo()
+    {
+        videoPlayer.Prepare();
+        WaitForSeconds waitForSeconds = new WaitForSeconds(1);
+        while (!videoPlayer.isPrepared)
+        {
+            yield return waitForSeconds;
+            break;
+        }
+        rawImage.texture = videoPlayer.texture;
+    }
 }

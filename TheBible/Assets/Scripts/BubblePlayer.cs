@@ -8,9 +8,11 @@ public class BubblePlayer : MonoBehaviour
 {
     public VideoPlayer videoPlayer;
     public RawImage rawImage;
+    private bool onceTime;
     void Start()
     {
         StartCoroutine(PlayVideo());
+        onceTime = true;
     }
     IEnumerator PlayVideo()
     {
@@ -26,12 +28,12 @@ public class BubblePlayer : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (onceTime && collision.gameObject.CompareTag("Player"))
         {
             // 말풍선 플레이
             Debug.Log("video play");
-            rawImage.texture = videoPlayer.texture;
             videoPlayer.Play();
+            onceTime = false;
         }
     }
 }
