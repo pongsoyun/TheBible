@@ -9,16 +9,25 @@ public class Ending : MonoBehaviour
 
     public MemoryPool StonePool;
     public bool isCptHomeEnd = false;
-    public Vector2 throwPower;
     private bool isInit = false;
-
 
     void Update()
     {
+        Debug.Log($"isInit : {isInit}");
         if (isCptHomeEnd && !isInit)
         {
             isInit = true;
             StonePool = new MemoryPool(Stone, 5, 10);
+            StartCoroutine(StoneSpawn());
         }    
+    }
+
+    IEnumerator StoneSpawn()
+    {
+        while (true)
+        {
+            StonePool.Respawn(transform.position, transform.rotation);
+            yield return new WaitForSeconds(2f);
+        }
     }
 }

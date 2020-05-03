@@ -6,33 +6,47 @@ using UnityEngine;
 public class EndingStone : ThrowObject, IDespawnable
 {
     public event Action<GameObject> OnDespawn;
-    public Ending endingObj;
+    public Vector2 throwPower;
+    public bool isFlip = false;
 
+    private Vector2 originPower = new Vector2(0.6f, 0.7f);
     private float powerWeight;
+
+    private void Awake()
+    {
+        if (isFlip)
+        {
+            originPower = new Vector2(-0.6f, 0.7f);
+        }
+    }
 
     protected override void OnEnable()
     {
+        throwPower = originPower;
         transform.SetParent(null);
         PowerSet();
-        gameObject.GetComponent<Rigidbody2D>().velocity = endingObj.throwPower;
+        gameObject.GetComponent<Rigidbody2D>().velocity = throwPower;
     }
 
     protected override void PowerSet()
     {
-        powerWeight = UnityEngine.Random.Range(5f, 8f);
-        endingObj.throwPower *= powerWeight;
+        powerWeight = UnityEngine.Random.Range(12f, 15f);
+        throwPower *= powerWeight;
     }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        //try
-        //{
-        //    endingObj.StonePool.Despawn(gameObject);
-        //}
-        //catch (ArgumentOutOfRangeException e)
-        //{
-        //    Debug.Log($"예외 발생!");
-        //    Destroy(gameObject);
-        //}
+        if (collision.gameObject.CompareTag("ThrowObject"))
+        {
+            try
+            {
+                OnDespawn(gameObject);
+            }
+            catch (ArgumentOutOfRangeException e)
+            {
+                Debug.Log($"예외 발생!");
+                Destroy(gameObject);
+            }
+        } 
     }
 }
