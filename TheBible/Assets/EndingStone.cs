@@ -19,7 +19,7 @@ public class EndingStone : ThrowObject, IDespawnable
 
     protected override void PowerSet()
     {
-        powerWeight = UnityEngine.Random.Range(5f,8f);
+        powerWeight = UnityEngine.Random.Range(5f, 8f);
         endingObj.throwPower *= powerWeight;
     }
 
@@ -29,7 +29,7 @@ public class EndingStone : ThrowObject, IDespawnable
         {
             endingObj.StonePool.Despawn(gameObject);
         }
-        catch(ArgumentOutOfRangeException e)
+        catch (ArgumentOutOfRangeException e)
         {
             Debug.Log($"예외 발생!");
             Destroy(gameObject);
