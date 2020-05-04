@@ -38,6 +38,10 @@ public class EndingStone : ThrowObject, IDespawnable
     {
         if (collision.gameObject.CompareTag("ThrowObject"))
         {
+
+        }
+        else
+        {
             try
             {
                 OnDespawn(gameObject);
@@ -47,6 +51,6 @@ public class EndingStone : ThrowObject, IDespawnable
                 Debug.Log($"예외 발생!");
                 Destroy(gameObject);
             }
-        } 
+        }
     }
 }
