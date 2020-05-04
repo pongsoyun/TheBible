@@ -24,9 +24,14 @@ public class BubblePlayer : MonoBehaviour
         while (!videoPlayer.isPrepared)
         {
             yield return waitForSeconds;
+            Debug.Log("video play is not PrePared");
             break;
         }
+
         rawImage.texture = videoPlayer.texture;
+        Debug.Log("rawImage Texture setting!");
+        StopCoroutine(PlayVideo());
+        yield return new WaitForEndOfFrame();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
