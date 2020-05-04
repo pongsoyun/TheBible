@@ -40,7 +40,7 @@ public class Stone : ThrowObject, IDespawnable
     {
         try
         {
-            GamePlayerMove.instance.throwObjectPool[(int)ThrowType.Stone].Despawn(gameObject);
+            OnDespawn(gameObject);
         }
         catch (ArgumentOutOfRangeException arguException)
         {
@@ -48,9 +48,4 @@ public class Stone : ThrowObject, IDespawnable
             Destroy(gameObject);
         }
     }
-
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-
-    //}
 }
