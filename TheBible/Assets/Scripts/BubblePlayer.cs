@@ -9,15 +9,18 @@ public class BubblePlayer : MonoBehaviour
     public VideoPlayer videoPlayer;
     public RawImage rawImage;
     private bool onceTime;
+    WaitForSeconds waitForSeconds = new WaitForSeconds(1);
+
     void Start()
     {
         StartCoroutine(PlayVideo());
         onceTime = true;
     }
+
     IEnumerator PlayVideo()
     {
         videoPlayer.Prepare();
-        WaitForSeconds waitForSeconds = new WaitForSeconds(1);
+        
         while (!videoPlayer.isPrepared)
         {
             yield return waitForSeconds;
@@ -30,6 +33,7 @@ public class BubblePlayer : MonoBehaviour
     {
         if (onceTime && collision.gameObject.CompareTag("Player"))
         {
+            rawImage.color = new Color(rawImage.color.r, rawImage.color.g, rawImage.color.b, 1f);
             // 말풍선 플레이
             Debug.Log("video play");
             videoPlayer.Play();
