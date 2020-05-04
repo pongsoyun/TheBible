@@ -1,31 +1,34 @@
 fileFormatVersion: 2
-guid: 9753b5d4a0f4847cdb762ccdb15a9a03
+guid: 2ca154282a5354709b761f97a061dd3e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6478032754490262061
-    second: MainChar_Idle_0
+      213: 4618322762839480231
+    second: Rabbit_Throw_O_0
   - first:
-      213: -7659938689298763523
-    second: MainChar_Idle_1
+      213: -8873279067422979656
+    second: Rabbit_Throw_O_1
   - first:
-      213: -2146123377187674968
-    second: MainChar_Idle_2
+      213: 4651432676858000582
+    second: Rabbit_Throw_O_2
   - first:
-      213: 6140530266768679468
-    second: MainChar_Idle_3
+      213: 1387273745573388177
+    second: Rabbit_Throw_O_3
   - first:
-      213: -7770233431251893255
-    second: MainChar_Idle_4
+      213: -4829371792695568321
+    second: Rabbit_Throw_O_4
   - first:
-      213: -2815628539457396681
-    second: MainChar_Idle_5
+      213: 2559057607132486788
+    second: Rabbit_Throw_O_5
   - first:
-      213: 3197979614727582213
-    second: MainChar_Idle_6
+      213: 670933659689704336
+    second: Rabbit_Throw_O_6
   - first:
-      213: -8923654902155645189
-    second: MainChar_Idle_7
+      213: -5368766331185457536
+    second: Rabbit_Throw_O_7
+  - first:
+      213: 4695456005146468772
+    second: Rabbit_Throw_O_8
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +87,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -96,7 +99,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -110,169 +113,190 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MainChar_Idle_0
+      name: Rabbit_Throw_O_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 512
         height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccbc93abd0b2040da90075d9df044741
-      internalID: 6478032754490262061
+      spriteID: 7fcdd015e94674c17a6da2a8a3085488
+      internalID: 4618322762839480231
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_1
+      name: Rabbit_Throw_O_1
       rect:
         serializedVersion: 2
         x: 512
         y: 0
         width: 512
         height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e980ac60c1fdf46b3b230cc6d62ca1a7
-      internalID: -7659938689298763523
+      spriteID: b199c804e7dc34272ae17453255f3675
+      internalID: -8873279067422979656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_2
+      name: Rabbit_Throw_O_2
       rect:
         serializedVersion: 2
         x: 1024
         y: 0
         width: 512
         height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73839ecabf9ac4ef7ae543e399829cd4
-      internalID: -2146123377187674968
+      spriteID: 54743487579f54f9fbc7dfd07fa52f5f
+      internalID: 4651432676858000582
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_3
+      name: Rabbit_Throw_O_3
       rect:
         serializedVersion: 2
         x: 1536
         y: 0
         width: 512
         height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d3d9d14e587049289a60476d402ed9b
-      internalID: 6140530266768679468
+      spriteID: 568e57a47c01d492184bc28f74d8cacd
+      internalID: 1387273745573388177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_4
+      name: Rabbit_Throw_O_4
       rect:
         serializedVersion: 2
         x: 2048
         y: 0
         width: 512
         height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3a1aa5378ca7442e932371944c6c815
-      internalID: -7770233431251893255
+      spriteID: e3256ee72adf64c6591e46eb22864094
+      internalID: -4829371792695568321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_5
+      name: Rabbit_Throw_O_5
       rect:
         serializedVersion: 2
         x: 2560
         y: 0
         width: 512
         height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47885047b640e4804b336a99b971ab10
-      internalID: -2815628539457396681
+      spriteID: 313638dd5699c443f86798b62895c3db
+      internalID: 2559057607132486788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_6
+      name: Rabbit_Throw_O_6
       rect:
         serializedVersion: 2
         x: 3072
         y: 0
         width: 512
         height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c8153c2993b9430590374ed4d68febe
-      internalID: 3197979614727582213
+      spriteID: 538d915f668784fa78703047634c10ad
+      internalID: 670933659689704336
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_7
+      name: Rabbit_Throw_O_7
       rect:
         serializedVersion: 2
         x: 3584
         y: 0
         width: 512
         height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfa5806d6e662410ca400533ed1d281b
-      internalID: -8923654902155645189
+      spriteID: 27c6f0e885b914c7c9a40441f561aa7f
+      internalID: -5368766331185457536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Throw_O_8
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 0
+        width: 512
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 589b575cb4605485988d3d00e054bde4
+      internalID: 4695456005146468772
       vertices: []
       indices: 
       edges: []
@@ -280,7 +304,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: d58adea35510b47f39a15663224f93b8
     internalID: 0
     vertices: []
     indices: 

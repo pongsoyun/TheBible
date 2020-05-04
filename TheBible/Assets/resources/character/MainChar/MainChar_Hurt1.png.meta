@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 9753b5d4a0f4847cdb762ccdb15a9a03
+guid: 9b9d50dc044594ecbb1c319bbc597138
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6478032754490262061
-    second: MainChar_Idle_0
+      213: 4731121124103844830
+    second: MainChar_Hurt1_0
   - first:
-      213: -7659938689298763523
-    second: MainChar_Idle_1
+      213: -1183982709826725932
+    second: MainChar_Hurt1_1
   - first:
-      213: -2146123377187674968
-    second: MainChar_Idle_2
+      213: 3844341875033372
+    second: MainChar_Hurt1_2
   - first:
-      213: 6140530266768679468
-    second: MainChar_Idle_3
+      213: -5502925093663313014
+    second: MainChar_Hurt1_3
   - first:
-      213: -7770233431251893255
-    second: MainChar_Idle_4
+      213: -1864498748381089496
+    second: MainChar_Hurt1_4
   - first:
-      213: -2815628539457396681
-    second: MainChar_Idle_5
+      213: 80269700534767023
+    second: MainChar_Hurt1_5
   - first:
-      213: 3197979614727582213
-    second: MainChar_Idle_6
+      213: 1249110369282141067
+    second: MainChar_Hurt1_6
   - first:
-      213: -8923654902155645189
-    second: MainChar_Idle_7
+      213: 5125974842086916841
+    second: MainChar_Hurt1_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +84,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -96,7 +96,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -110,169 +110,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MainChar_Idle_0
+      name: MainChar_Hurt1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 512
         height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccbc93abd0b2040da90075d9df044741
-      internalID: 6478032754490262061
+      spriteID: a3bfdcceb9c764d1aa52c3de5f8ab066
+      internalID: 4731121124103844830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_1
+      name: MainChar_Hurt1_1
       rect:
         serializedVersion: 2
         x: 512
         y: 0
         width: 512
         height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e980ac60c1fdf46b3b230cc6d62ca1a7
-      internalID: -7659938689298763523
+      spriteID: c715657dbba7040b2a8b9d88f5894478
+      internalID: -1183982709826725932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_2
+      name: MainChar_Hurt1_2
       rect:
         serializedVersion: 2
         x: 1024
         y: 0
         width: 512
         height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73839ecabf9ac4ef7ae543e399829cd4
-      internalID: -2146123377187674968
+      spriteID: ec8ea715947474296acbb6f8a1cd2224
+      internalID: 3844341875033372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_3
+      name: MainChar_Hurt1_3
       rect:
         serializedVersion: 2
         x: 1536
         y: 0
         width: 512
         height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d3d9d14e587049289a60476d402ed9b
-      internalID: 6140530266768679468
+      spriteID: 977f75283681142489d8bbf29486076e
+      internalID: -5502925093663313014
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_4
+      name: MainChar_Hurt1_4
       rect:
         serializedVersion: 2
         x: 2048
         y: 0
         width: 512
         height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3a1aa5378ca7442e932371944c6c815
-      internalID: -7770233431251893255
+      spriteID: 4fe695f07c1a74443a220a3313aa9fdb
+      internalID: -1864498748381089496
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_5
+      name: MainChar_Hurt1_5
       rect:
         serializedVersion: 2
         x: 2560
         y: 0
         width: 512
         height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47885047b640e4804b336a99b971ab10
-      internalID: -2815628539457396681
+      spriteID: 02284802b313140f8b7a20a67dff9ea7
+      internalID: 80269700534767023
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_6
+      name: MainChar_Hurt1_6
       rect:
         serializedVersion: 2
         x: 3072
         y: 0
         width: 512
         height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c8153c2993b9430590374ed4d68febe
-      internalID: 3197979614727582213
+      spriteID: 960f5cb2b8d4549aa8bec90c2390fef0
+      internalID: 1249110369282141067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_7
+      name: MainChar_Hurt1_7
       rect:
         serializedVersion: 2
         x: 3584
         y: 0
         width: 512
         height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfa5806d6e662410ca400533ed1d281b
-      internalID: -8923654902155645189
+      spriteID: 264bb0cb475b4495c86c3a897ff5a6cc
+      internalID: 5125974842086916841
       vertices: []
       indices: 
       edges: []

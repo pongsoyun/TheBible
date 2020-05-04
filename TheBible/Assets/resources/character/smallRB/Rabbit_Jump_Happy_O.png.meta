@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 9753b5d4a0f4847cdb762ccdb15a9a03
+guid: bc3acde1b3b8743739156864c754ce3f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6478032754490262061
-    second: MainChar_Idle_0
+      213: -9214692645592037517
+    second: Rabbit_Jump_Happy_O_0
   - first:
-      213: -7659938689298763523
-    second: MainChar_Idle_1
+      213: 1743011614816313566
+    second: Rabbit_Jump_Happy_O_1
   - first:
-      213: -2146123377187674968
-    second: MainChar_Idle_2
+      213: -3085230492623285070
+    second: Rabbit_Jump_Happy_O_2
   - first:
-      213: 6140530266768679468
-    second: MainChar_Idle_3
+      213: 9108757272643631081
+    second: Rabbit_Jump_Happy_O_3
   - first:
-      213: -7770233431251893255
-    second: MainChar_Idle_4
+      213: -1055720176098664851
+    second: Rabbit_Jump_Happy_O_4
   - first:
-      213: -2815628539457396681
-    second: MainChar_Idle_5
+      213: 6707477642000443931
+    second: Rabbit_Jump_Happy_O_5
   - first:
-      213: 3197979614727582213
-    second: MainChar_Idle_6
+      213: -2998774208914414050
+    second: Rabbit_Jump_Happy_O_6
   - first:
-      213: -8923654902155645189
-    second: MainChar_Idle_7
+      213: 4949622961766722351
+    second: Rabbit_Jump_Happy_O_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +84,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -96,7 +96,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -110,169 +110,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MainChar_Idle_0
+      name: Rabbit_Jump_Happy_O_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 512
         height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccbc93abd0b2040da90075d9df044741
-      internalID: 6478032754490262061
+      spriteID: a133d7bf4e3da404d8aff2c435ccfa72
+      internalID: -9214692645592037517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_1
+      name: Rabbit_Jump_Happy_O_1
       rect:
         serializedVersion: 2
         x: 512
         y: 0
         width: 512
         height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e980ac60c1fdf46b3b230cc6d62ca1a7
-      internalID: -7659938689298763523
+      spriteID: e453fb5dda14c441583f03e3a642de5d
+      internalID: 1743011614816313566
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_2
+      name: Rabbit_Jump_Happy_O_2
       rect:
         serializedVersion: 2
         x: 1024
         y: 0
         width: 512
         height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73839ecabf9ac4ef7ae543e399829cd4
-      internalID: -2146123377187674968
+      spriteID: d94366d8ade7b4639af01709a3a21b6e
+      internalID: -3085230492623285070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_3
+      name: Rabbit_Jump_Happy_O_3
       rect:
         serializedVersion: 2
         x: 1536
         y: 0
         width: 512
         height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d3d9d14e587049289a60476d402ed9b
-      internalID: 6140530266768679468
+      spriteID: 068882834ebf1495e83dd6518e406bb2
+      internalID: 9108757272643631081
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_4
+      name: Rabbit_Jump_Happy_O_4
       rect:
         serializedVersion: 2
         x: 2048
         y: 0
         width: 512
         height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3a1aa5378ca7442e932371944c6c815
-      internalID: -7770233431251893255
+      spriteID: 3aeb45c81fbab4aba95a1f02dd0987a4
+      internalID: -1055720176098664851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_5
+      name: Rabbit_Jump_Happy_O_5
       rect:
         serializedVersion: 2
         x: 2560
         y: 0
         width: 512
         height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47885047b640e4804b336a99b971ab10
-      internalID: -2815628539457396681
+      spriteID: 3b521e7ddebce470c9be17daaec0d80c
+      internalID: 6707477642000443931
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_6
+      name: Rabbit_Jump_Happy_O_6
       rect:
         serializedVersion: 2
         x: 3072
         y: 0
         width: 512
         height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c8153c2993b9430590374ed4d68febe
-      internalID: 3197979614727582213
+      spriteID: 13c7ba3a5888d4184a337db6fa71479b
+      internalID: -2998774208914414050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_7
+      name: Rabbit_Jump_Happy_O_7
       rect:
         serializedVersion: 2
         x: 3584
         y: 0
         width: 512
         height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfa5806d6e662410ca400533ed1d281b
-      internalID: -8923654902155645189
+      spriteID: 91cc550d98aa643b28c842983d50df4d
+      internalID: 4949622961766722351
       vertices: []
       indices: 
       edges: []
@@ -280,7 +280,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 19e6d3c73aa1a4275858afb63eff5ebb
     internalID: 0
     vertices: []
     indices: 

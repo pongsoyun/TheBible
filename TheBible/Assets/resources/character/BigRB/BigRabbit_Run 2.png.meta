@@ -1,31 +1,37 @@
 fileFormatVersion: 2
-guid: 9753b5d4a0f4847cdb762ccdb15a9a03
+guid: daeb83df614c14bb0ab30924e7a623b5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6478032754490262061
-    second: MainChar_Idle_0
+      213: -8493976416420644261
+    second: BigRabbit_Run 2_0
   - first:
-      213: -7659938689298763523
-    second: MainChar_Idle_1
+      213: 4930180291254469900
+    second: BigRabbit_Run 2_1
   - first:
-      213: -2146123377187674968
-    second: MainChar_Idle_2
+      213: 6072074428360957275
+    second: BigRabbit_Run 2_2
   - first:
-      213: 6140530266768679468
-    second: MainChar_Idle_3
+      213: -5547027688752897713
+    second: BigRabbit_Run 2_3
   - first:
-      213: -7770233431251893255
-    second: MainChar_Idle_4
+      213: -3494202341773697871
+    second: BigRabbit_Run 2_4
   - first:
-      213: -2815628539457396681
-    second: MainChar_Idle_5
+      213: 2985666305560482715
+    second: BigRabbit_Run 2_5
   - first:
-      213: 3197979614727582213
-    second: MainChar_Idle_6
+      213: -1421220536227769815
+    second: BigRabbit_Run 2_6
   - first:
-      213: -8923654902155645189
-    second: MainChar_Idle_7
+      213: -7664394801518699921
+    second: BigRabbit_Run 2_7
+  - first:
+      213: -7072026615016223047
+    second: BigRabbit_Run 2_8
+  - first:
+      213: -3538639039006054908
+    second: BigRabbit_Run 2_9
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +90,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -96,7 +102,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -110,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MainChar_Idle_0
+      name: BigRabbit_Run 2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,20 +124,20 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccbc93abd0b2040da90075d9df044741
-      internalID: 6478032754490262061
+      spriteID: 1d56be219e4cd442890c223f28875176
+      internalID: -8493976416420644261
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_1
+      name: BigRabbit_Run 2_1
       rect:
         serializedVersion: 2
         x: 512
@@ -139,20 +145,20 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e980ac60c1fdf46b3b230cc6d62ca1a7
-      internalID: -7659938689298763523
+      spriteID: 27d12c3a64aaf4107ac9609e28b0a236
+      internalID: 4930180291254469900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_2
+      name: BigRabbit_Run 2_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -160,20 +166,20 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73839ecabf9ac4ef7ae543e399829cd4
-      internalID: -2146123377187674968
+      spriteID: e13a6df1a1e0645bf89cd13c7eb36a96
+      internalID: 6072074428360957275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_3
+      name: BigRabbit_Run 2_3
       rect:
         serializedVersion: 2
         x: 1536
@@ -181,20 +187,20 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d3d9d14e587049289a60476d402ed9b
-      internalID: 6140530266768679468
+      spriteID: ea2ed558b1656479d9c438a7dbcb315a
+      internalID: -5547027688752897713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_4
+      name: BigRabbit_Run 2_4
       rect:
         serializedVersion: 2
         x: 2048
@@ -202,20 +208,20 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3a1aa5378ca7442e932371944c6c815
-      internalID: -7770233431251893255
+      spriteID: a28b3bc4d296e4b3bb7d34f59fc8cee5
+      internalID: -3494202341773697871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_5
+      name: BigRabbit_Run 2_5
       rect:
         serializedVersion: 2
         x: 2560
@@ -223,20 +229,20 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47885047b640e4804b336a99b971ab10
-      internalID: -2815628539457396681
+      spriteID: 56ae3a372ee584fde902a9a8d1f248c3
+      internalID: 2985666305560482715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_6
+      name: BigRabbit_Run 2_6
       rect:
         serializedVersion: 2
         x: 3072
@@ -244,20 +250,20 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c8153c2993b9430590374ed4d68febe
-      internalID: 3197979614727582213
+      spriteID: 07fbfb4faad2f464eb86f700cb03809c
+      internalID: -1421220536227769815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainChar_Idle_7
+      name: BigRabbit_Run 2_7
       rect:
         serializedVersion: 2
         x: 3584
@@ -265,14 +271,56 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfa5806d6e662410ca400533ed1d281b
-      internalID: -8923654902155645189
+      spriteID: c4971d9ca0b7f4f4eb4d93b9bec76c93
+      internalID: -7664394801518699921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigRabbit_Run 2_8
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0807015ad0c04733a3d37988c4f571d
+      internalID: -7072026615016223047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigRabbit_Run 2_9
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a79a27be748ad436b9dfcd0fd2121ac2
+      internalID: -3538639039006054908
       vertices: []
       indices: 
       edges: []
@@ -280,7 +328,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 4dab830bd2ba94ebcb62d7a5bc2c4524
     internalID: 0
     vertices: []
     indices: 
