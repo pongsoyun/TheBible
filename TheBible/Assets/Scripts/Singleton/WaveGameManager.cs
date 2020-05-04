@@ -84,11 +84,7 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
         {
             sceneEnd = true;
             Debug.Log($"SceneEnd : {sceneEnd}");
-            foreach (var pool in EnemyWavePool)
-            {
-                //pool.AllDespawn();
-                pool.Dispose();
-            }
+            DisposeAllPool();
             SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("WaveGame"));
         }
     }
