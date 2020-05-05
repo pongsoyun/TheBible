@@ -16,7 +16,6 @@ public class PlayerTeleporter : EditorWindow
 
     void OnGUI()
     {
-        //EditorGUILayout.LabelField("Example Label");
         GUILayout.BeginVertical();
         if (GUILayout.Button("Find Teleport Position"))
         {
