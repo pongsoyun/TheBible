@@ -10843,7 +10843,7 @@ GameObject:
   - component: {fileID: 573283514}
   m_Layer: 0
   m_Name: FlagTown
-  m_TagString: Untagged
+  m_TagString: Flag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12972,7 +12972,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 663096846}
   m_LocalRotation: {x: -0.07523801, y: -0.0038919086, z: 0.0002935206, w: -0.99715793}
-  m_LocalPosition: {x: -271.80457, y: -15.245309, z: 40.250034}
+  m_LocalPosition: {x: -271.42172, y: -15.245309, z: 40.247044}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 343923931}
@@ -22946,7 +22946,7 @@ GameObject:
   - component: {fileID: 856503325}
   m_Layer: 0
   m_Name: FlagPond
-  m_TagString: Untagged
+  m_TagString: Flag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25766,7 +25766,7 @@ GameObject:
   - component: {fileID: 992359574}
   m_Layer: 0
   m_Name: FlagBigHouse
-  m_TagString: Untagged
+  m_TagString: Flag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26217,7 +26217,7 @@ GameObject:
   - component: {fileID: 1014758480}
   m_Layer: 0
   m_Name: FlagCliff
-  m_TagString: Untagged
+  m_TagString: Flag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42264,7 +42264,7 @@ GameObject:
   - component: {fileID: 1502931103}
   m_Layer: 0
   m_Name: FlagStart
-  m_TagString: Untagged
+  m_TagString: Flag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42918,7 +42918,7 @@ GameObject:
   - component: {fileID: 1554309668}
   m_Layer: 0
   m_Name: FlagMiniGame1
-  m_TagString: Untagged
+  m_TagString: Flag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47223,7 +47223,7 @@ GameObject:
   - component: {fileID: 1764812907}
   m_Layer: 0
   m_Name: FlagMiniGame2
-  m_TagString: Untagged
+  m_TagString: Flag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

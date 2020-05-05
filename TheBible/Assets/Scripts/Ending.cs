@@ -13,7 +13,7 @@ public class Ending : MonoBehaviour
 
     void Update()
     {
-        Debug.Log($"isInit : {isInit}");
+        //Debug.Log($"isInit : {isInit}");
         if (isCptHomeEnd && !isInit)
         {
             isInit = true;
