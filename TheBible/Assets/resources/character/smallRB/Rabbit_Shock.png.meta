@@ -1,79 +1,82 @@
 fileFormatVersion: 2
-guid: fe8e251b49fe74a3e8baa7e8050218f7
+guid: 2d1ca3c02e80e4d54be56149b41bef43
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5469169443290492642
-    second: KingRabbit_Cure_0
+      213: -4541951873342705047
+    second: Rabbit_Shock_0
   - first:
-      213: 5374113136366822038
-    second: KingRabbit_Cure_1
+      213: -8275613482512435603
+    second: Rabbit_Shock_1
   - first:
-      213: 933852518140993515
-    second: KingRabbit_Cure_2
+      213: 5843057314119252984
+    second: Rabbit_Shock_2
   - first:
-      213: -7646875420381826407
-    second: KingRabbit_Cure_3
+      213: 1630344949431883357
+    second: Rabbit_Shock_3
   - first:
-      213: 4515251321802694513
-    second: KingRabbit_Cure_4
+      213: -5136563401855271797
+    second: Rabbit_Shock_4
   - first:
-      213: -338850930299127474
-    second: KingRabbit_Cure_5
+      213: 4748384762850563520
+    second: Rabbit_Shock_5
   - first:
-      213: 674992047031428890
-    second: KingRabbit_Cure_6
+      213: 7541264302145898666
+    second: Rabbit_Shock_6
   - first:
-      213: -8858769027247920316
-    second: KingRabbit_Cure_7
+      213: -3687010521357133132
+    second: Rabbit_Shock_7
   - first:
-      213: 6153001542060142533
-    second: KingRabbit_Cure_8
+      213: 316008227345202193
+    second: Rabbit_Shock_8
   - first:
-      213: 6125078547319061923
-    second: KingRabbit_Cure_9
+      213: -5664093457028670569
+    second: Rabbit_Shock_9
   - first:
-      213: -1049787186050727096
-    second: KingRabbit_Cure_10
+      213: -9048221263941204249
+    second: Rabbit_Shock_10
   - first:
-      213: 5321997737946868870
-    second: KingRabbit_Cure_11
+      213: 7761988505016490790
+    second: Rabbit_Shock_11
   - first:
-      213: -4807444944698357472
-    second: KingRabbit_Cure_12
+      213: 5568651548904712747
+    second: Rabbit_Shock_12
   - first:
-      213: 6589384916275026513
-    second: KingRabbit_Cure_13
+      213: 7634189038595355267
+    second: Rabbit_Shock_13
   - first:
-      213: -559472865382413321
-    second: KingRabbit_Cure_14
+      213: -4776742533338493369
+    second: Rabbit_Shock_14
   - first:
-      213: 8489079839325354228
-    second: KingRabbit_Cure_15
+      213: 7275016902714707562
+    second: Rabbit_Shock_15
   - first:
-      213: -2185600458519509699
-    second: KingRabbit_Cure_16
+      213: 2271386721828069323
+    second: Rabbit_Shock_16
   - first:
-      213: -3605555027067576007
-    second: KingRabbit_Cure_17
+      213: -2447571051650482953
+    second: Rabbit_Shock_17
   - first:
-      213: -7417337291551384503
-    second: KingRabbit_Cure_18
+      213: -1917802783897539196
+    second: Rabbit_Shock_18
   - first:
-      213: 2252908097355643232
-    second: KingRabbit_Cure_19
+      213: -6086943286444866699
+    second: Rabbit_Shock_19
   - first:
-      213: -5275708702542811513
-    second: KingRabbit_Cure_20
+      213: 3066447055060273996
+    second: Rabbit_Shock_20
   - first:
-      213: 4218206421054086113
-    second: KingRabbit_Cure_21
+      213: 1336418262923411625
+    second: Rabbit_Shock_21
   - first:
-      213: -2306295405311749817
-    second: KingRabbit_Cure_22
+      213: -1466526491430009256
+    second: Rabbit_Shock_22
   - first:
-      213: -433253705993017043
-    second: KingRabbit_Cure_23
+      213: -20079169663103295
+    second: Rabbit_Shock_23
+  - first:
+      213: 3513847258404613177
+    second: Rabbit_Shock_24
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -158,505 +161,526 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: KingRabbit_Cure_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 4096
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a2205ecff8c274c7eaf14c7999fa1adb
-      internalID: -5469169443290492642
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KingRabbit_Cure_1
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 4096
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a788e712cf2804a6692e4246611a36ee
-      internalID: 5374113136366822038
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KingRabbit_Cure_2
-      rect:
-        serializedVersion: 2
-        x: 2048
-        y: 4096
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4cd1550495007408e8ba7979b2fcea72
-      internalID: 933852518140993515
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KingRabbit_Cure_3
-      rect:
-        serializedVersion: 2
-        x: 3072
-        y: 4096
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0aab7bbc4175e41e1b61be878fd6974f
-      internalID: -7646875420381826407
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KingRabbit_Cure_4
-      rect:
-        serializedVersion: 2
-        x: 4096
-        y: 4096
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 660cfc75ec88b461b85f315faf35e0a8
-      internalID: 4515251321802694513
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KingRabbit_Cure_5
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 3072
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 21417a65842ac49589edb2f396956883
-      internalID: -338850930299127474
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KingRabbit_Cure_6
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 3072
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 67474adfe58d446d18a11fd662e070bd
-      internalID: 674992047031428890
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KingRabbit_Cure_7
-      rect:
-        serializedVersion: 2
-        x: 2048
-        y: 3072
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 965adeaf7f67149ce8c47f1119e63233
-      internalID: -8858769027247920316
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KingRabbit_Cure_8
-      rect:
-        serializedVersion: 2
-        x: 3072
-        y: 3072
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f0c57df0178c402aa7c76eecfb95de5
-      internalID: 6153001542060142533
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KingRabbit_Cure_9
-      rect:
-        serializedVersion: 2
-        x: 4096
-        y: 3072
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a862a13f1086e448797d0576b036182d
-      internalID: 6125078547319061923
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KingRabbit_Cure_10
+      name: Rabbit_Shock_0
       rect:
         serializedVersion: 2
         x: 0
         y: 2048
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: faf56c452df6840cda52450e6c5f9e04
-      internalID: -1049787186050727096
+      spriteID: 650590badbf9b42989e02fd839fda75c
+      internalID: -4541951873342705047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Cure_11
+      name: Rabbit_Shock_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1267486541b484fa1ded782028203e
+      internalID: -8275613482512435603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Shock_2
       rect:
         serializedVersion: 2
         x: 1024
         y: 2048
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f073301c4f26646eb860ea8f7ef3f6d9
-      internalID: 5321997737946868870
+      spriteID: 8c3cb83168a1b4c86beb316ce9aa5b32
+      internalID: 5843057314119252984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Cure_12
+      name: Rabbit_Shock_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959db0081bcca42f8bb3be33d2f02183
+      internalID: 1630344949431883357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Shock_4
       rect:
         serializedVersion: 2
         x: 2048
         y: 2048
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a34859b937c064d6c80fa7b4f2460a2e
-      internalID: -4807444944698357472
+      spriteID: 15f41de0dbed043ba9e47eb8a0f16cab
+      internalID: -5136563401855271797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Cure_13
+      name: Rabbit_Shock_5
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 2048
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 0
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c38525c30e7b49d5894c683c9d26aed
-      internalID: 6589384916275026513
+      spriteID: 20e03ba40fa7541d1814cd3ace70c3f6
+      internalID: 4748384762850563520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Cure_14
+      name: Rabbit_Shock_6
       rect:
         serializedVersion: 2
-        x: 4096
-        y: 2048
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 512
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7827b699310dd47fba6fbc270d821976
-      internalID: -559472865382413321
+      spriteID: e666ace96c6094183987ce63c786ddee
+      internalID: 7541264302145898666
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Cure_15
+      name: Rabbit_Shock_7
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e565994b4eff4cdda35e77027bd8f48
+      internalID: -3687010521357133132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Shock_8
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a011ff293ac409aa0a8ff62990da2c
+      internalID: 316008227345202193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Shock_9
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b584576996ff545e3af445d55d1094f0
+      internalID: -5664093457028670569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Shock_10
       rect:
         serializedVersion: 2
         x: 0
         y: 1024
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 030408b13de0c4185a59423f172bc92d
-      internalID: 8489079839325354228
+      spriteID: 700325a5d40014c3ca381746c1ce8139
+      internalID: -9048221263941204249
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Cure_16
+      name: Rabbit_Shock_11
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb64b00440b74c9d8fc4c54febb6dc9
+      internalID: 7761988505016490790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Shock_12
       rect:
         serializedVersion: 2
         x: 1024
         y: 1024
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16a6d4408cf6a4168b75ac10804aac78
-      internalID: -2185600458519509699
+      spriteID: bf5bbdb2109d74fe8affb939163a700d
+      internalID: 5568651548904712747
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Cure_17
+      name: Rabbit_Shock_13
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5990a70d6fe444de2bb57dc3fe745f6f
+      internalID: 7634189038595355267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Shock_14
       rect:
         serializedVersion: 2
         x: 2048
         y: 1024
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d13f18ba6e3944d78cebcdc3a2fc6a4
-      internalID: -3605555027067576007
+      spriteID: 8d3865a7736c4460eaeb557538e0cbb5
+      internalID: -4776742533338493369
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Cure_18
+      name: Rabbit_Shock_15
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 1024
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 0
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c853a2e37bf2244e6b86c2b26e43aafb
-      internalID: -7417337291551384503
+      spriteID: e9e0cc259f9b14b2aa3feb95ae08fd4a
+      internalID: 7275016902714707562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Cure_19
+      name: Rabbit_Shock_16
       rect:
         serializedVersion: 2
-        x: 4096
-        y: 1024
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 512
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3669a3d04c7f140cf8f89dda254374fe
-      internalID: 2252908097355643232
+      spriteID: 0092364afc4da4db9a337b7734447cd6
+      internalID: 2271386721828069323
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Cure_20
+      name: Rabbit_Shock_17
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a96589fbfdb493d8a5f884327c7349
+      internalID: -2447571051650482953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Shock_18
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb31e75986f724947878f7f30d7d067b
+      internalID: -1917802783897539196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Shock_19
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f5dcdfba836e49078b7c379e6427a16
+      internalID: -6086943286444866699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Shock_20
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21ab6dca06e11482796cdb99746988b4
-      internalID: -5275708702542811513
+      spriteID: e8b3d65a523e444c6bea99400889a7d4
+      internalID: 3066447055060273996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Cure_21
+      name: Rabbit_Shock_21
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7c493cc4b817408f812bd1e9094ebdb
+      internalID: 1336418262923411625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Shock_22
       rect:
         serializedVersion: 2
         x: 1024
         y: 0
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd0b971806fa64847a9341a3f02dac7e
-      internalID: 4218206421054086113
+      spriteID: 1d7bfa0c62ab448ddae4d57603aa1fff
+      internalID: -1466526491430009256
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Cure_22
+      name: Rabbit_Shock_23
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32e995792df54dc1a8455006e0f60cf
+      internalID: -20079169663103295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Shock_24
       rect:
         serializedVersion: 2
         x: 2048
         y: 0
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e63d667c3b2b84f9b9baa7bbbf24ca8c
-      internalID: -2306295405311749817
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KingRabbit_Cure_23
-      rect:
-        serializedVersion: 2
-        x: 3072
-        y: 0
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c9fbfb3685d748ea93f506fc6185045
-      internalID: -433253705993017043
+      spriteID: b72c79929d7804dec8eff17ca04291d1
+      internalID: 3513847258404613177
       vertices: []
       indices: 
       edges: []
@@ -664,7 +688,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 1a1c3e9fa62bd4b4f8accb9bdfd46bcf
+    spriteID: 106ac8d695b224e4689fc73dda85aa14
     internalID: 0
     vertices: []
     indices: 

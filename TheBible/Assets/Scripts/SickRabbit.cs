@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Video;
 
 public class SickRabbit : MonoBehaviour
 {
@@ -17,14 +16,19 @@ public class SickRabbit : MonoBehaviour
     public bool isAbleCure;
     public bool isFirstEvent = true;  // 일단.. 긴급 처방.. 
 
-    public VideoPlayer videoPlayer;
-    public RawImage rawImage;
+    public Animator MiniRbAnim;
+    public bool isMiniRbAnimPlay = false;
+
+    // public GameObject BubbleKingCure;
+    public GameObject BubbleTogether;
+
     void Start()
     {
         Aura.Stop();
         ActionParticle.Stop();
 
-        StartCoroutine(PlayVideo());
+        // BubbleKingCure.SetActive(false);
+        BubbleTogether.SetActive(false);
     }
 
     void Update()
@@ -45,6 +49,11 @@ public class SickRabbit : MonoBehaviour
             Aura.Emit(1);
             ActionParticle.Emit(1);
             PlayerAnim.SetBool("magic", true);
+            // 애기 놀람 
+            if(!isMiniRbAnimPlay){
+            MiniRbAnim.SetBool("shock", true);
+            isMiniRbAnimPlay = true;
+            }
         }
 
         if (FilledImage.fillAmount >= 1.0f)
@@ -57,23 +66,15 @@ public class SickRabbit : MonoBehaviour
             }
             else
             {
-                CureKingAnim.SetBool("Cure", true);
-                // Invoke(1000, "TogetherPlay");
-                videoPlayer.Play();
+                CureKingAnim.SetBool("cure", true);
+                Invoke("PlayBubbleTogether", 1f);
             }
             FilledImage.fillAmount = 0;
 
         }
     }
-    IEnumerator PlayVideo()
-    {
-        videoPlayer.Prepare();
-        WaitForSeconds waitForSeconds = new WaitForSeconds(1);
-        while (!videoPlayer.isPrepared)
-        {
-            yield return waitForSeconds;
-            break;
-        }
-        rawImage.texture = videoPlayer.texture;
+
+    private void PlayBubbleTogether() {
+        BubbleTogether.SetActive(true);
     }
 }

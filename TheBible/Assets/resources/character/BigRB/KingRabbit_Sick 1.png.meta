@@ -1,115 +1,118 @@
 fileFormatVersion: 2
-guid: 939450a45dbe74324a5d745008edb773
+guid: 795ec817efc954a44b69a90d7974ae47
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3968541350980974267
-    second: KingRabbit_Sick_0
+      213: 1763076883623258848
+    second: KingRabbit_Sick 1_0
   - first:
-      213: -4474021895023477728
-    second: KingRabbit_Sick_1
+      213: -3933701996205464470
+    second: KingRabbit_Sick 1_1
   - first:
-      213: 4929423701892538766
-    second: KingRabbit_Sick_2
+      213: -95764915590567811
+    second: KingRabbit_Sick 1_2
   - first:
-      213: 7283410274934920964
-    second: KingRabbit_Sick_3
+      213: -4025942111667012855
+    second: KingRabbit_Sick 1_3
   - first:
-      213: -7744058857037636731
-    second: KingRabbit_Sick_4
+      213: -1957299169535121685
+    second: KingRabbit_Sick 1_4
   - first:
-      213: 2156454246644654977
-    second: KingRabbit_Sick_5
+      213: -8432716098694276127
+    second: KingRabbit_Sick 1_5
   - first:
-      213: 1849853342237994491
-    second: KingRabbit_Sick_6
+      213: 5479887594283630398
+    second: KingRabbit_Sick 1_6
   - first:
-      213: 3285748854957925530
-    second: KingRabbit_Sick_7
+      213: 2977045557852752797
+    second: KingRabbit_Sick 1_7
   - first:
-      213: -5322494075749684582
-    second: KingRabbit_Sick_8
+      213: 8523135486704083241
+    second: KingRabbit_Sick 1_8
   - first:
-      213: 8969993044186893051
-    second: KingRabbit_Sick_9
+      213: 8612561336614865178
+    second: KingRabbit_Sick 1_9
   - first:
-      213: -1998416676811774497
-    second: KingRabbit_Sick_10
+      213: -9082862311508278544
+    second: KingRabbit_Sick 1_10
   - first:
-      213: 5028385990971141917
-    second: KingRabbit_Sick_11
+      213: -1626411206298932818
+    second: KingRabbit_Sick 1_11
   - first:
-      213: -1291284408255513360
-    second: KingRabbit_Sick_12
+      213: -6607142240267710186
+    second: KingRabbit_Sick 1_12
   - first:
-      213: -1755531743577640350
-    second: KingRabbit_Sick_13
+      213: -6250202438391831349
+    second: KingRabbit_Sick 1_13
   - first:
-      213: 2822398522858787191
-    second: KingRabbit_Sick_14
+      213: -8250179535251579958
+    second: KingRabbit_Sick 1_14
   - first:
-      213: -7989320062332719771
-    second: KingRabbit_Sick_15
+      213: -987144388155345361
+    second: KingRabbit_Sick 1_15
   - first:
-      213: 1467230547481466858
-    second: KingRabbit_Sick_16
+      213: -447305197049698677
+    second: KingRabbit_Sick 1_16
   - first:
-      213: 5888657529858413111
-    second: KingRabbit_Sick_17
+      213: 11854573671772485
+    second: KingRabbit_Sick 1_17
   - first:
-      213: -3400654757829441043
-    second: KingRabbit_Sick_18
+      213: 8000218663756169114
+    second: KingRabbit_Sick 1_18
   - first:
-      213: 6080429180748727872
-    second: KingRabbit_Sick_19
+      213: 4826973431378357518
+    second: KingRabbit_Sick 1_19
   - first:
-      213: 116022940915194020
-    second: KingRabbit_Sick_20
+      213: -1289093370940908764
+    second: KingRabbit_Sick 1_20
   - first:
-      213: -7119097717788819955
-    second: KingRabbit_Sick_21
+      213: -5380426925889496845
+    second: KingRabbit_Sick 1_21
   - first:
-      213: 1387179294657678624
-    second: KingRabbit_Sick_22
+      213: 4437290823940223312
+    second: KingRabbit_Sick 1_22
   - first:
-      213: 2567956421911967967
-    second: KingRabbit_Sick_23
+      213: -3607404048749616608
+    second: KingRabbit_Sick 1_23
   - first:
-      213: 4814373969134250324
-    second: KingRabbit_Sick_24
+      213: -5101473404677600211
+    second: KingRabbit_Sick 1_24
   - first:
-      213: 2852600189166613325
-    second: KingRabbit_Sick_25
+      213: -6872680475026420193
+    second: KingRabbit_Sick 1_25
   - first:
-      213: 8880549077701341106
-    second: KingRabbit_Sick_26
+      213: 1500667886967871630
+    second: KingRabbit_Sick 1_26
   - first:
-      213: -6264218932289818756
-    second: KingRabbit_Sick_27
+      213: 8842960737158943609
+    second: KingRabbit_Sick 1_27
   - first:
-      213: 1842619123925094284
-    second: KingRabbit_Sick_28
+      213: -8796877488096151349
+    second: KingRabbit_Sick 1_28
   - first:
-      213: -8408734509345529455
-    second: KingRabbit_Sick_29
+      213: -5463147575775085696
+    second: KingRabbit_Sick 1_29
   - first:
-      213: 7059599917988378325
-    second: KingRabbit_Sick_30
+      213: 4986340042315403253
+    second: KingRabbit_Sick 1_30
   - first:
-      213: 2947129064847638425
-    second: KingRabbit_Sick_31
+      213: 1506301471605917663
+    second: KingRabbit_Sick 1_31
   - first:
-      213: -7176574291625157625
-    second: KingRabbit_Sick_32
+      213: -4912889079422447449
+    second: KingRabbit_Sick 1_32
   - first:
-      213: -4992742203903145743
-    second: KingRabbit_Sick_33
+      213: 1981629655223119022
+    second: KingRabbit_Sick 1_33
   - first:
-      213: -6460903390894471238
-    second: KingRabbit_Sick_34
+      213: 6564315065849761998
+    second: KingRabbit_Sick 1_34
   - first:
-      213: 5005885624424362585
-    second: KingRabbit_Sick_35
+      213: 3374210442468553369
+    second: KingRabbit_Sick 1_35
+  - first:
+      213: -4209509932616423328
+    second: KingRabbit_Sick 1_36
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -194,49 +197,49 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: KingRabbit_Sick_0
+      name: KingRabbit_Sick 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 5120
         width: 1024
         height: 1024
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2562690e221434c10b29d8b1b8c6d697
-      internalID: 3968541350980974267
+      spriteID: cd421eab60e9640eba329f0130611de7
+      internalID: 1763076883623258848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_1
+      name: KingRabbit_Sick 1_1
       rect:
         serializedVersion: 2
         x: 1024
         y: 5120
         width: 1024
         height: 1024
-      alignment: 9
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a411acbdc53654c0f9efcaa5c158d451
-      internalID: -4474021895023477728
+      spriteID: f389688989d33464bb9d7968f2d00305
+      internalID: -3933701996205464470
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_2
+      name: KingRabbit_Sick 1_2
       rect:
         serializedVersion: 2
         x: 2048
@@ -250,14 +253,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56fb42f5d41d54a83a2757e320ef9a60
-      internalID: 4929423701892538766
+      spriteID: 8aac0fdfbfad24a61b5897a1571160d0
+      internalID: -95764915590567811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_3
+      name: KingRabbit_Sick 1_3
       rect:
         serializedVersion: 2
         x: 3072
@@ -271,14 +274,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 949c8a770daea442cbc16c1ac90c0bd8
-      internalID: 7283410274934920964
+      spriteID: cb35e6e0b8b5c4f4fb1f964a4bc5a0d0
+      internalID: -4025942111667012855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_4
+      name: KingRabbit_Sick 1_4
       rect:
         serializedVersion: 2
         x: 4096
@@ -292,14 +295,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 857b609786f0043748a4d2909998fd73
-      internalID: -7744058857037636731
+      spriteID: b04f83cac93534af8a9e7c33a62e4d1d
+      internalID: -1957299169535121685
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_5
+      name: KingRabbit_Sick 1_5
       rect:
         serializedVersion: 2
         x: 5120
@@ -313,14 +316,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f659b53ca51874dfc825b04404a430d8
-      internalID: 2156454246644654977
+      spriteID: c0e57cfc60f4d45669fb4ae43121e46f
+      internalID: -8432716098694276127
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_6
+      name: KingRabbit_Sick 1_6
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 5120
+        width: 1024
+        height: 1024
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c32c1cd48614a4da48e3d1355444cec2
+      internalID: 5479887594283630398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingRabbit_Sick 1_7
       rect:
         serializedVersion: 2
         x: 0
@@ -334,14 +358,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11b8333cb5ae4478287ced44d900a189
-      internalID: 1849853342237994491
+      spriteID: d4391d16983504fb19bd01e17a2b8a1b
+      internalID: 2977045557852752797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_7
+      name: KingRabbit_Sick 1_8
       rect:
         serializedVersion: 2
         x: 1024
@@ -355,18 +379,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32b9e609078d04bbb8d9cdf051e64768
-      internalID: 3285748854957925530
+      spriteID: 50c96f5417a6f4a0a8e38e1df281d2ad
+      internalID: 8523135486704083241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_8
+      name: KingRabbit_Sick 1_9
       rect:
         serializedVersion: 2
         x: 2048
-        y: 4104
+        y: 4096
         width: 1024
         height: 1024
       alignment: 7
@@ -376,14 +400,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b6f4afad7aad4d0097e6b23e4699e9c
-      internalID: -5322494075749684582
+      spriteID: 23d9cc5637f3747ae8518b11ebe0b66d
+      internalID: 8612561336614865178
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_9
+      name: KingRabbit_Sick 1_10
       rect:
         serializedVersion: 2
         x: 3072
@@ -397,14 +421,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad657aaf4d82742bb91f9e155dec70e8
-      internalID: 8969993044186893051
+      spriteID: 655297b1def6740eba46cdf37dedfbd8
+      internalID: -9082862311508278544
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_10
+      name: KingRabbit_Sick 1_11
       rect:
         serializedVersion: 2
         x: 4096
@@ -418,14 +442,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25e4cfdda17d64e62b4f0606b90da474
-      internalID: -1998416676811774497
+      spriteID: a6c0add6623a34f0197ee25aff494375
+      internalID: -1626411206298932818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_11
+      name: KingRabbit_Sick 1_12
       rect:
         serializedVersion: 2
         x: 5120
@@ -439,14 +463,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96cc73eabb06d4649961eb7a260ddea5
-      internalID: 5028385990971141917
+      spriteID: da124680857c445a8a473cbbf2ac2ab6
+      internalID: -6607142240267710186
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_12
+      name: KingRabbit_Sick 1_13
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 4096
+        width: 1024
+        height: 1024
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30bbb7cb0c7be4a4f910cecb78ef2618
+      internalID: -6250202438391831349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingRabbit_Sick 1_14
       rect:
         serializedVersion: 2
         x: 0
@@ -460,14 +505,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3bd6fe9d6a334ea48f14dc4314a6132
-      internalID: -1291284408255513360
+      spriteID: 2b99e9a98f529442fb871f21536f4aa5
+      internalID: -8250179535251579958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_13
+      name: KingRabbit_Sick 1_15
       rect:
         serializedVersion: 2
         x: 1024
@@ -481,14 +526,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08a1f0b28221f4494aac8502a540165c
-      internalID: -1755531743577640350
+      spriteID: 250b580beed3e4d91a1bb7afa89bf2ad
+      internalID: -987144388155345361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_14
+      name: KingRabbit_Sick 1_16
       rect:
         serializedVersion: 2
         x: 2048
@@ -502,14 +547,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8866eb12592994c2686a2cb306677807
-      internalID: 2822398522858787191
+      spriteID: 247c8e9acc07740e08a179153f8af448
+      internalID: -447305197049698677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_15
+      name: KingRabbit_Sick 1_17
       rect:
         serializedVersion: 2
         x: 3072
@@ -523,14 +568,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1af8c9a2f06f4bc981722264e0ab18d
-      internalID: -7989320062332719771
+      spriteID: d7a837873dcd14cfe99925afbdd0b10c
+      internalID: 11854573671772485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_16
+      name: KingRabbit_Sick 1_18
       rect:
         serializedVersion: 2
         x: 4096
@@ -544,14 +589,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bcafb1285393343bcb7726fc6f18e234
-      internalID: 1467230547481466858
+      spriteID: 8e8c9f975803643c299976ff86054d0e
+      internalID: 8000218663756169114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_17
+      name: KingRabbit_Sick 1_19
       rect:
         serializedVersion: 2
         x: 5120
@@ -565,14 +610,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97f2ce6674b844292a67d0032c973d3c
-      internalID: 5888657529858413111
+      spriteID: 9ea12fb216638450ca459625e2e74183
+      internalID: 4826973431378357518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_18
+      name: KingRabbit_Sick 1_20
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c152374c92e64756abf64d2d84d6ba1
+      internalID: -1289093370940908764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingRabbit_Sick 1_21
       rect:
         serializedVersion: 2
         x: 0
@@ -586,14 +652,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 757fa35d955e740ecbf929eda091b137
-      internalID: -3400654757829441043
+      spriteID: f40e934496e96454c9c8d4b073dc5c6d
+      internalID: -5380426925889496845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_19
+      name: KingRabbit_Sick 1_22
       rect:
         serializedVersion: 2
         x: 1024
@@ -607,14 +673,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5450729576d6c4e9fbab5f874edcca80
-      internalID: 6080429180748727872
+      spriteID: 94350b1df65b947c58b96897ee958465
+      internalID: 4437290823940223312
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_20
+      name: KingRabbit_Sick 1_23
       rect:
         serializedVersion: 2
         x: 2048
@@ -628,14 +694,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de01b322c4397428e8cd2978e7020a8c
-      internalID: 116022940915194020
+      spriteID: 72f23c053f86d44ef838c64c8becc08b
+      internalID: -3607404048749616608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_21
+      name: KingRabbit_Sick 1_24
       rect:
         serializedVersion: 2
         x: 3072
@@ -649,14 +715,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91c4c9ce4f1fc4e4db825b9353629482
-      internalID: -7119097717788819955
+      spriteID: f61bce3e9fe664b39a80656141caf70e
+      internalID: -5101473404677600211
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_22
+      name: KingRabbit_Sick 1_25
       rect:
         serializedVersion: 2
         x: 4096
@@ -670,14 +736,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d9f7308cecc74cf1b7faaf02d657ad1
-      internalID: 1387179294657678624
+      spriteID: 4fe9d696d3f624170bb600a7abbde7f7
+      internalID: -6872680475026420193
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_23
+      name: KingRabbit_Sick 1_26
       rect:
         serializedVersion: 2
         x: 5120
@@ -691,14 +757,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c887ee35dc79846c282a15bd018b93db
-      internalID: 2567956421911967967
+      spriteID: 3069a8ecb78344048afcf429d7ccc448
+      internalID: 1500667886967871630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_24
+      name: KingRabbit_Sick 1_27
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb4f0c60502534907adf0b800e2b878f
+      internalID: 8842960737158943609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingRabbit_Sick 1_28
       rect:
         serializedVersion: 2
         x: 0
@@ -712,14 +799,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c22a97772ca2c4498b2ea51c49fb73f5
-      internalID: 4814373969134250324
+      spriteID: ea0fdf73360484f6ba6dce7c9a4b55dd
+      internalID: -8796877488096151349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_25
+      name: KingRabbit_Sick 1_29
       rect:
         serializedVersion: 2
         x: 1024
@@ -733,14 +820,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03b03f7b68e1949adad92b2e7d7f1378
-      internalID: 2852600189166613325
+      spriteID: 08123ad51496b4a079d2b3c654c89a50
+      internalID: -5463147575775085696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_26
+      name: KingRabbit_Sick 1_30
       rect:
         serializedVersion: 2
         x: 2048
@@ -754,14 +841,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4f2b45a1a92944b08a0f2f52ac26bc6
-      internalID: 8880549077701341106
+      spriteID: fbfb40cbf69da4bbf9d26c7b933312b2
+      internalID: 4986340042315403253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_27
+      name: KingRabbit_Sick 1_31
       rect:
         serializedVersion: 2
         x: 3072
@@ -775,14 +862,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e21423abe58e477684e2335709aa898
-      internalID: -6264218932289818756
+      spriteID: cc6e5cc2ba9f84703b6178db98e0b902
+      internalID: 1506301471605917663
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_28
+      name: KingRabbit_Sick 1_32
       rect:
         serializedVersion: 2
         x: 4096
@@ -796,14 +883,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d63562e8cba064a629ff638e66516009
-      internalID: 1842619123925094284
+      spriteID: b17705f53b46b4269a38aac03250c220
+      internalID: -4912889079422447449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_29
+      name: KingRabbit_Sick 1_33
       rect:
         serializedVersion: 2
         x: 5120
@@ -817,14 +904,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d01a2a2a4b4b4aca94f5d58305fbd3c
-      internalID: -8408734509345529455
+      spriteID: 4b91e0d58d8bb434186f19db0e28a8bf
+      internalID: 1981629655223119022
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_30
+      name: KingRabbit_Sick 1_34
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 1024
+        width: 1024
+        height: 1024
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59aa41f0315e74dc28a450868a114fb2
+      internalID: 6564315065849761998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingRabbit_Sick 1_35
       rect:
         serializedVersion: 2
         x: 0
@@ -838,14 +946,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: caacd50e5b753404d803e6969541ce68
-      internalID: 7059599917988378325
+      spriteID: c29e0113d07734c34b3a217e73a7f2b6
+      internalID: 3374210442468553369
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KingRabbit_Sick_31
+      name: KingRabbit_Sick 1_36
       rect:
         serializedVersion: 2
         x: 1024
@@ -859,92 +967,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5356777c74e2649ec94020fcfb71409b
-      internalID: 2947129064847638425
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KingRabbit_Sick_32
-      rect:
-        serializedVersion: 2
-        x: 2048
-        y: 0
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 157cf84984be74b629e260784ab56823
-      internalID: -7176574291625157625
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KingRabbit_Sick_33
-      rect:
-        serializedVersion: 2
-        x: 3072
-        y: 0
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7fa2f130de1e74a579a8664b27136d08
-      internalID: -4992742203903145743
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KingRabbit_Sick_34
-      rect:
-        serializedVersion: 2
-        x: 4096
-        y: 0
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86a74bc5481104f0fbc962a7421a6904
-      internalID: -6460903390894471238
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KingRabbit_Sick_35
-      rect:
-        serializedVersion: 2
-        x: 5120
-        y: 0
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ac7211f3c5be44d1be62c7efb67f6c8
-      internalID: 5005885624424362585
+      spriteID: d658540c159d34b28a2a3a7a7e852c03
+      internalID: -4209509932616423328
       vertices: []
       indices: 
       edges: []
@@ -952,7 +976,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b8d12a7b9332648e3bf9cf90104e4624
+    spriteID: adbff6bd79c0a47558cc2edb3811a71d
     internalID: 0
     vertices: []
     indices: 
