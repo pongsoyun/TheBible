@@ -21,16 +21,7 @@ public class BubbleSwitch : MonoBehaviour
         if (!isBubbleOnce && collision.CompareTag("Player"))
         {
             Bubble.SetActive(true);
-            // Debug.Log($"{animParamString}is truetrue");
             isBubbleOnce = true;
-            // Bubble.SetBool(animParamString, true);
-            // Invoke("ParamStringOFF", 3f);
         }
     }
-
-    // private void ParamStringOFF()
-    // {
-    //     Debug.Log($"{animParamString} OFF");
-    //     // Bubble.SetBool(animParamString, false);
-    // }
 }

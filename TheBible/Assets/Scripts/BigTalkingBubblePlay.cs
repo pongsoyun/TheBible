@@ -8,8 +8,6 @@ public class BigTalkingBubblePlay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {// 6초 후 bubble 활성화
-        Debug.Log("출력력뎢ㅁ러ㅕㅇ니ㅗ랴ㅏ저되놔러");
-        Invoke("Printer", 2f);
         Invoke("BubbleON", 4f);
     }
 
@@ -17,10 +15,5 @@ public class BigTalkingBubblePlay : MonoBehaviour
     {
         Debug.Log("BubbleON");
         BigTalkingBubble.SetActive(true);
-    }
-
-    void Printer()
-    {
-        Debug.Log("printer ");
     }
 }
