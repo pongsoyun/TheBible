@@ -35,7 +35,6 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
     public MemoryPool ParticlePool;
     public Transform SpawnPoint;
     public int killCount = 0;
-    public int ActiveEnemyCount = 0;
 
     private int enemyCount = 15;
     private WaitForSeconds waitTime = new WaitForSeconds(2.5f);
@@ -121,7 +120,7 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
         while (state.Equals(GameState.OnGoing))
         {
             int rabbitSize = Random.Range(0, EnemyPrefab.Length);
-            if (killCount < waveLimit && ActiveEnemyCount < waveLimit)
+            if (killCount < waveLimit)
             {
                 EnemyWavePool[rabbitSize].Respawn(SpawnPoint.position, gameObject.transform.rotation);
                 yield return waitTime;

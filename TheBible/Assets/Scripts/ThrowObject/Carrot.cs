@@ -42,7 +42,7 @@ public class Carrot : ThrowObject, IDespawnable
         {
             OnDespawn(gameObject);
         }
-        catch(ArgumentOutOfRangeException arguException)
+        catch(Exception e)
         {
             Debug.Log($"예외 발생!");
             Destroy(gameObject);

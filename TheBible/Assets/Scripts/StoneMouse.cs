@@ -25,23 +25,31 @@ public class StoneMouse : ThrowObject, IDespawnable
     private void OnMouseDown()
     {
         Debug.Log($"{gameObject.name} was Clicked");
-        MouseGameManager.instance.StonePool.Despawn(gameObject);
+        Despawn();
         MouseGameManager.instance.killCount++;
     }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            Debug.Log("Ground Despawn!");
-            MouseGameManager.instance.StonePool.Despawn(gameObject);
-        }
-
-        else if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             MouseGameManager.instance.playerHp--;
             Debug.Log($"Player Hit! Hp : {MouseGameManager.instance.playerHp}");
-            MouseGameManager.instance.StonePool.Despawn(gameObject);
+        }
+        Despawn();
+    }
+
+    private void Despawn()
+    {
+        MouseGameManager.instance.ParticlePool.Respawn(transform.position, transform.rotation);
+        try
+        {
+            OnDespawn(gameObject);
+        }
+        catch(Exception e)
+        {
+            Debug.Log("예외 발생!");
+            Destroy(gameObject);
         }
     }
 }

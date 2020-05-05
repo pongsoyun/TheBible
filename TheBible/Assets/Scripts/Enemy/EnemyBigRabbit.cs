@@ -17,8 +17,6 @@ public class EnemyBigRabbit : EnemyRabbit, IDespawnable
         hp = 4;
         prefabRigidBody2D = GetComponent<Rigidbody2D>();
         OnDespawn += Despawn;
-        WaveGameManager.instance.ActiveEnemyCount++;
-        Debug.Log($"{nameof(gameObject)} Count++! :{ WaveGameManager.instance.ActiveEnemyCount} ");
     }
 
     void OnEnable()
@@ -54,19 +52,18 @@ public class EnemyBigRabbit : EnemyRabbit, IDespawnable
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            WaveGameManager.instance.EnemyWavePool[(int)RabbitType.BigRabbit].Despawn(gameObject);
+            OnDespawn(gameObject);
             GamePlayerMove.instance.playerHP--;
             Debug.Log("Player Hit!");
         }
         if (collision.gameObject.CompareTag("EndZone"))
         {
-            WaveGameManager.instance.EnemyWavePool[(int)RabbitType.BigRabbit].Despawn(gameObject);
+            OnDespawn(gameObject);
         }
     }
 
     private void Despawn(GameObject prefab)
     {
         WaveGameManager.instance.ParticlePool.Respawn(prefab.transform.position, prefab.transform.rotation);
-        WaveGameManager.instance.EnemyWavePool[(int)RabbitType.BigRabbit].Despawn(prefab);
     }
 }

@@ -13,14 +13,14 @@ public class EnemySmallRabbit : EnemyRabbit, IDespawnable
     {
         prefabRigidBody2D = GetComponent<Rigidbody2D>();
         OnDespawn += Despawn;
-        WaveGameManager.instance.ActiveEnemyCount++;
-        //Debug.Log($"{nameof(gameObject)} Count++! :{ WaveGameManager.instance.ActiveEnemyCount} ");
     }
+
     void OnEnable()
     {
         hp = 2;
         isAngry = false;
     }
+
     // Update is called once per frame
     void Update()
     {
@@ -33,6 +33,7 @@ public class EnemySmallRabbit : EnemyRabbit, IDespawnable
         {
             speed = 2;
         }
+
         prefabRigidBody2D.velocity = transform.right * speed * -1;// Go to Left
         if (hp <= 0)
         {
@@ -53,13 +54,12 @@ public class EnemySmallRabbit : EnemyRabbit, IDespawnable
         }
         if (collision.gameObject.CompareTag("EndZone"))
         {
-            WaveGameManager.instance.EnemyWavePool[(int)RabbitType.SmallRabbit].Despawn(gameObject);
+            OnDespawn(gameObject);
         }
     }
 
     private void Despawn(GameObject prefab)
     {
         WaveGameManager.instance.ParticlePool.Respawn(prefab.transform.position, prefab.transform.rotation);
-        WaveGameManager.instance.EnemyWavePool[(int)RabbitType.SmallRabbit].Despawn(prefab);
     }
 }

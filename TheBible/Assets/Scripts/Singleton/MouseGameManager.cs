@@ -14,9 +14,12 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
     private GameObject StonePrefab;
     [SerializeField]
     private GameObject TargetObject;
+    [SerializeField]
+    private GameObject ParticleObject;
+
     GameState state;
     public MemoryPool StonePool;
-
+    public MemoryPool ParticlePool;
     public int playerHp;
     public int waveLimit;
     public int killCount;
@@ -29,6 +32,7 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
     public Animator MiniRBAnim1;
     public Animator MiniRBAnim2;
     bool isMainCharMagic = false;
+
     void Awake()
     {
         GameStart += InitializeGame;
@@ -51,8 +55,7 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
         {
             sceneEnd = true;
             Debug.Log($"SceneEnd : {sceneEnd}");
-            StonePool.Dispose();
-            SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("MouseClickGame"));
+            UnloadScene();
         }
         if (!sceneEnd && playerHp <= 0)
         {
@@ -67,7 +70,8 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
         waveLimit = 10;
         killCount = 0;
         playerHp = 10;
-        StonePool = new MemoryPool(StonePrefab, 10, 20);
+        StonePool = new MemoryPool(StonePrefab, 5, 10);
+        ParticlePool = new MemoryPool(ParticleObject, 5, 10);
         StartCoroutine(StoneSpawn());
     }
 
@@ -75,8 +79,7 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
     {
         state = GameState.Clear;
         Debug.Log($"{state}");
-        //StonePool.AllDespawn();
-        StonePool.Dispose();
+        sceneEnd = true;
         StopCoroutine(StoneSpawn());
         Invoke("UnloadScene", 5f);
     }
@@ -84,11 +87,9 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
     private void GameFail()
     {
         state = GameState.Fail;
-        StopCoroutine(StoneSpawn());
         sceneEnd = true;
+        StopCoroutine(StoneSpawn());
         Debug.Log($"SceneEnd : {sceneEnd}, GameState.{state}");
-        //StonePool.AllDespawn();
-        StonePool.Dispose();
         Invoke("UnloadScene", 5f);
     }
 
@@ -129,6 +130,8 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
     private void UnloadScene()
     {
         Debug.Log("UnloadScene Call!");
+        StonePool.Dispose();
+        ParticlePool.Dispose();
         SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("MouseClickGame"));
     }
 }

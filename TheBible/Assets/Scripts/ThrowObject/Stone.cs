@@ -15,25 +15,13 @@ public class Stone : ThrowObject, IDespawnable
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("ThrowObject"))
-        {
-            CancelInvoke();
-            Despawn();
-        }
-        else if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             Debug.Log("Stone Eat!");
             collision.gameObject.GetComponent<EnemyRabbit>().isAngry = true;
-            CancelInvoke();
-            Despawn();
         }
-        else if (collision.gameObject.CompareTag("Ground"))
-        {
-            Debug.Log("Ground Destroy");
-            CancelInvoke();
-            Despawn();
-        }
-       
+        CancelInvoke();
+        Despawn();
     }
 
     private void Despawn()
@@ -42,7 +30,7 @@ public class Stone : ThrowObject, IDespawnable
         {
             OnDespawn(gameObject);
         }
-        catch (ArgumentOutOfRangeException arguException)
+        catch (Exception e)
         {
             Debug.Log($"예외 발생!");
             Destroy(gameObject);

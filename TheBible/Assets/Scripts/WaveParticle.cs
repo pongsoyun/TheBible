@@ -1,10 +1,14 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WaveParticle : MonoBehaviour
+public class WaveParticle : MonoBehaviour, IDespawnable
 {
-    ParticleSystem Aura;
+    //ParticleSystem Aura;
+
+    public event Action<GameObject> OnDespawn;
+
     void OnEnable()
     {
         Invoke("DespawnParticle", 0.5f);
@@ -12,13 +16,9 @@ public class WaveParticle : MonoBehaviour
 
     void DespawnParticle()
     {
-        WaveGameManager.instance.ParticlePool.Despawn(gameObject);
+        //WaveGameManager.instance.ParticlePool.Despawn(gameObject);
+        OnDespawn(gameObject);
     }
-    //// Start is called before the first frame update
-    //void Start()
-    //{
-
-    //}
 
     //// Update is called once per frame
     //void Update()
