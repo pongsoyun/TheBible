@@ -310,6 +310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingBar: {fileID: 1027415505}
+  guideText: {fileID: 398821038}
 --- !u!1 &1027415503
 GameObject:
   m_ObjectHideFlags: 0

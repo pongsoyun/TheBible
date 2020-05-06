@@ -8,6 +8,8 @@ public class LoadingScene : MonoBehaviour
 {
     [SerializeField]
     Image loadingBar;
+    [SerializeField]
+    Text guideText;
 
     static string SceneName = "Stage1";//private?
 
@@ -49,10 +51,14 @@ public class LoadingScene : MonoBehaviour
                 loadingBar.fillAmount = Mathf.Lerp(loadingBar.fillAmount, 1, timeC);
                 if (loadingBar.fillAmount.Equals(1.0f))
                 {
-                    yield return new WaitForSeconds(2.0f); // For Fake Loading
-                    asyncScene.allowSceneActivation = true;
-                    SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("LoadingScene"));
-                    SceneManager.SetActiveScene(SceneManager.GetSceneByName(SceneName));
+                    guideText.text = "아무 키나 누르면 다음으로 넘어갑니다.";
+                    if (Input.anyKeyDown)
+                    {
+                        //yield return new WaitForSeconds(2.0f); // For Fake Loading
+                        asyncScene.allowSceneActivation = true;
+                        SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("LoadingScene"));
+                        SceneManager.SetActiveScene(SceneManager.GetSceneByName(SceneName));
+                    }
                 }
             }
             else
