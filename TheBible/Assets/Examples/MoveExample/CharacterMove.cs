@@ -25,7 +25,7 @@ public class CharacterMove : MonoBehaviour
 
     private void OnEnable()
     {
-        if (!TutorialManager.instance.tutorialEnd)
+        if (!TutorialManager.instance.tutorialEnd && TutorialManager.instance.tutorialPanel != null)
         {
             TutorialManager.instance.tutorialPanel.SetActive(true);
         }

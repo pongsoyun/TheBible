@@ -9,7 +9,7 @@ public class CptHomeExit : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (KingAnimator.GetBool("Cure") && Input.GetKeyDown(KeyCode.W))
+        if (KingAnimator.GetBool("cure") && Input.GetKeyDown(KeyCode.W))
         {
             SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("CptHome"));
         }
