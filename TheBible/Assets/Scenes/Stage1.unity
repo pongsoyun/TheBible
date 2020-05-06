@@ -13493,7 +13493,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 663096846}
   m_LocalRotation: {x: -0.07523801, y: -0.0038919086, z: 0.0002935206, w: -0.99715793}
-  m_LocalPosition: {x: -271.80457, y: -15.245309, z: 40.250034}
+  m_LocalPosition: {x: -271.42172, y: -15.245309, z: 40.247044}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 343923931}
@@ -26385,6 +26385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPortalScene: 1
   sceneName: CptHome
+  loadingImageIndex: 0
   MGIntroObjs: {fileID: 0}
 --- !u!61 &992359575
 BoxCollider2D:
@@ -43762,6 +43763,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPortalScene: 0
   sceneName: WaveGame
+  loadingImageIndex: 1
   MGIntroObjs: {fileID: 1702823571}
 --- !u!50 &1554309669
 Rigidbody2D:
@@ -48063,6 +48065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPortalScene: 0
   sceneName: MouseClickGame
+  loadingImageIndex: 0
   MGIntroObjs: {fileID: 887739528}
 --- !u!50 &1764812908
 Rigidbody2D:

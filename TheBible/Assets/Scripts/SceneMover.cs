@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SceneMover : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class SceneMover : MonoBehaviour
 
     [SerializeField]
     string sceneName;
+    [SerializeField]
+    int loadingImageIndex;
 
     bool sceneStart = false;
     public GameObject MGIntroObjs;
@@ -18,6 +21,7 @@ public class SceneMover : MonoBehaviour
         {
             sceneStart = true;
             MGIntroObjs.SetActive(false);
+            LoadingScene.SetGuideImageIndex(loadingImageIndex);
             LoadingScene.LoadScene(sceneName);
         }
     }

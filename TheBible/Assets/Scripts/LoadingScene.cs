@@ -10,12 +10,18 @@ public class LoadingScene : MonoBehaviour
     Image loadingBar;
     [SerializeField]
     Text guideText;
+    [SerializeField]
+    Image testImage;
+    [SerializeField]
+    Sprite[] guideSprite;
 
+    static int guideImageIndex = 0;
     static string SceneName = "Stage1";//private?
 
     // Start is called before the first frame update
     void Start()
     {
+        testImage.sprite = guideSprite[guideImageIndex];
         loadingBar.fillAmount = 0;
         StartCoroutine(LoadAsyncScene());
     }
@@ -31,6 +37,10 @@ public class LoadingScene : MonoBehaviour
         {
             SceneManager.LoadScene("LoadingScene", LoadSceneMode.Additive);
         }
+    }
+    public static void SetGuideImageIndex(int index)
+    {
+        guideImageIndex = index;
     }
 
     IEnumerator LoadAsyncScene()
