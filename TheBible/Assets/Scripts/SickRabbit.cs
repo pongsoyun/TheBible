@@ -21,6 +21,8 @@ public class SickRabbit : MonoBehaviour
 
     // public GameObject BubbleKingCure;
     public GameObject BubbleTogether;
+    private AudioSource audio;
+    public AudioClip CureSound;
 
     void Start()
     {
@@ -29,6 +31,13 @@ public class SickRabbit : MonoBehaviour
 
         // BubbleKingCure.SetActive(false);
         BubbleTogether.SetActive(false);
+
+
+        // sound
+        audio = gameObject.AddComponent<AudioSource>();
+        audio.clip = CureSound;
+        audio.loop = false;
+        audio.volume = 0.8f;
     }
 
     void Update()
@@ -50,9 +59,10 @@ public class SickRabbit : MonoBehaviour
             ActionParticle.Emit(1);
             PlayerAnim.SetBool("magic", true);
             // 애기 놀람 
-            if(!isMiniRbAnimPlay){
-            MiniRbAnim.SetBool("shock", true);
-            isMiniRbAnimPlay = true;
+            if (!isMiniRbAnimPlay)
+            {
+                MiniRbAnim.SetBool("shock", true);
+                isMiniRbAnimPlay = true;
             }
         }
 
@@ -67,6 +77,7 @@ public class SickRabbit : MonoBehaviour
             else
             {
                 CureKingAnim.SetBool("cure", true);
+                audio.Play();
                 Invoke("PlayBubbleTogether", 1f);
             }
             FilledImage.fillAmount = 0;
@@ -74,7 +85,8 @@ public class SickRabbit : MonoBehaviour
         }
     }
 
-    private void PlayBubbleTogether() {
+    private void PlayBubbleTogether()
+    {
         BubbleTogether.SetActive(true);
     }
 }

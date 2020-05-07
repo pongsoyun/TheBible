@@ -23,13 +23,19 @@ public class CharacterMove : MonoBehaviour
 
     private Animator animator;
 
+    public AudioSource jumpAudio;
+    public AudioClip jumpSound;
+    public AudioSource magicAudio;
+    public AudioClip magicSound;
+    public bool isMagicSound = false;
+
     private void OnEnable()
     {
         if (!TutorialManager.instance.tutorialEnd && TutorialManager.instance.tutorialPanel != null)
         {
             TutorialManager.instance.tutorialPanel.SetActive(true);
         }
-        foreach(var particle in particleSystems)
+        foreach (var particle in particleSystems)
         {
             particle.Stop();
         }
@@ -39,6 +45,13 @@ public class CharacterMove : MonoBehaviour
     {
         CharacterBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+
+        magicAudio = gameObject.GetComponent<AudioSource>();
+        magicAudio.clip = magicSound;
+        magicAudio.Stop();
+        jumpAudio = gameObject.GetComponent<AudioSource>();
+        jumpAudio.clip = jumpSound;
+        jumpAudio.Stop();
     }
 
     void Update()
@@ -46,8 +59,19 @@ public class CharacterMove : MonoBehaviour
         MovingCharacter();
         if (Input.GetKey(KeyCode.E))
         {
+            if (!isMagicSound)
+            {
+                Invoke("magicAudioPlay", 1f);
+                isMagicSound = true;
+            }
             ActivateEvent?.Invoke();
         }
+    }
+
+    void magicAudioPlay()
+    {
+        magicAudio.Play();
+        isMagicSound = false;
     }
 
     void MovingCharacter()
@@ -65,6 +89,7 @@ public class CharacterMove : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && isGround)
         {
             Debug.Log("CanJump!");
+            jumpAudio.Play();
             CharacterBody.AddForce(Vector3.up * jumpPower, ForceMode2D.Force);
         }
         else if (isGround)
