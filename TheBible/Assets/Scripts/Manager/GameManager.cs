@@ -23,10 +23,14 @@ public class GameManager : MonoBehaviour
 
     public bool isGameOver;
 
+    [SerializeField]
+    GameObject GameOverSound;
+
     void Start()
     {
         GameOverText.enabled = false; // default 설정
         isGameOver = false;
+        GameOverSound.SetActive(false);
     }
 
 
@@ -37,9 +41,13 @@ public class GameManager : MonoBehaviour
         if (!isGameOver && (Player.transform.localPosition.y < this.gameOverY))
         {
             Debug.Log("gameover");
+            GameOverSound.SetActive(true);
             GameOver(Player.transform.localPosition.x);
         }
-        
+        else
+        {
+            // GameOverSound.SetActive(false);
+        }
     }
 
     private void GameOver(float gameOverX)
@@ -53,7 +61,7 @@ public class GameManager : MonoBehaviour
 
     private void MovingSpawnSpot()
     {
-
+        GameOverSound.SetActive(false);
         if (gameOverX < FlagCliff.position.x)
         {
             // FlagPond에서 죽었을 경우
