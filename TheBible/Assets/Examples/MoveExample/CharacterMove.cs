@@ -23,6 +23,7 @@ public class CharacterMove : MonoBehaviour
 
     private Animator animator;
 
+    [Header("Sound"), Space(5)]
     public AudioSource jumpAudio;
     public AudioClip jumpSound;
     public AudioSource magicAudio;
@@ -45,13 +46,6 @@ public class CharacterMove : MonoBehaviour
     {
         CharacterBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-
-        magicAudio = gameObject.GetComponent<AudioSource>();
-        magicAudio.clip = magicSound;
-        magicAudio.Stop();
-        jumpAudio = gameObject.GetComponent<AudioSource>();
-        jumpAudio.clip = jumpSound;
-        jumpAudio.Stop();
     }
 
     void Update()
