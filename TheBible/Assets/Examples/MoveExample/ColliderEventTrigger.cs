@@ -68,12 +68,17 @@ public class ColliderEventTrigger : MonoBehaviour
             else
             {
                 Debug.Log("isPet True!");
-                isPet = true; // 따라다니기
                 MiniRbAnim.SetBool("Cure", true); // animation 변경(Cured RB으로)
+                Invoke("SetPositionPet", 2.5f);
             }
             FilledImage.fillAmount = 0;
 
         }
+    }
+
+    void SetPositionPet()
+    {
+        isPet = true; // 따라다니기
     }
 
     void OnTriggerEnter2D(Collider2D collision)

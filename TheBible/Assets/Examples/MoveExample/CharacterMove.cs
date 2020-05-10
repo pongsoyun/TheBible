@@ -25,9 +25,7 @@ public class CharacterMove : MonoBehaviour
 
     [Header("Sound"), Space(5)]
     public AudioSource jumpAudio;
-    //public AudioClip jumpSound;
     public AudioSource magicAudio;
-    //public AudioClip magicSound;
     //public bool isMagicSound = false;
 
     private void OnEnable()
