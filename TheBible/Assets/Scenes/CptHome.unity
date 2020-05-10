@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 108320150}
   - component: {fileID: 108320149}
   m_Layer: 0
-  m_Name: jump4
+  m_Name: jump1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -347,7 +347,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 356d3b7286a51426e9d93d196be42c23, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9daa3ac07e3104c859bf452339a342cb, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -11855,7 +11855,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3b7d90ee191d54398b2a4cd304afcd83, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7d55326b45cb54e8bb2c2bec8c505b34, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -12453,10 +12453,7 @@ MonoBehaviour:
   particleSystems: []
   jumpPower: 330
   jumpAudio: {fileID: 108320149}
-  jumpSound: {fileID: 8300000, guid: 356d3b7286a51426e9d93d196be42c23, type: 3}
   magicAudio: {fileID: 1903953023}
-  magicSound: {fileID: 8300000, guid: 3b7d90ee191d54398b2a4cd304afcd83, type: 3}
-  isMagicSound: 0
 --- !u!50 &3348378451325007275
 Rigidbody2D:
   serializedVersion: 4

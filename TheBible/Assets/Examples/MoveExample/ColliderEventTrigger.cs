@@ -18,12 +18,8 @@ public class ColliderEventTrigger : MonoBehaviour
 
     bool isPet = false; // position을 위함. Player따라다닐 RB
     bool isFirstEvent = true;  // 일단.. 긴급 처방.. 
-    // Start is called before the first frame update
-    //void Awake()
-    //{
-    //    Player = FindObjectOfType<CharacterMove>();
-    //    //  animator = GetComponent<Animator>();
-    //}
+
+    public AudioSource cureAudio;
 
     void Start()
     {
@@ -69,7 +65,8 @@ public class ColliderEventTrigger : MonoBehaviour
             {
                 Debug.Log("isPet True!");
                 MiniRbAnim.SetBool("Cure", true); // animation 변경(Cured RB으로)
-                Invoke("SetPositionPet", 2.5f);
+                cureAudio.Play();
+                Invoke("SetPositionPet", 2f);
             }
             FilledImage.fillAmount = 0;
 
