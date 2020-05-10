@@ -21,9 +21,7 @@ public class GamePlayerMove : Singleton<GamePlayerMove>
     private GameObject TargetObject;
 
     [SerializeField, Header("About Preview")]
-    private Image PreviewObject;
-    [SerializeField]
-    private Sprite[] PreviewSprites;
+    private GameObject[] PreviewObject;
 
     [Header("ETC")]
     public MemoryPool[] throwObjectPool;
@@ -52,7 +50,11 @@ public class GamePlayerMove : Singleton<GamePlayerMove>
     // Update is called once per frame
     void Update()
     {
-        PreviewObject.sprite = PreviewSprites[throwIndex];
+        foreach(var sprite in PreviewObject)
+        {
+            sprite.SetActive(false);
+        }
+        PreviewObject[throwIndex].SetActive(true);
 
         if (Input.GetMouseButtonDown(0))
         {
