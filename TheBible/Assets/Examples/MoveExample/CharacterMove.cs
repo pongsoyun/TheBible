@@ -25,10 +25,10 @@ public class CharacterMove : MonoBehaviour
 
     [Header("Sound"), Space(5)]
     public AudioSource jumpAudio;
-    public AudioClip jumpSound;
+    //public AudioClip jumpSound;
     public AudioSource magicAudio;
-    public AudioClip magicSound;
-    public bool isMagicSound = false;
+    //public AudioClip magicSound;
+    //public bool isMagicSound = false;
 
     private void OnEnable()
     {
@@ -53,20 +53,26 @@ public class CharacterMove : MonoBehaviour
         MovingCharacter();
         if (Input.GetKey(KeyCode.E))
         {
-            if (!isMagicSound)
+            if (!magicAudio.isPlaying)
             {
-                Invoke("magicAudioPlay", 1f);
-                isMagicSound = true;
+                magicAudio.Play();
+                //Invoke("magicAudioPlay", 1f);
+                //isMagicSound = true;
             }
             ActivateEvent?.Invoke();
         }
+        else
+        {
+            magicAudio.Stop();
+            //isMagicSound = false;
+        }
     }
 
-    void magicAudioPlay()
-    {
-        magicAudio.Play();
-        isMagicSound = false;
-    }
+    //void magicAudioPlay()
+    //{
+    //    magicAudio.Play();
+    //    isMagicSound = false;
+    //}
 
     void MovingCharacter()
     {
