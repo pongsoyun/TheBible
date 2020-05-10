@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.UI;
 
-public class GameManager : MonoBehaviour
+public class GameManager : Singleton<GameManager>
 {
     public Text GameOverText;
     // Tutorial
@@ -14,14 +15,17 @@ public class GameManager : MonoBehaviour
     public float gameOverX;
     public float gameOverY = -30.0f;
 
+    [Header("Flag"), Space(5)]
     public Transform FlagPond;
     public Transform FlagCliff;
     public Transform FlagTown;
     public Transform FlagMiniGame1;
     public Transform FlagMiniGame2;
     public Transform FlagBigHouse;
-
+    
     public bool isGameOver;
+    [SerializeField, Header("FlimBar"), Space(5)]
+    GameObject[] filmBar;
 
     [SerializeField]
     GameObject GameOverSound;
@@ -90,5 +94,23 @@ public class GameManager : MonoBehaviour
         // 좀 더 부드럽게 가져오려 했는데 우선은,,, 기본구현부터푸쉬,, 
         // Vector3 flag1Down = new Vector3(Flag1Down.position.x, Flag1Down.position.y, Flag1Down.position.z);
         // Player.transform.position = Vector3.MoveTowards(transform.position, flag1Down, 2f); 
+    }
+
+    public void FilmBarOn(PlayableDirector playableDirector)
+    {
+        Debug.Log("Check FilmBarOn Call Stack");
+        foreach(var bar in filmBar)
+        {
+            bar.SetActive(true);
+        }
+    }
+
+    public void FilmBarOff(PlayableDirector playableDirector)
+    {
+        Debug.Log("Check FilmBarOff Call Stack");
+        foreach (var bar in filmBar)
+        {
+            bar.SetActive(false);
+        }
     }
 }

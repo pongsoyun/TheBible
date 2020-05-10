@@ -17,6 +17,8 @@ public class ActivateCM : MonoBehaviour
         if (!isPlayOnce && collision.CompareTag(tagName))
         {
             isPlayOnce = true;
+            director.played += GameManager.instance.FilmBarOn;
+            director.stopped += GameManager.instance.FilmBarOff;
             director.Play();
         }
     }
