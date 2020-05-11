@@ -22,13 +22,14 @@ public class GameManager : Singleton<GameManager>
     public Transform FlagMiniGame1;
     public Transform FlagMiniGame2;
     public Transform FlagBigHouse;
-    
+
     public bool isGameOver;
     [SerializeField, Header("FlimBar"), Space(5)]
     GameObject[] filmBar;
 
     [SerializeField]
     GameObject GameOverSound;
+    public AudioSource mainBGM;
 
     void Start()
     {
@@ -99,7 +100,7 @@ public class GameManager : Singleton<GameManager>
     public void FilmBarOn(PlayableDirector playableDirector)
     {
         Debug.Log("Check FilmBarOn Call Stack");
-        foreach(var bar in filmBar)
+        foreach (var bar in filmBar)
         {
             bar.SetActive(true);
         }

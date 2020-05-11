@@ -177,6 +177,7 @@ MonoBehaviour:
   MainCharAnim: {fileID: 546792379}
   MiniRBAnim1: {fileID: 215354151}
   MiniRBAnim2: {fileID: 362736767}
+  mg2BGM: {fileID: 848799883}
 --- !u!1 &60868174
 GameObject:
   m_ObjectHideFlags: 0

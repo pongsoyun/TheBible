@@ -13587,7 +13587,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 663096846}
   m_LocalRotation: {x: -0.07523801, y: -0.0038919086, z: 0.0002935206, w: -0.99715793}
-  m_LocalPosition: {x: -271.9133, y: -15.245309, z: 40.25088}
+  m_LocalPosition: {x: -271.80457, y: -15.245309, z: 40.250034}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 343923931}
@@ -17186,6 +17186,7 @@ MonoBehaviour:
   - {fileID: 630940558}
   - {fileID: 1886543529}
   GameOverSound: {fileID: 1829683422}
+  mainBGM: {fileID: 1983251279}
 --- !u!114 &791954093
 MonoBehaviour:
   m_ObjectHideFlags: 0

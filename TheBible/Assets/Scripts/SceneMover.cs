@@ -15,12 +15,11 @@ public class SceneMover : MonoBehaviour
     bool sceneStart = false;
     public GameObject MGIntroObjs;
 
-    public AudioSource mainBGM;
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!sceneStart && !isPortalScene && collision.gameObject.CompareTag("Player"))
         {
+            GameManager.instance.mainBGM.Pause();
             sceneStart = true;
             MGIntroObjs.SetActive(false);
             LoadingScene.SetGuideImageIndex(loadingImageIndex);
@@ -32,8 +31,8 @@ public class SceneMover : MonoBehaviour
     {
         if (!sceneStart && isPortalScene && Input.GetKeyDown(KeyCode.W) && collision.gameObject.CompareTag("Player"))
         {
+            GameManager.instance.mainBGM.Pause();
             sceneStart = true;
-            mainBGM.Pause();
             LoadingScene.LoadScene(sceneName);
         }
     }

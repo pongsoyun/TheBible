@@ -580,6 +580,7 @@ MonoBehaviour:
   waveLimit: 10
   SpawnPoint: {fileID: 410196465}
   killCount: 0
+  mg1BGM: {fileID: 1940876659}
 --- !u!1 &419272706
 GameObject:
   m_ObjectHideFlags: 0

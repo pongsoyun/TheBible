@@ -40,6 +40,8 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
     private WaitForSeconds waitTime = new WaitForSeconds(2.5f);
     private bool sceneEnd = false;
 
+    public AudioSource mg1BGM;
+
     void Awake()
     {
         GameStart += InitializeGame;
@@ -50,6 +52,8 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
     // Start is called before the first frame update
     void Start()
     {
+        // WaveGame BGM 켜기
+        mg1BGM.Play();
         GameStart?.Invoke();
     }
 
@@ -162,6 +166,7 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
 
     private void EndScene()
     {
+        GameManager.instance.mainBGM.Play();
         sceneEnd = true;
         Debug.Log($"SceneEnd : {sceneEnd}");
         DisposeAllPool();
