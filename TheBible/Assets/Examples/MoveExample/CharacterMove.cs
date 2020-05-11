@@ -114,12 +114,29 @@ public class CharacterMove : MonoBehaviour
             isGround = true;
         }
     }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Basket"))
+        {
+            Debug.Log("isBasket");
+            isGround = true;
+            gameObject.transform.SetParent(collision.gameObject.transform);
+        }
+    }
+
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
             Debug.Log("NotGround!");
             isGround = false;
+        }
+        else if (collision.gameObject.CompareTag("Basket"))
+        {
+            Debug.Log("NotBaket");
+            isGround = false;
+            gameObject.transform.SetParent(null);
         }
     }
 

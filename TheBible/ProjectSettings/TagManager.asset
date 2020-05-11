@@ -15,6 +15,7 @@ TagManager:
   - ThrowObject
   - Stone2
   - Flag
+  - Basket
   layers:
   - Default
   - TransparentFX

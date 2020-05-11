@@ -81,10 +81,7 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
         //Test Code
         if (!sceneEnd && Input.GetMouseButtonDown(1))//마우스 우클릭
         {
-            sceneEnd = true;
-            Debug.Log($"SceneEnd : {sceneEnd}");
-            DisposeAllPool();
-            SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("WaveGame"));
+            EndScene();
         }
     }
 
@@ -102,17 +99,12 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
 
     private void GameClear()
     {
-        sceneEnd = true;
-        DisposeAllPool();
-        SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("WaveGame"));
+        EndScene();
     }
 
     private void GameFail()
     {
-        sceneEnd = true;
-        Debug.Log($"SceneEnd : {sceneEnd}");
-        DisposeAllPool();
-        SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("WaveGame"));
+        EndScene();
     }
 
     IEnumerator WaveSpawn()
@@ -166,5 +158,13 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
             pool.Dispose();
         }
         ParticlePool.Dispose();
+    }
+
+    private void EndScene()
+    {
+        sceneEnd = true;
+        Debug.Log($"SceneEnd : {sceneEnd}");
+        DisposeAllPool();
+        SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("WaveGame"));
     }
 }
