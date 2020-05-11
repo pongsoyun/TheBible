@@ -10,6 +10,9 @@ public class ActivateCM : MonoBehaviour
     [SerializeField]
     string tagName = "Player";
 
+    public bool isFlimBar = false;
+
+    GameObject Player = null;
     bool isPlayOnce = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -17,9 +20,25 @@ public class ActivateCM : MonoBehaviour
         if (!isPlayOnce && collision.CompareTag(tagName))
         {
             isPlayOnce = true;
-            director.played += GameManager.instance.FilmBarOn;
-            director.stopped += GameManager.instance.FilmBarOff;
+            Player = collision.gameObject;
+            if (isFlimBar)
+            {
+                director.played += GameManager.instance.FilmBarOn;
+                director.stopped += GameManager.instance.FilmBarOff;
+            }
+            director.played += PlayerStopOn;
+            director.stopped += PlayerStopOff;
             director.Play();
         }
+    }
+
+    private void PlayerStopOn(PlayableDirector playable)
+    {
+        Player.GetComponent<CharacterMove>().isPlayed = true;
+    }
+
+    private void PlayerStopOff(PlayableDirector playable)
+    {
+        Player.GetComponent<CharacterMove>().isPlayed = false;
     }
 }

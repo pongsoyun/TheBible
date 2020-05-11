@@ -20,7 +20,7 @@ public class CharacterMove : MonoBehaviour
     float moveSide;
     Rigidbody2D CharacterBody;
     bool isGround;
-
+    public bool isPlayed = false;
     private Animator animator;
 
     [Header("Sound"), Space(5)]
@@ -48,29 +48,11 @@ public class CharacterMove : MonoBehaviour
 
     void Update()
     {
-        MovingCharacter();
-        if (Input.GetKey(KeyCode.E))
+        if (!isPlayed)
         {
-            if (!magicAudio.isPlaying)
-            {
-                magicAudio.Play();
-                //Invoke("magicAudioPlay", 1f);
-                //isMagicSound = true;
-            }
-            ActivateEvent?.Invoke();
-        }
-        else
-        {
-            magicAudio.Stop();
-            //isMagicSound = false;
+            MovingCharacter();
         }
     }
-
-    //void magicAudioPlay()
-    //{
-    //    magicAudio.Play();
-    //    isMagicSound = false;
-    //}
 
     void MovingCharacter()
     {
@@ -102,7 +84,18 @@ public class CharacterMove : MonoBehaviour
 
             animator.SetFloat("speed", Mathf.Abs(Input.GetAxis("Horizontal")));
         }
-
+        if (Input.GetKey(KeyCode.E))
+        {
+            if (!magicAudio.isPlaying)
+            {
+                magicAudio.Play();
+            }
+            ActivateEvent?.Invoke();
+        }
+        else
+        {
+            magicAudio.Stop();
+        }
 
     }
 
