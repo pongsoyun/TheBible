@@ -39111,7 +39111,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325069982}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 212.53, y: -16.4, z: 50}
+  m_LocalPosition: {x: 212.65, y: -7.6, z: 50}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2024638743}
@@ -52433,7 +52433,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938914395}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 173.23, y: -20.95, z: 49.7}
+  m_LocalPosition: {x: 173.23, y: -20.16, z: 49.7}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 262664814}
@@ -56479,7 +56479,6 @@ MonoBehaviour:
   afterDirector: {fileID: 1126662034}
   MGEndingRabbits: {fileID: 262664813}
   ThrowRabbits: {fileID: 1664212996}
-  BubbleBigRbEnding: {fileID: 1325069982}
   isBeforeCpt: 1
   MainCharAnim: {fileID: 1115337225}
 --- !u!61 &2121671489
