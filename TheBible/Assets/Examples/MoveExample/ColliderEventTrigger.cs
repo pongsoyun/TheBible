@@ -32,7 +32,7 @@ public class ColliderEventTrigger : MonoBehaviour
         // miniRB position
         if (isPet)
         {
-            transform.position = new Vector3(Player.transform.position.x - 1f, Player.transform.position.y + 0.2f, transform.transform.position.z);
+            transform.position = new Vector3(Player.transform.position.x - 1.15f, Player.transform.position.y + 0.2f, transform.transform.position.z);
         }
 
         // Animation - magic
