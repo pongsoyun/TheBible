@@ -32,7 +32,7 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
     public Animator MiniRBAnim1;
     public Animator MiniRBAnim2;
     bool isMainCharMagic = false;
-
+    public AudioSource mg2BGM;
     void Awake()
     {
         GameStart += InitializeGame;
@@ -43,6 +43,7 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
     // Start is called before the first frame update
     void Start()
     {
+        mg2BGM.Play();
         GameStart();
     }
 
@@ -129,6 +130,7 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
 
     private void UnloadScene()
     {
+        GameManager.instance.mainBGM.Play();
         Debug.Log("UnloadScene Call!");
         StonePool.Dispose();
         ParticlePool.Dispose();

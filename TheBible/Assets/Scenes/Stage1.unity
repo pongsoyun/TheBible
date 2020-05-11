@@ -13587,7 +13587,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 663096846}
   m_LocalRotation: {x: -0.07523801, y: -0.0038919086, z: 0.0002935206, w: -0.99715793}
-  m_LocalPosition: {x: -271.9133, y: -15.245309, z: 40.25088}
+  m_LocalPosition: {x: -271.80457, y: -15.245309, z: 40.250034}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 343923931}
@@ -17186,6 +17186,7 @@ MonoBehaviour:
   - {fileID: 630940558}
   - {fileID: 1886543529}
   GameOverSound: {fileID: 1829683422}
+  mainBGM: {fileID: 1983251279}
 --- !u!114 &791954093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39110,7 +39111,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325069982}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 212.53, y: -16.4, z: 50}
+  m_LocalPosition: {x: 212.65, y: -7.6, z: 50}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2024638743}
@@ -41754,7 +41755,7 @@ PrefabInstance:
     - target: {fileID: 5729735599254047483, guid: 6fbff57764e874269aba769ab4a96d12,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -18.012
+      value: -18.1
       objectReference: {fileID: 0}
     - target: {fileID: 5729735599254047483, guid: 6fbff57764e874269aba769ab4a96d12,
         type: 3}
@@ -52432,7 +52433,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938914395}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 173.23, y: -20.95, z: 49.7}
+  m_LocalPosition: {x: 173.23, y: -20.16, z: 49.7}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 262664814}
@@ -56478,7 +56479,6 @@ MonoBehaviour:
   afterDirector: {fileID: 1126662034}
   MGEndingRabbits: {fileID: 262664813}
   ThrowRabbits: {fileID: 1664212996}
-  BubbleBigRbEnding: {fileID: 1325069982}
   isBeforeCpt: 1
   MainCharAnim: {fileID: 1115337225}
 --- !u!61 &2121671489

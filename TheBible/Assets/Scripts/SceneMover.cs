@@ -19,6 +19,7 @@ public class SceneMover : MonoBehaviour
     {
         if (!sceneStart && !isPortalScene && collision.gameObject.CompareTag("Player"))
         {
+            GameManager.instance.mainBGM.Pause();
             sceneStart = true;
             MGIntroObjs.SetActive(false);
             LoadingScene.SetGuideImageIndex(loadingImageIndex);
@@ -30,6 +31,7 @@ public class SceneMover : MonoBehaviour
     {
         if (!sceneStart && isPortalScene && Input.GetKeyDown(KeyCode.W) && collision.gameObject.CompareTag("Player"))
         {
+            GameManager.instance.mainBGM.Pause();
             sceneStart = true;
             LoadingScene.LoadScene(sceneName);
         }
