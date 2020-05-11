@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class LoadingScene : MonoBehaviour
 {
-    [SerializeField]
-    Image loadingBar;
+    //[SerializeField]
+    //Image loadingBar;
     [SerializeField]
     Text guideText;
     [SerializeField]
@@ -22,7 +22,7 @@ public class LoadingScene : MonoBehaviour
     void Start()
     {
         testImage.sprite = guideSprite[guideImageIndex];
-        loadingBar.fillAmount = 0;
+        //loadingBar.fillAmount = 0;
         StartCoroutine(LoadAsyncScene());
     }
 
@@ -58,25 +58,26 @@ public class LoadingScene : MonoBehaviour
 
             if (asyncScene.progress >= 0.9f)
             {
-                loadingBar.fillAmount = Mathf.Lerp(loadingBar.fillAmount, 1, timeC);
-                if (loadingBar.fillAmount.Equals(1.0f))
+                //loadingBar.fillAmount = Mathf.Lerp(loadingBar.fillAmount, 1, timeC);
+                //if (loadingBar.fillAmount.Equals(1.0f))
+                //{
+
+                //}
+                guideText.text = "아무 키나 누르면 다음으로 넘어갑니다.";
+                if (Input.anyKeyDown)
                 {
-                    guideText.text = "아무 키나 누르면 다음으로 넘어갑니다.";
-                    if (Input.anyKeyDown)
-                    {
-                        //yield return new WaitForSeconds(2.0f); // For Fake Loading
-                        asyncScene.allowSceneActivation = true;
-                        SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("LoadingScene"));
-                        SceneManager.SetActiveScene(SceneManager.GetSceneByName(SceneName));
-                    }
+                    //yield return new WaitForSeconds(2.0f); // For Fake Loading
+                    asyncScene.allowSceneActivation = true;
+                    SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("LoadingScene"));
+                    SceneManager.SetActiveScene(SceneManager.GetSceneByName(SceneName));
                 }
             }
-            else
-            {
-                loadingBar.fillAmount = Mathf.Lerp(loadingBar.fillAmount, asyncScene.progress, timeC);
-                if (loadingBar.fillAmount >= asyncScene.progress)
-                    timeC = 0f;
-            }
+            //else
+            //{
+            //    //loadingBar.fillAmount = Mathf.Lerp(loadingBar.fillAmount, asyncScene.progress, timeC);
+            //    if (loadingBar.fillAmount >= asyncScene.progress)
+            //        timeC = 0f;
+            //}
         }
     }
 }
