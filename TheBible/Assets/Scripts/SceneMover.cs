@@ -15,6 +15,8 @@ public class SceneMover : MonoBehaviour
     bool sceneStart = false;
     public GameObject MGIntroObjs;
 
+    public AudioSource mainBGM;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!sceneStart && !isPortalScene && collision.gameObject.CompareTag("Player"))
@@ -31,6 +33,7 @@ public class SceneMover : MonoBehaviour
         if (!sceneStart && isPortalScene && Input.GetKeyDown(KeyCode.W) && collision.gameObject.CompareTag("Player"))
         {
             sceneStart = true;
+            mainBGM.Pause();
             LoadingScene.LoadScene(sceneName);
         }
     }
