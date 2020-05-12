@@ -41,6 +41,9 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
     private bool sceneEnd = false;
 
     public AudioSource mg1BGM;
+    public Animator MainCharAnim;
+    public Animator MiniRBAnim1;
+    public Animator MiniRBAnim2;
 
     void Awake()
     {
@@ -78,6 +81,9 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
         else if (state.Equals(GameState.Clear))
         {
             DebugText.text = "Game Clear!";
+            MainCharAnim.SetBool("clear", true);
+            MiniRBAnim1.SetBool("clear", true);
+            Invoke("Rb2Action", 0.5f);
             Invoke("GameClear", 2f);
         }
         Debug.Log($"GameState : {state.ToString()}");
@@ -87,6 +93,11 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
         {
             EndScene();
         }
+    }
+
+    void Rb2Action()
+    {
+        MiniRBAnim2.SetBool("clear", true);
     }
 
     private void InitializeGame()

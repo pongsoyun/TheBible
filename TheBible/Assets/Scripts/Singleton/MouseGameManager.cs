@@ -31,6 +31,7 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
     public Animator MainCharAnim;
     public Animator MiniRBAnim1;
     public Animator MiniRBAnim2;
+    public Animator BigRbAnim;
     bool isMainCharMagic = false;
     public AudioSource mg2BGM;
     void Awake()
@@ -102,8 +103,8 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
             {
                 isMainCharMagic = true;
                 MainCharAnim.SetBool("magic", true);
-                MiniRBAnim1.SetBool("clear", false);
-                MiniRBAnim2.SetBool("clear", false);
+                // MiniRBAnim1.SetBool("clear", false);
+                // MiniRBAnim2.SetBool("clear", false);
             }
             if (killCount < waveLimit)
             {
@@ -118,6 +119,7 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
             else
             {
                 MainCharAnim.SetBool("magic", false);
+                BigRbAnim.SetBool("clear", true);
                 MiniRBAnim1.SetBool("clear", true);
                 MiniRBAnim2.SetBool("clear", true);
                 isMainCharMagic = false;

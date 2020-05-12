@@ -581,6 +581,9 @@ MonoBehaviour:
   SpawnPoint: {fileID: 410196465}
   killCount: 0
   mg1BGM: {fileID: 1940876659}
+  MainCharAnim: {fileID: 621768380}
+  MiniRBAnim1: {fileID: 553603628}
+  MiniRBAnim2: {fileID: 419272708}
 --- !u!1 &419272706
 GameObject:
   m_ObjectHideFlags: 0
