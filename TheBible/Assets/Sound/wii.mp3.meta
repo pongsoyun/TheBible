@@ -1,15 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 5518f3f23e51a4df08942e6427829e92
-=======
-<<<<<<< HEAD:TheBible/Assets/RpgBgmLobby/RPG_Lobby.wav.meta
-guid: b442123a67071894ca2beeb4a6185aae
-timeCreated: 1545638001
-licenseType: Store
-=======
-guid: e8f7a0ad574621d4e919b520cb15677c
->>>>>>> fce349da253182a28d557c6f40ab660cefc39405:TheBible/Assets/Sound/UsingEffect/cureRabbit2.wav.meta
->>>>>>> fce349da253182a28d557c6f40ab660cefc39405
+guid: 89ac6469f306440f4b1a8859c7d1c5fe
 AudioImporter:
   externalObjects: {}
   serializedVersion: 6

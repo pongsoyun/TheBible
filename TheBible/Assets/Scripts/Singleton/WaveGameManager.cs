@@ -40,10 +40,11 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
     private WaitForSeconds waitTime = new WaitForSeconds(2.5f);
     private bool sceneEnd = false;
 
-    public AudioSource mg1BGM;
     public Animator MainCharAnim;
     public Animator MiniRBAnim1;
     public Animator MiniRBAnim2;
+    public AudioSource mg1BGM;
+    public AudioSource clearGameAudio;
 
     void Awake()
     {
@@ -80,6 +81,7 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
         }
         else if (state.Equals(GameState.Clear))
         {
+            clearGameAudio.Play();
             DebugText.text = "Game Clear!";
             MainCharAnim.SetBool("clear", true);
             MiniRBAnim1.SetBool("clear", true);

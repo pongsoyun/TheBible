@@ -34,6 +34,8 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
     public Animator BigRbAnim;
     bool isMainCharMagic = false;
     public AudioSource mg2BGM;
+    public AudioSource clearGameAudio;
+
     void Awake()
     {
         GameStart += InitializeGame;
@@ -118,6 +120,7 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
             }
             else
             {
+                clearGameAudio.Play();
                 MainCharAnim.SetBool("magic", false);
                 BigRbAnim.SetBool("clear", true);
                 MiniRBAnim1.SetBool("clear", true);
