@@ -10832,6 +10832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   director: {fileID: 341939408}
   tagName: Player
+  isFlimBar: 0
 --- !u!1 &540892782
 GameObject:
   m_ObjectHideFlags: 0
@@ -18464,7 +18465,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 837866634}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.48, y: 0.3, z: -4.1200027}
+  m_LocalPosition: {x: 3.15, y: 0.3, z: -4.1200027}
   m_LocalScale: {x: 0.5, y: 0.5, z: 2}
   m_Children: []
   m_Father: {fileID: 3348378451606534441}
@@ -18542,7 +18543,7 @@ ParticleSystem:
   m_GameObject: {fileID: 837866634}
   serializedVersion: 6
   lengthInSec: 1
-  simulationSpeed: 3
+  simulationSpeed: 2.5
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
@@ -18669,7 +18670,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.8
+      scalar: 0.47
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -18723,7 +18724,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 0.9490196, g: 0.8156863, b: 0.37254903, a: 0.78431374}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -18785,7 +18786,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 1.2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -19101,7 +19102,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 100
+    maxNumParticles: 70
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -19247,7 +19248,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0.5
     radius:
-      value: 1.8
+      value: 1
       mode: 0
       spread: 0
       speed:
@@ -29122,6 +29123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   director: {fileID: 1998368841}
   tagName: Player
+  isFlimBar: 0
 --- !u!61 &1104597260
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45101,6 +45103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   director: {fileID: 1987430445}
   tagName: Player
+  isFlimBar: 0
 --- !u!1 &1589444130
 GameObject:
   m_ObjectHideFlags: 0
@@ -49596,6 +49599,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   director: {fileID: 1389880321}
   tagName: Player
+  isFlimBar: 0
 --- !u!61 &1780943165
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57175,6 +57179,7 @@ MonoBehaviour:
   - {fileID: 1117912960}
   - {fileID: 837866637}
   jumpPower: 330
+  isPlayed: 0
   jumpAudio: {fileID: 1714060341}
   magicAudio: {fileID: 1398211835}
 --- !u!61 &3348378451606534423
