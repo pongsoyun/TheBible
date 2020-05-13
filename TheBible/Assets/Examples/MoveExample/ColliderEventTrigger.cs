@@ -7,8 +7,6 @@ public class ColliderEventTrigger : MonoBehaviour
 {
     [SerializeField]
     CharacterMove Player;
-    [SerializeField]
-    private Image FilledImage;
 
     public ParticleSystem Aura;
     public ParticleSystem ActionParticle;
@@ -17,10 +15,9 @@ public class ColliderEventTrigger : MonoBehaviour
     public Animator PlayerAnim;
 
     bool isPet = false; // position을 위함. Player따라다닐 RB
-    bool isFirstEvent = true;  // 일단.. 긴급 처방.. 
-
+    bool isFirstEvent = true;
+    float cureAmount = 0f;
     public AudioSource cureAudio;
-
     void Start()
     {
         Aura.Stop();
@@ -32,7 +29,21 @@ public class ColliderEventTrigger : MonoBehaviour
         // miniRB position
         if (isPet)
         {
-            transform.position = new Vector3(Player.transform.position.x - 1.15f, Player.transform.position.y + 0.2f, transform.transform.position.z);
+            if (MiniRbAnim.GetCurrentAnimatorStateInfo(0).IsName("Rabbit_Sick"))
+            {
+                Player.isPlayed = true;
+            }
+            else if (MiniRbAnim.GetCurrentAnimatorStateInfo(0).IsName("Rabbit_Happy"))
+            {
+                transform.position = new Vector3(Mathf.Lerp(transform.position.x, Player.transform.position.x - 1.15f, 0.1f),
+                                            Mathf.Lerp(transform.position.y, Player.transform.position.y + 0.2f, 0.1f),
+                                            transform.position.z);
+            }
+            else
+            {
+                Player.isPlayed = false;
+                transform.position = new Vector3(Player.transform.position.x - 1.15f, Player.transform.position.y + 0.2f, transform.position.z);
+            }
         }
 
         // Animation - magic
@@ -47,29 +58,19 @@ public class ColliderEventTrigger : MonoBehaviour
         Debug.Log("EventTriggerON");
         if (Input.GetKey(KeyCode.E))
         {
-            FilledImage.fillAmount += 0.01f;
+            cureAmount += 0.01f;
             Aura.Emit(1);
             ActionParticle.Emit(1);
             PlayerAnim.SetBool("magic", true);
         }
 
-        if (FilledImage.fillAmount >= 1.0f)
+        if (cureAmount >= 1.0f)
         {
-            // 이게 최초에 한번 호출이 되네요..
-            Debug.Log("FilledImage Reset 1.0 to 0!");
-            if (isFirstEvent)
-            {
-                isFirstEvent = false;
-            }
-            else
-            {
-                Debug.Log("isPet True!");
-                MiniRbAnim.SetBool("Cure", true); // animation 변경(Cured RB으로)
-                cureAudio.Play();
-                Invoke("SetPositionPet", 2f);
-            }
-            FilledImage.fillAmount = 0;
-
+            Debug.Log("isPet True!");
+            MiniRbAnim.SetBool("Cure", true); // animation 변경(Cured RB으로)
+            cureAudio.Play();
+            Invoke("SetPositionPet", 2f);
+            cureAmount = 0;
         }
     }
 
@@ -85,10 +86,10 @@ public class ColliderEventTrigger : MonoBehaviour
         Player.ActivateEvent += DebugEvent;
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        // Debug.Log("EventExit");
-        //Player.ActivateEvent -= DebugEvent;
-        FilledImage.fillAmount = 1f;
-    }
+    //private void OnTriggerExit2D(Collider2D collision)
+    //{
+    //    // Debug.Log("EventExit");
+    //    //Player.ActivateEvent -= DebugEvent;
+    //    //FilledImage.fillAmount = 1f;
+    //}
 }
