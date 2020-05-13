@@ -7,8 +7,6 @@ public class SickRabbit : MonoBehaviour
 {
     [SerializeField]
     CharacterMove Player;
-    [SerializeField]
-    private Image FilledImage;
 
     public ParticleSystem Aura;
     public ParticleSystem ActionParticle;
