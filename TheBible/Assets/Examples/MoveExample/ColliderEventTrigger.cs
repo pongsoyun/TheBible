@@ -69,16 +69,10 @@ public class ColliderEventTrigger : MonoBehaviour
             Debug.Log("isPet True!");
             MiniRbAnim.SetBool("Cure", true); // animation 변경(Cured RB으로)
             cureAudio.Play();
-            Invoke("SetPositionPet", 2f);
+            isPet = true;
             cureAmount = 0;
         }
     }
-
-    void SetPositionPet()
-    {
-        isPet = true; // 따라다니기
-    }
-
     void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("EventEnter");
@@ -86,10 +80,4 @@ public class ColliderEventTrigger : MonoBehaviour
         Player.ActivateEvent += DebugEvent;
     }
 
-    //private void OnTriggerExit2D(Collider2D collision)
-    //{
-    //    // Debug.Log("EventExit");
-    //    //Player.ActivateEvent -= DebugEvent;
-    //    //FilledImage.fillAmount = 1f;
-    //}
 }
