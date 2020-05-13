@@ -24,8 +24,8 @@ public class GameManager : Singleton<GameManager>
     public Transform FlagBigHouse;
 
     public bool isGameOver;
-    [SerializeField, Header("FlimBar"), Space(5)]
-    GameObject[] filmBar;
+    [Header("FlimBar"), Space(5)]
+    public GameObject[] filmBar;
 
     [SerializeField]
     GameObject GameOverSound;
@@ -97,21 +97,21 @@ public class GameManager : Singleton<GameManager>
         // Player.transform.position = Vector3.MoveTowards(transform.position, flag1Down, 2f); 
     }
 
-    public void FilmBarOn(PlayableDirector playableDirector)
+    public void FilmBarOn()
     {
-        Debug.Log("Check FilmBarOn Call Stack");
-        foreach (var bar in filmBar)
-        {
-            bar.SetActive(true);
-        }
+    
     }
 
-    public void FilmBarOff(PlayableDirector playableDirector)
+    void DisposeFlimBar()
     {
-        Debug.Log("Check FilmBarOff Call Stack");
-        foreach (var bar in filmBar)
-        {
-            bar.SetActive(false);
-        }
+
     }
+    //public void FilmBarOff(PlayableDirector playableDirector)
+    //{
+    //    Debug.Log("Check FilmBarOff Call Stack");
+    //    foreach (var bar in filmBar)
+    //    {
+    //        bar.SetActive(false);
+    //    }
+    //}
 }
