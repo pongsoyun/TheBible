@@ -18,6 +18,8 @@ public class ColliderEventTrigger : MonoBehaviour
     bool isFirstEvent = true;
     float cureAmount = 0f;
     public AudioSource cureAudio;
+
+    bool isDestroy = false;
     void Start()
     {
         Aura.Stop();
@@ -44,6 +46,11 @@ public class ColliderEventTrigger : MonoBehaviour
                 Player.isPlayed = false;
                 transform.position = new Vector3(Player.transform.position.x - 1.15f, Player.transform.position.y + 0.2f, transform.position.z);
             }
+        }
+
+        if (isDestroy)
+        {
+            transform.position = Vector3.Lerp(transform.position, new Vector3(60f, transform.position.y, transform.position.z), 0.01f);
         }
 
         // Animation - magic
@@ -75,9 +82,32 @@ public class ColliderEventTrigger : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
+        // :) 이부분 작동이 안되네요.. 요 바로 밑 주석부분 ㅠㅠ..
+        /* 
+        if (collision.gameObject.CompareTag("DestroyPet"))
+        {
+            Debug.Log("sickRabbit OFF");
+            isDestroy = true;
+        }
+        */
+
         Debug.Log("EventEnter");
         Player.eventClear();
         Player.ActivateEvent += DebugEvent;
+
+
+        // if (collision.gameObject.CompareTag("destroyPet"))
+        // {
+        //     // 왜 안되는거니. 
+        //     Debug.Log("sickRabbit OFF");
+        //     transform.position = Vector3.Lerp(transform.position, new Vector3(60, transform.position.y, transform.position.z), 0.01f);
+        // }
+        // else
+        // {
+
+        // }
+
+
     }
 
 }

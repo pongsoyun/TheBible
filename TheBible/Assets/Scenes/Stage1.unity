@@ -4704,7 +4704,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259911083}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 59.82, y: -20.601, z: 53.02}
+  m_LocalPosition: {x: 59.82, y: -20.601, z: 50}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.3291007}
   m_Children: []
   m_Father: {fileID: 1717247845}
@@ -11359,7 +11359,7 @@ BoxCollider2D:
   m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -8.59}
@@ -18368,7 +18368,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 830942024}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 67.46, y: -20.56, z: 53.02}
+  m_LocalPosition: {x: 67.46, y: -20.56, z: 52.48}
   m_LocalScale: {x: 0.6000001, y: 0.59999996, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1717247845}
@@ -26892,7 +26892,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1004044083}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 81.08, y: -21.049, z: 53.02}
+  m_LocalPosition: {x: 81.08, y: -21.049, z: 50}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1717247845}
@@ -27388,7 +27388,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016912873}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 96.471, y: -20.515, z: 53.02}
+  m_LocalPosition: {x: 96.471, y: -20.515, z: 50}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1717247845}
@@ -45027,10 +45027,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1573385711}
   - component: {fileID: 1573385712}
-  - component: {fileID: 1573385713}
   m_Layer: 0
   m_Name: OffPetCollider
-  m_TagString: Untagged
+  m_TagString: destroyPet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45043,7 +45042,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1573385710}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 33.42, y: -23.48, z: 49}
+  m_LocalPosition: {x: 31.47, y: -23.48, z: 49}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0}
   m_Children: []
   m_Father: {fileID: 887975656}
@@ -45075,18 +45074,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.97, y: 25.65}
   m_EdgeRadius: 0
---- !u!114 &1573385713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1573385710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 410b41918423f486ca909da1df94b5fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1575078030
 GameObject:
   m_ObjectHideFlags: 0
@@ -50626,7 +50613,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7e8fa89919521d84b8180dc811d7c545, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d1bb8c5ca921e481bae456ccdf1dc1d4, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
