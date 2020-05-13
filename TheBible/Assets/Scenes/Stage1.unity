@@ -38291,7 +38291,6 @@ GameObject:
   - component: {fileID: 1287125206}
   - component: {fileID: 1287125208}
   - component: {fileID: 1287125207}
-  - component: {fileID: 1287125209}
   m_Layer: 0
   m_Name: BIgHill (1)
   m_TagString: Ground
@@ -38407,22 +38406,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &1287125209
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1287125205}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -16.6, y: -3.5}
-  serializedVersion: 2
-  m_Radius: 1.5033112
 --- !u!1 &1296544206
 GameObject:
   m_ObjectHideFlags: 0

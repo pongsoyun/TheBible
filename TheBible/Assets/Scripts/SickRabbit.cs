@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class SickRabbit : MonoBehaviour
 {
-    //CharacterMove Player;
+    [SerializeField]
+    CharacterMove Player;
     [SerializeField]
     private Image FilledImage;
 
@@ -23,6 +24,8 @@ public class SickRabbit : MonoBehaviour
     public GameObject BubbleTogether;
     private AudioSource audio;
     public AudioClip CureSound;
+    Animator animator;
+    float fillAmount;
 
     void Start()
     {
@@ -47,6 +50,22 @@ public class SickRabbit : MonoBehaviour
         {
             PlayerAnim.SetBool("magic", false);
         }
+
+        if (BubbleTogether.activeInHierarchy)
+        {
+            animator = BubbleTogether.GetComponent<Animator>();
+
+            if (animator.GetCurrentAnimatorStateInfo(0).IsName("Bubble_Together"))
+            {
+                BubbleTogether.GetComponentInParent<CharacterMove>().isPlayed = true;
+                Debug.Log("Bubble_Together is Playing!");
+            }
+            else
+            {
+                BubbleTogether.GetComponentInParent<CharacterMove>().isPlayed = false;
+                Debug.Log("Bubble_Together Stop!");
+            }
+        }
     }
 
     void DebugEvent()
@@ -54,7 +73,7 @@ public class SickRabbit : MonoBehaviour
         Debug.Log("EventTriggerON");
         if (Input.GetKey(KeyCode.E))
         {
-            FilledImage.fillAmount += 0.01f;
+            fillAmount += 0.01f;
             Aura.Emit(1);
             ActionParticle.Emit(1);
             PlayerAnim.SetBool("magic", true);
@@ -66,22 +85,12 @@ public class SickRabbit : MonoBehaviour
             }
         }
 
-        if (FilledImage.fillAmount >= 1.0f)
+        if (fillAmount >= 1.0f)
         {
-            // 이게 최초에 한번 호출이 되네요..
-            Debug.Log("FilledImage Reset 1.0 to 0!");
-            if (isFirstEvent)
-            {
-                isFirstEvent = false;
-            }
-            else
-            {
-                CureKingAnim.SetBool("cure", true);
-                audio.Play();
-                Invoke("PlayBubbleTogether", 1f);
-            }
-            FilledImage.fillAmount = 0;
-
+            CureKingAnim.SetBool("cure", true);
+            audio.Play();
+            Invoke("PlayBubbleTogether", 1f);
+            fillAmount = 0;
         }
     }
 
