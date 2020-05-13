@@ -16,7 +16,7 @@ TagManager:
   - Stone2
   - Flag
   - Basket
-  - destroyPet
+  - DestroyPet
   layers:
   - Default
   - TransparentFX
