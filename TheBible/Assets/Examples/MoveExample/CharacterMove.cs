@@ -101,6 +101,7 @@ public class CharacterMove : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log($"{collision.gameObject.tag}, Enter2d, {isGround}");
         if (collision.gameObject.CompareTag("Ground"))
         {
             Debug.Log("isGround!");
@@ -110,16 +111,23 @@ public class CharacterMove : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
+        Debug.Log($"{collision.gameObject.tag}, Stay2d, {isGround}");
         if (collision.gameObject.CompareTag("Basket"))
         {
             Debug.Log("isBasket");
             isGround = true;
             gameObject.transform.SetParent(collision.gameObject.transform);
         }
+        else if (collision.gameObject.CompareTag("Ground"))
+        {
+            Debug.Log("isGround!");
+            isGround = true;
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
+        Debug.Log($"{collision.gameObject.tag}, Exit2d, {isGround}");
         if (collision.gameObject.CompareTag("Ground"))
         {
             Debug.Log("NotGround!");

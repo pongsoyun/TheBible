@@ -10768,7 +10768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   director: {fileID: 341939408}
   tagName: Player
-  isFlimBar: 0
+  isFlimBar: 1
 --- !u!1 &540892782
 GameObject:
   m_ObjectHideFlags: 0
@@ -12953,8 +12953,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -65}
-  m_SizeDelta: {x: 1920, y: 130}
+  m_AnchoredPosition: {x: 0, y: 19}
+  m_SizeDelta: {x: 1336, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &630940560
 MonoBehaviour:
@@ -12969,7 +12969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.6431373}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -36724,7 +36724,6 @@ GameObject:
   m_Component:
   - component: {fileID: 492995406}
   - component: {fileID: 1236638957}
-  - component: {fileID: 1236638956}
   m_Layer: 0
   m_Name: BIgHill
   m_TagString: Ground
@@ -36732,54 +36731,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!60 &1236638956
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236638955}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.16}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 43.523148, y: 8.799999}
-    newSize: {x: 10.77, y: 10.82}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 9.656623, y: -3.6079667}
-      - {x: 12.539816, y: -3.6220999}
-      - {x: 12.921415, y: -3.6079667}
-      - {x: 16.285141, y: -3.6220999}
-      - {x: 16.525406, y: -3.6079667}
-      - {x: 17.65607, y: -3.4666336}
-      - {x: 21.740595, y: -2.8447685}
-      - {x: 21.782995, y: -2.8165019}
-      - {x: 21.782995, y: -2.7034354}
-      - {x: 21.754728, y: -2.3218362}
-      - {x: 21.669928, y: -1.8413041}
-      - {x: 21.64166, y: -1.7141044}
-      - {x: 21.500328, y: -1.275972}
-      - {x: 21.132862, y: 0.052558213}
-      - {x: 20.850197, y: 2.3562863}
-      - {x: 20.793663, y: 2.6106856}
-      - {x: 16.285141, y: 4.080549}
-      - {x: 3.6499698, y: 4.4197483}
-      - {x: 2.9998379, y: 4.4197483}
-      - {x: -7.190272, y: 4.292548}
-      - {x: -8.070251, y: 4.313701}
-      - {x: -19.879883, y: -2.1978493}
-      - {x: -19.911774, y: -3.438366}
 --- !u!212 &1236638957
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38340,6 +38291,7 @@ GameObject:
   - component: {fileID: 1287125206}
   - component: {fileID: 1287125208}
   - component: {fileID: 1287125207}
+  - component: {fileID: 1287125209}
   m_Layer: 0
   m_Name: BIgHill (1)
   m_TagString: Ground
@@ -38403,12 +38355,8 @@ PolygonCollider2D:
       - {x: 20.850197, y: 2.3562863}
       - {x: 20.793663, y: 2.6106856}
       - {x: 16.285141, y: 4.080549}
-      - {x: 3.6499698, y: 4.4197483}
-      - {x: 2.9998379, y: 4.4197483}
-      - {x: -7.190272, y: 4.292548}
-      - {x: -8.070251, y: 4.313701}
-      - {x: -19.879883, y: -2.1978493}
-      - {x: -19.911774, y: -3.438366}
+      - {x: -11.224548, y: 4.426777}
+      - {x: -19.996399, y: -2.211567}
 --- !u!212 &1287125208
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38459,6 +38407,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1287125209
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287125205}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -16.6, y: -3.5}
+  serializedVersion: 2
+  m_Radius: 1.5033112
 --- !u!1 &1296544206
 GameObject:
   m_ObjectHideFlags: 0
@@ -39590,7 +39554,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1338342510}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -47890,7 +47854,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708026669}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -51761,8 +51725,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 65}
-  m_SizeDelta: {x: 1920, y: 130}
+  m_AnchoredPosition: {x: 0, y: -19}
+  m_SizeDelta: {x: 1336, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1886543531
 MonoBehaviour:
@@ -51777,7 +51741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.6431373}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -55749,7 +55713,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2071157487}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
