@@ -180,6 +180,7 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
     private void EndScene()
     {
         GameManager.instance.mainBGM.Play();
+        GameManager.instance.Player.SetActive(true);
         sceneEnd = true;
         Debug.Log($"SceneEnd : {sceneEnd}");
         DisposeAllPool();

@@ -10,8 +10,6 @@ public class ActivateCM : MonoBehaviour
     [SerializeField]
     string tagName = "Player";
 
-    public bool isFlimBar = false;
-
     GameObject Player = null;
     bool isPlayOnce = false;
 
@@ -21,11 +19,7 @@ public class ActivateCM : MonoBehaviour
         {
             isPlayOnce = true;
             Player = collision.gameObject;
-            if (isFlimBar)
-            {
-                director.played += GameManager.instance.FilmBarOn;
-                director.stopped += GameManager.instance.FilmBarOff;
-            }
+
             director.played += PlayerStopOn;
             director.stopped += PlayerStopOff;
             director.Play();

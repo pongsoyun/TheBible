@@ -30,7 +30,7 @@ public class EndingStone : ThrowObject, IDespawnable
 
     protected override void PowerSet()
     {
-        powerWeight = UnityEngine.Random.Range(12f, 15f);
+        powerWeight = UnityEngine.Random.Range(6f, 8f);
         throwPower *= powerWeight;
     }
 

@@ -5,9 +5,6 @@ using UnityEngine.UI;
 
 public class SickRabbit : MonoBehaviour
 {
-    [SerializeField]
-    CharacterMove Player;
-
     public ParticleSystem Aura;
     public ParticleSystem ActionParticle;
     public Animator CureKingAnim;
@@ -19,7 +16,7 @@ public class SickRabbit : MonoBehaviour
     public bool isMiniRbAnimPlay = false;
 
     // public GameObject BubbleKingCure;
-    public GameObject BubbleTogether;
+    public GameObject[] Bubbles;
     private AudioSource audio;
     public AudioClip CureSound;
     Animator animator;
@@ -31,7 +28,10 @@ public class SickRabbit : MonoBehaviour
         ActionParticle.Stop();
 
         // BubbleKingCure.SetActive(false);
-        BubbleTogether.SetActive(false);
+        foreach(var bubble in Bubbles)
+        {
+            bubble.SetActive(false);
+        }
 
 
         // sound
@@ -49,19 +49,22 @@ public class SickRabbit : MonoBehaviour
             PlayerAnim.SetBool("magic", false);
         }
 
-        if (BubbleTogether.activeInHierarchy)
+        foreach(var bubble in Bubbles)
         {
-            animator = BubbleTogether.GetComponent<Animator>();
+            if (bubble.activeInHierarchy)
+            {
+                animator = bubble.GetComponent<Animator>();
 
-            if (animator.GetCurrentAnimatorStateInfo(0).IsName("Bubble_Together"))
-            {
-                BubbleTogether.GetComponentInParent<CharacterMove>().isPlayed = true;
-                Debug.Log("Bubble_Together is Playing!");
-            }
-            else
-            {
-                BubbleTogether.GetComponentInParent<CharacterMove>().isPlayed = false;
-                Debug.Log("Bubble_Together Stop!");
+                if (animator.GetCurrentAnimatorStateInfo(0).IsName("Bubble_Together"))
+                {
+                    bubble.GetComponentInParent<CharacterMove>().isPlayed = true;
+                    Debug.Log("Bubble_Together is Playing!");
+                }
+                else
+                {
+                    bubble.GetComponentInParent<CharacterMove>().isPlayed = false;
+                    Debug.Log("Bubble_Together Stop!");
+                }
             }
         }
     }
@@ -94,6 +97,6 @@ public class SickRabbit : MonoBehaviour
 
     private void PlayBubbleTogether()
     {
-        BubbleTogether.SetActive(true);
+        Bubbles[1].SetActive(true);
     }
 }

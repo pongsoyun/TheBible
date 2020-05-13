@@ -39,6 +39,7 @@ public class CptHomeExit : MonoBehaviour
     private void UnloadCptScene()
     {
         Debug.Log("UnloadScene Called!");
+        GameManager.instance.Player.SetActive(true);
         SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("CptHome"));
     }
 }

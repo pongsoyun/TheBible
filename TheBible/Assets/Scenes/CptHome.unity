@@ -165,7 +165,7 @@ Transform:
   - {fileID: 982544906}
   - {fileID: 100491113}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &49005348
 BoxCollider2D:
@@ -5637,7 +5637,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2d0d1744b52491c88c92da492db642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
   Aura: {fileID: 276505887}
   ActionParticle: {fileID: 1512177714}
   CureKingAnim: {fileID: 315449634}
@@ -5646,7 +5645,9 @@ MonoBehaviour:
   isFirstEvent: 1
   MiniRbAnim: {fileID: 1507881049}
   isMiniRbAnimPlay: 0
-  BubbleTogether: {fileID: 1718818664}
+  Bubbles:
+  - {fileID: 1653758373}
+  - {fileID: 1718818664}
   CureSound: {fileID: 8300000, guid: 7343b861bd6f34d0da5972d6b0cebb15, type: 3}
 --- !u!1 &379855168
 GameObject:
@@ -5679,7 +5680,7 @@ Transform:
   - {fileID: 108320150}
   - {fileID: 1903953024}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &440795231
 GameObject:
@@ -6243,7 +6244,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1507881047
 GameObject:
@@ -11462,7 +11463,7 @@ Transform:
   m_LocalScale: {x: 0.91578263, y: 0.91578263, z: 0.91578263}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1718818664
 GameObject:
@@ -12093,7 +12094,7 @@ Transform:
   - {fileID: 1653758376}
   - {fileID: 1718818665}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3348378451325007255
 SpriteRenderer:

@@ -136,6 +136,7 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
     private void UnloadScene()
     {
         GameManager.instance.mainBGM.Play();
+        GameManager.instance.Player.SetActive(true);
         Debug.Log("UnloadScene Call!");
         StonePool.Dispose();
         ParticlePool.Dispose();
