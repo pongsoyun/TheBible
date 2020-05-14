@@ -48,9 +48,10 @@ public class ColliderEventTrigger : MonoBehaviour
             }
         }
 
-        if (isDestroy)
+        else if (isDestroy)
         {
             transform.position = Vector3.Lerp(transform.position, new Vector3(60f, transform.position.y, transform.position.z), 0.01f);
+            Destroy(gameObject, 4f);
         }
 
         // Animation - magic
@@ -82,32 +83,15 @@ public class ColliderEventTrigger : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        // :) 이부분 작동이 안되네요.. 요 바로 밑 주석부분 ㅠㅠ..
-        /* 
         if (collision.gameObject.CompareTag("DestroyPet"))
         {
             Debug.Log("sickRabbit OFF");
             isDestroy = true;
+            isPet = false;
         }
-        */
-
         Debug.Log("EventEnter");
         Player.eventClear();
         Player.ActivateEvent += DebugEvent;
-
-
-        // if (collision.gameObject.CompareTag("destroyPet"))
-        // {
-        //     // 왜 안되는거니. 
-        //     Debug.Log("sickRabbit OFF");
-        //     transform.position = Vector3.Lerp(transform.position, new Vector3(60, transform.position.y, transform.position.z), 0.01f);
-        // }
-        // else
-        // {
-
-        // }
-
-
     }
 
 }
