@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -180,8 +180,8 @@ MonoBehaviour:
     m_FontSize: 21
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 20
+    m_MaxSize: 30
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -312,8 +312,8 @@ MonoBehaviour:
   guideText: {fileID: 398821038}
   testImage: {fileID: 633332483}
   guideSprite:
-  - {fileID: 21300000, guid: af3f2c237258e8949a46041d55aeca91, type: 3}
-  - {fileID: 21300000, guid: b9c2ea7528d94d64cabb5ccf75c19965, type: 3}
+  - {fileID: 21300000, guid: 3dd3233447636433f8c8bc3d977839db, type: 3}
+  - {fileID: 21300000, guid: 27fef8aac3055497fbcc0758945d1565, type: 3}
 --- !u!1 &633332481
 GameObject:
   m_ObjectHideFlags: 0
