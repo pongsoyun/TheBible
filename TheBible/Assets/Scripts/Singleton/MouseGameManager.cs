@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
 {
@@ -10,14 +11,14 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
     public event Action GameComplete;
     public event Action GameOver;
 
-    [SerializeField]
+    [SerializeField, Header("Object")]
     private GameObject StonePrefab;
     [SerializeField]
     private GameObject TargetObject;
     [SerializeField]
     private GameObject ParticleObject;
 
-    GameState state;
+    [Header("게임 내 지표")]
     public MemoryPool StonePool;
     public MemoryPool ParticlePool;
     public int playerHp;
@@ -26,15 +27,23 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
     public Vector2 throwPower;
     public Vector3 rotateAngle;
 
-    bool sceneEnd = false;
-
+    
+    [Header("Animator"), Space(5)]
     public Animator MainCharAnim;
     public Animator MiniRBAnim1;
     public Animator MiniRBAnim2;
     public Animator BigRbAnim;
-    bool isMainCharMagic = false;
+
+    [Header("Audio"), Space(5)]
     public AudioSource mg2BGM;
     public AudioSource clearGameAudio;
+
+    [SerializeField, Header("UI")]
+    Text[] lbl_Game;
+
+    GameState state;
+    bool sceneEnd = false;
+    bool isMainCharMagic = false;
 
     void Awake()
     {
@@ -65,6 +74,8 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
         {
             GameFail();
         }
+        lbl_Game[0].text = $"플레이어 Hp : {playerHp}";
+        lbl_Game[1].text = $"막아야할 돌의 수 : {waveLimit - killCount}";
     }
 
     private void InitializeGame()
