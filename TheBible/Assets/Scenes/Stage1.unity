@@ -18670,7 +18670,7 @@ MonoBehaviour:
   filmBar:
   - {fileID: 630940558}
   - {fileID: 1886543529}
-  GameOverSound: {fileID: 1829683422}
+  gameOverSound: {fileID: 1829683426}
   mainBGM: {fileID: 1983251279}
 --- !u!114 &791954093
 MonoBehaviour:
@@ -44355,7 +44355,7 @@ PrefabInstance:
     - target: {fileID: 5729735599254047483, guid: 6fbff57764e874269aba769ab4a96d12,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -17.701
+      value: -17.79
       objectReference: {fileID: 0}
     - target: {fileID: 5729735599254047483, guid: 6fbff57764e874269aba769ab4a96d12,
         type: 3}
@@ -60978,7 +60978,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2162022732729650928}
   m_LocalRotation: {x: -0.008727774, y: 0, z: -0, w: 0.9999619}
-  m_LocalPosition: {x: -200.93, y: -21.94, z: 49.44}
+  m_LocalPosition: {x: -200.93, y: -21.94, z: 50}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}

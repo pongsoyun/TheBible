@@ -28,14 +28,14 @@ public class GameManager : Singleton<GameManager>
     public GameObject[] filmBar;
 
     [SerializeField]
-    GameObject GameOverSound;
+    public AudioSource gameOverSound;
+    [SerializeField]
     public AudioSource mainBGM;
 
     void Start()
     {
         GameOverText.enabled = false; // default 설정
         isGameOver = false;
-        GameOverSound.SetActive(false);
     }
 
 
@@ -46,12 +46,8 @@ public class GameManager : Singleton<GameManager>
         if (!isGameOver && (Player.transform.localPosition.y < this.gameOverY))
         {
             Debug.Log("gameover");
-            GameOverSound.SetActive(true);
+            gameOverSound.Play();
             GameOver(Player.transform.localPosition.x);
-        }
-        else
-        {
-            // GameOverSound.SetActive(false);
         }
     }
 
@@ -66,7 +62,6 @@ public class GameManager : Singleton<GameManager>
 
     private void MovingSpawnSpot()
     {
-        GameOverSound.SetActive(false);
         if (gameOverX < FlagCliff.position.x)
         {
             // FlagPond에서 죽었을 경우
@@ -88,18 +83,13 @@ public class GameManager : Singleton<GameManager>
             Player.transform.position = new Vector3(FlagMiniGame2.position.x, FlagMiniGame2.position.y, FlagMiniGame2.position.z);
         }
 
-        // Player.transform.position = new Vector3(FlagStart.position.x, FlagStart.position.y, FlagStart.position.z);
         isGameOver = false;
         GameOverText.enabled = false;
-
-        // 좀 더 부드럽게 가져오려 했는데 우선은,,, 기본구현부터푸쉬,, 
-        // Vector3 flag1Down = new Vector3(Flag1Down.position.x, Flag1Down.position.y, Flag1Down.position.z);
-        // Player.transform.position = Vector3.MoveTowards(transform.position, flag1Down, 2f); 
     }
 
     public void FilmBarOn()
     {
-    
+
     }
 
     void DisposeFlimBar()
