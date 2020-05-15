@@ -312,8 +312,8 @@ MonoBehaviour:
   guideText: {fileID: 398821038}
   testImage: {fileID: 633332483}
   guideSprite:
-  - {fileID: 21300000, guid: 3dd3233447636433f8c8bc3d977839db, type: 3}
   - {fileID: 21300000, guid: 27fef8aac3055497fbcc0758945d1565, type: 3}
+  - {fileID: 21300000, guid: 3dd3233447636433f8c8bc3d977839db, type: 3}
 --- !u!1 &633332481
 GameObject:
   m_ObjectHideFlags: 0
