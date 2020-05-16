@@ -28631,7 +28631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPortalScene: 1
   sceneName: CptHome
-  loadingImageIndex: 0
+  loadingImageIndex: 2
   MGIntroObjs: {fileID: 0}
 --- !u!61 &992359575
 BoxCollider2D:
