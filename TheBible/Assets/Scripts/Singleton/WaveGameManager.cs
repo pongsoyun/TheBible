@@ -19,7 +19,10 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
     public event Action GameStart;
     public event Action GameComplete;
     public event Action GameOver;
+
+    [Header("UI"), Space(4)]
     public Text DebugText;
+    public Text EnemyCountText;
 
     [SerializeField]
     private GameObject DebugPanel;
@@ -30,7 +33,7 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
     [SerializeField]
     private int waveLimit;
 
-    GameState state;
+    
     public MemoryPool[] EnemyWavePool;
     public MemoryPool ParticlePool;
     public Transform SpawnPoint;
@@ -39,10 +42,14 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
     private int enemyCount = 15;
     private WaitForSeconds waitTime = new WaitForSeconds(2.5f);
     private bool sceneEnd = false;
+    GameState state;
 
+    [Header("Animator"), Space(4)]
     public Animator MainCharAnim;
     public Animator MiniRBAnim1;
     public Animator MiniRBAnim2;
+
+    [Header("Audio"), Space(4)]
     public AudioSource mg1BGM;
     public AudioSource clearGameAudio;
 
@@ -74,6 +81,7 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
         {
             WaveSpawn();
             RenderPlayerHp();
+            EnemyCountText.text = $"남은 토끼의 수 : {waveLimit - killCount}";
         }
         else if (state.Equals(GameState.Fail))
         {

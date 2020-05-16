@@ -26,7 +26,11 @@ public class CharacterMove : MonoBehaviour
     [Header("Sound"), Space(5)]
     public AudioSource jumpAudio;
     public AudioSource magicAudio;
-    //public bool isMagicSound = false;
+
+    [SerializeField]
+    private GameObject FollowObject;
+    private Vector3 leftPosition = new Vector3(7.2f, 0, 0);
+    private Vector3 rightPosition = new Vector3(-7.2f, 0, 0);
 
     private void OnEnable()
     {
@@ -75,9 +79,15 @@ public class CharacterMove : MonoBehaviour
         else if (isGround)
         {
             if (Input.GetAxis("Horizontal") < 0)
+            {
                 chracter.flipX = true;
+                FollowObject.transform.localPosition = rightPosition;
+            }
             else if (Input.GetAxis("Horizontal") > 0)
+            {
                 chracter.flipX = false;
+                FollowObject.transform.localPosition = leftPosition;
+            }
 
             moveSide = Input.GetAxis("Horizontal") * moveWeight;
             CharacterBody.velocity = moveSide * transform.right;
