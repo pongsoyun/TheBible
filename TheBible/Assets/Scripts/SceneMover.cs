@@ -35,6 +35,7 @@ public class SceneMover : MonoBehaviour
             GameManager.instance.mainBGM.Pause();
             GameManager.instance.Player.SetActive(false);
             sceneStart = true;
+            LoadingScene.SetGuideImageIndex(loadingImageIndex);
             LoadingScene.LoadScene(sceneName);
         }
     }
