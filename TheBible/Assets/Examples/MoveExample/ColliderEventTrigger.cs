@@ -50,7 +50,7 @@ public class ColliderEventTrigger : MonoBehaviour
 
         else if (isDestroy)
         {
-            transform.position = Vector3.Lerp(transform.position, new Vector3(60f, transform.position.y, transform.position.z), 0.01f);
+            transform.position = Vector3.Lerp(transform.position, new Vector3(60f, transform.position.y, transform.position.z), 0.0001f);
             Destroy(gameObject, 4f);
         }
 
