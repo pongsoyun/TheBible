@@ -27,6 +27,9 @@ public class CharacterMove : MonoBehaviour
     public AudioSource jumpAudio;
     public AudioSource magicAudio;
 
+    [SerializeField]
+    GameObject VCAMSSIBAL;
+
     private void OnEnable()
     {
         foreach (var particle in particleSystems)
@@ -43,6 +46,10 @@ public class CharacterMove : MonoBehaviour
 
     void Update()
     {
+        if (VCAMSSIBAL && isGround)
+        {
+            VCAMSSIBAL.SetActive(false);
+        }
         if (!isPlayed)
         {
             MovingCharacter();
