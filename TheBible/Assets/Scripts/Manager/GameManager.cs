@@ -8,7 +8,7 @@ public class GameManager : Singleton<GameManager>
 {
     public Text GameOverText;
     // Tutorial
-    public bool isTutorial = true;
+    public bool isBeforeCpt = true;
     // stage 1
     public GameObject Player;
 

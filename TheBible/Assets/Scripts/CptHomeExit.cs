@@ -23,10 +23,11 @@ public class CptHomeExit : MonoBehaviour
         {
             // 수근수근이수근
             sceneEnd = true;
+            GameManager.instance.isBeforeCpt = false;
             BigTalkingBubble.SetActive(true);
             Player.GetComponent<CharacterMove>().enabled = false;
             Invoke("LatePlayerSetFalse", 1f);
-            Invoke("UnloadCptScene", 7f);//7초 뒤에 씬 내리도록
+            Invoke("UnloadCptScene", 10f);//10초 뒤에 씬 내리도록
 
         }
     }

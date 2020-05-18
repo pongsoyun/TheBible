@@ -8,10 +8,12 @@ public class SceneSeparator : MonoBehaviour
     PlayableDirector beforeDirector;
     [SerializeField]
     PlayableDirector afterDirector;
+    [SerializeField]
+    CharacterMove Player;
 
     public GameObject MGEndingRabbits;
     public GameObject EndingPlay;
-    public bool isBeforeCpt = true;
+    //public bool isBeforeCpt = true;
 
     private bool isPlayOnceBefore = false;
     private bool isPlayOnceAfter = false;
@@ -19,22 +21,35 @@ public class SceneSeparator : MonoBehaviour
     void Start()
     {
         MGEndingRabbits.SetActive(false);
+        beforeDirector.played += PlayerStopOn;
+        beforeDirector.stopped += PlayerStopOff;
+        afterDirector.played += PlayerStopOn;
+        afterDirector.stopped += PlayerStopOff;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!isPlayOnceBefore && isBeforeCpt && collision.CompareTag("Player"))
+        if (!isPlayOnceBefore && GameManager.instance.isBeforeCpt && collision.CompareTag("Player"))
         {
-            isBeforeCpt = false;
             isPlayOnceBefore = true;
             beforeDirector.Play();
         }
-        else if (!isPlayOnceAfter && isPlayOnceBefore && !isBeforeCpt && collision.CompareTag("Player"))
+        else if (!isPlayOnceAfter && isPlayOnceBefore && !GameManager.instance.isBeforeCpt && collision.CompareTag("Player"))
         {
             MGEndingRabbits.SetActive(true);
             isPlayOnceAfter = true;
             afterDirector.Play();
             EndingPlay.SetActive(true);
         }
+    }
+
+    private void PlayerStopOn(PlayableDirector playable)
+    {
+        Player.isPlayed = true;
+    }
+
+    private void PlayerStopOff(PlayableDirector playable)
+    {
+        Player.isPlayed = false;
     }
 }

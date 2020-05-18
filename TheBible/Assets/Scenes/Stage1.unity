@@ -5240,7 +5240,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &262664814
 Transform:
   m_ObjectHideFlags: 0
@@ -18185,7 +18185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameOverText: {fileID: 1829683424}
-  isTutorial: 1
+  isBeforeCpt: 1
   Player: {fileID: 3348378451606534443}
   gameOverX: 0
   gameOverY: -40
@@ -51075,7 +51075,7 @@ GameObject:
   - component: {fileID: 1770364371}
   - component: {fileID: 1770364372}
   m_Layer: 0
-  m_Name: bubble_ImagineFriend
+  m_Name: Bubble_ImagineFriend
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51089,7 +51089,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770364369}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 188.2, y: -21.7, z: 50}
+  m_LocalPosition: {x: 182.22, y: -21.7, z: 50}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 2024638743}
@@ -51108,7 +51108,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.5077667, y: 10.090157}
+  m_Offset: {x: 4.737842, y: 10.090157}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -51119,7 +51119,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 15.015533, y: 33.07811}
+  m_Size: {x: 10.555383, y: 33.07811}
   m_EdgeRadius: 0
 --- !u!114 &1770364372
 MonoBehaviour:
@@ -58736,9 +58736,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeDirector: {fileID: 155749513}
   afterDirector: {fileID: 1126662034}
+  Player: {fileID: 3348378451606534422}
   MGEndingRabbits: {fileID: 262664813}
   EndingPlay: {fileID: 1632432519}
-  isBeforeCpt: 1
 --- !u!61 &2121671489
 BoxCollider2D:
   m_ObjectHideFlags: 0
