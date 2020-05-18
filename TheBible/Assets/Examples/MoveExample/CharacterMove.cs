@@ -46,14 +46,15 @@ public class CharacterMove : MonoBehaviour
 
     void Update()
     {
-        if (VCAMSSIBAL && isGround)
-        {
-            VCAMSSIBAL.SetActive(false);
-        }
         if (!isPlayed)
         {
             MovingCharacter();
         }
+        if (VCAMSSIBAL && isGround)
+        {
+            VCAMSSIBAL.SetActive(false);
+        }
+
     }
 
     void MovingCharacter()

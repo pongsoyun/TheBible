@@ -11,10 +11,10 @@ public class ThrowObject : MonoBehaviour
     {
         transform.SetParent(null);
         PowerSet();
-        if (power.Equals(Vector2.zero))
-        {
-            Debug.LogError("power not set!");
-        }
+        //if (power.Equals(Vector2.zero))
+        //{
+        //    Debug.LogError("power not set!");
+        //}
         gameObject.GetComponent<Rigidbody2D>().velocity = power;
     }
 

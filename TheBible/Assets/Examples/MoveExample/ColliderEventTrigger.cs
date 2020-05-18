@@ -72,7 +72,7 @@ public class ColliderEventTrigger : MonoBehaviour
             PlayerAnim.SetBool("magic", true);
         }
 
-        if (cureAmount >= 1.0f)
+        if (cureAmount >= 5.0f)
         {
             Debug.Log("isPet True!");
             MiniRbAnim.SetBool("Cure", true); // animation 변경(Cured RB으로)
@@ -89,9 +89,11 @@ public class ColliderEventTrigger : MonoBehaviour
             isDestroy = true;
             isPet = false;
         }
-        Debug.Log("EventEnter");
-        Player.eventClear();
-        Player.ActivateEvent += DebugEvent;
+        else if (collision.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("EventEnter");
+            Player.eventClear();
+            Player.ActivateEvent += DebugEvent;
+        }
     }
-
 }
