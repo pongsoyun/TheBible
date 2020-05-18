@@ -9,19 +9,21 @@ public class ActivateCM : MonoBehaviour
     PlayableDirector director;
     [SerializeField]
     string tagName = "Player";
-
-    GameObject Player = null;
+    [SerializeField]
+    GameObject Player;
     bool isPlayOnce = false;
+
+    private void Start()
+    {
+        director.played += PlayerStopOn;
+        director.stopped += PlayerStopOff;
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!isPlayOnce && collision.CompareTag(tagName))
         {
             isPlayOnce = true;
-            Player = collision.gameObject;
-
-            director.played += PlayerStopOn;
-            director.stopped += PlayerStopOff;
             director.Play();
         }
     }

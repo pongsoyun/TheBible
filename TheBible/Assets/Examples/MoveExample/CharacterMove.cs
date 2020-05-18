@@ -27,17 +27,8 @@ public class CharacterMove : MonoBehaviour
     public AudioSource jumpAudio;
     public AudioSource magicAudio;
 
-    [SerializeField]
-    private GameObject FollowObject;
-    private Vector3 leftPosition = new Vector3(7.2f, 0, 0);
-    private Vector3 rightPosition = new Vector3(-7.2f, 0, 0);
-
     private void OnEnable()
     {
-        if (!TutorialManager.instance.tutorialEnd && TutorialManager.instance.tutorialPanel != null)
-        {
-            TutorialManager.instance.tutorialPanel.SetActive(true);
-        }
         foreach (var particle in particleSystems)
         {
             particle.Stop();
@@ -81,12 +72,10 @@ public class CharacterMove : MonoBehaviour
             if (Input.GetAxis("Horizontal") < 0)
             {
                 chracter.flipX = true;
-                FollowObject.transform.localPosition = rightPosition;
             }
             else if (Input.GetAxis("Horizontal") > 0)
             {
                 chracter.flipX = false;
-                FollowObject.transform.localPosition = leftPosition;
             }
 
             moveSide = Input.GetAxis("Horizontal") * moveWeight;

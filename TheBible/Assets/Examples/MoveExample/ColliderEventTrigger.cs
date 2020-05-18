@@ -37,8 +37,8 @@ public class ColliderEventTrigger : MonoBehaviour
             }
             else if (MiniRbAnim.GetCurrentAnimatorStateInfo(0).IsName("Rabbit_Happy"))
             {
-                transform.position = new Vector3(Mathf.Lerp(transform.position.x, Player.transform.position.x - 1.15f, 0.1f),
-                                            Mathf.Lerp(transform.position.y, Player.transform.position.y + 0.2f, 0.1f),
+                transform.position = new Vector3(Mathf.Lerp(transform.position.x, Player.transform.position.x - 1.15f, 0.01f),
+                                            Mathf.Lerp(transform.position.y, Player.transform.position.y + 0.2f, 0.01f),
                                             transform.position.z);
             }
             else
@@ -50,7 +50,7 @@ public class ColliderEventTrigger : MonoBehaviour
 
         else if (isDestroy)
         {
-            transform.position = Vector3.Lerp(transform.position, new Vector3(60f, transform.position.y, transform.position.z), 0.0001f);
+            transform.position = Vector3.Lerp(transform.position, new Vector3(60f, transform.position.y, transform.position.z), 0.0009f);
             Destroy(gameObject, 4f);
         }
 

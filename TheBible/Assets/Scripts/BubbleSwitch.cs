@@ -34,6 +34,7 @@ public class BubbleSwitch : MonoBehaviour
             {
                 Bubble.GetComponentInParent<CharacterMove>().isPlayed = false;
                 Debug.Log($"{animationName} Stop!");
+                Bubble.SetActive(false);
             }
         }
 

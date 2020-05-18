@@ -10,7 +10,7 @@ public class RingTrace : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        deltaFloat += Mathf.Sin(degree++*weight);
+        deltaFloat += Mathf.Sin(degree++ * weight);
         transform.localPosition = new Vector2(0, 2.75f + Mathf.Sin(deltaFloat)*0.1f);
         if (degree >= 360)
             degree = 0;
