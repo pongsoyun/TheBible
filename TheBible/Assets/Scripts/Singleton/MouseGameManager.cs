@@ -27,7 +27,7 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
     public Vector2 throwPower;
     public Vector3 rotateAngle;
 
-    
+
     [Header("Animator"), Space(5)]
     public Animator MainCharAnim;
     public Animator MiniRBAnim1;
@@ -74,8 +74,8 @@ public class MouseGameManager : Singleton<MouseGameManager>, IGameProcess
         {
             GameFail();
         }
-        lbl_Game[0].text = $"플레이어 Hp : {playerHp}";
-        lbl_Game[1].text = $"막아야할 돌의 수 : {waveLimit - killCount}";
+        lbl_Game[0].text = $"Hp : {playerHp}";
+        lbl_Game[1].text = $"남은 돌 개수 : {waveLimit - killCount}";
     }
 
     private void InitializeGame()

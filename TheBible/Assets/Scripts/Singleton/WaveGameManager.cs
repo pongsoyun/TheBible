@@ -33,7 +33,7 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
     [SerializeField]
     private int waveLimit;
 
-    
+
     public MemoryPool[] EnemyWavePool;
     public MemoryPool ParticlePool;
     public Transform SpawnPoint;
@@ -81,7 +81,7 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
         {
             WaveSpawn();
             RenderPlayerHp();
-            EnemyCountText.text = $"남은 토끼의 수 : {waveLimit - killCount}";
+            EnemyCountText.text = $"남은 토끼 수 : {waveLimit - killCount}";
         }
         else if (state.Equals(GameState.Fail))
         {
@@ -167,7 +167,7 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
             state = GameState.Fail;
             return;
         }
-        DebugText.text = $"Player Hp : {playerHp}";
+        DebugText.text = $"Hp : {playerHp}";
     }
 
     private void DisposeAllPool()
