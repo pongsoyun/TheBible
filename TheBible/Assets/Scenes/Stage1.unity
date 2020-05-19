@@ -10514,7 +10514,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1.51}
+  m_AnchoredPosition: {x: 0, y: -1.95}
   m_SizeDelta: {x: 160, y: 18.46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &488411966
@@ -10540,8 +10540,8 @@ MonoBehaviour:
     m_FontSize: 9
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 9
-    m_MaxSize: 15
+    m_MinSize: 0
+    m_MaxSize: 9
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -11598,7 +11598,6 @@ MonoBehaviour:
   director: {fileID: 341939408}
   tagName: Player
   Player: {fileID: 3348378451606534422}
-  DebugText: {fileID: 445799488}
 --- !u!1 &540892782
 GameObject:
   m_ObjectHideFlags: 0
@@ -30398,7 +30397,6 @@ MonoBehaviour:
   director: {fileID: 1998368841}
   tagName: Player
   Player: {fileID: 3348378451606534422}
-  DebugText: {fileID: 445799488}
 --- !u!61 &1104597260
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45674,19 +45672,16 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 0
-    m_MaxSize: 300
+    m_MaxSize: 5
     m_Alignment: 4
     m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC120\uC744 \uD589\uD560 \uB54C\uB294 \uADF8\uAC83\uC774 \uCD08\uB798\uD558\uB294
-    \uC5B4\uB824\uC6C0\uACFC\n\uADF8\uAC83\uC774 \uAC00\uC838\uB2E4\uC904 \uD589\uBCF5\uC744
-    \uD568\uAED8 \uC800\uC6B8\uC5D0 \uC62C\uB824\uBCF4\uACE0, \n\n\uC545\uC744 \uD589\uD560
-    \uB54C\uB294 \uC77C\uC2DC\uC801\uC778 \uCF8C\uB77D\uC774 \uC8FC\uB294 \uC990\uAC70\uC6C0\uACFC\n\uADF8\uAC83\uC5D0
-    \uB4A4\uB530\uB97C \uBD88\uD589\uC744 \uD568\uAED8 \uC800\uC6B8\uC5D0 \uC62C\uB824\uBCF4\uB77C.\n\n\n-
-    \uD0C8\uBB34\uB4DC - "
+  m_Text: "\uC774 \uC138\uC0C1\uC5D0\uC11C \uAC00\uC7A5 \uC704\uD5D8\uD55C \uAC83\uC740\n\uACE0\uC9D1\uC2A4\uB7F0
+    \uBB34\uC9C0(Sincere ignorance)\uC640\n\uC591\uC2EC\uC801\uC778 \uC6B0\uB454\uD568(Conscientious
+    stupidity)\uC774\uB2E4.\n\n\n- \uB9C8\uD2F4 \uB8E8\uD130 \uD0B9 -"
 --- !u!222 &1526596182
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -46738,7 +46733,6 @@ MonoBehaviour:
   director: {fileID: 1987430445}
   tagName: Player
   Player: {fileID: 3348378451606534422}
-  DebugText: {fileID: 445799488}
 --- !u!1 &1589444130
 GameObject:
   m_ObjectHideFlags: 0
@@ -47668,7 +47662,6 @@ MonoBehaviour:
   director: {fileID: 1441052079}
   tagName: Player
   Player: {fileID: 3348378451606534422}
-  DebugText: {fileID: 445799488}
 --- !u!61 &1632432522
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51485,7 +51478,6 @@ MonoBehaviour:
   director: {fileID: 1389880321}
   tagName: Player
   Player: {fileID: 3348378451606534422}
-  DebugText: {fileID: 445799488}
 --- !u!61 &1780943165
 BoxCollider2D:
   m_ObjectHideFlags: 0
