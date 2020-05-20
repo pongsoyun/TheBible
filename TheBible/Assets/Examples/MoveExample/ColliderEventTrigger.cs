@@ -72,7 +72,7 @@ public class ColliderEventTrigger : MonoBehaviour
             PlayerAnim.SetBool("magic", true);
         }
 
-        if (cureAmount >= 5.0f)
+        if (cureAmount >= 15.0f)
         {
             Debug.Log("isPet True!");
             MiniRbAnim.SetBool("Cure", true); // animation 변경(Cured RB으로)

@@ -12188,7 +12188,7 @@ MonoBehaviour:
   runSpeed: 7
   walkSpeed: 5
   particleSystems: []
-  jumpPower: 330
+  jumpPower: 5
   isPlayed: 0
   jumpAudio: {fileID: 108320149}
   magicAudio: {fileID: 1903953023}

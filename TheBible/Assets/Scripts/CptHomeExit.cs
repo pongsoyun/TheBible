@@ -19,7 +19,7 @@ public class CptHomeExit : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (!sceneEnd && KingAnimator.GetBool("cure") && Input.GetKeyDown(KeyCode.W))
+        if (!sceneEnd && KingAnimator.GetBool("cure") && Input.GetKey(KeyCode.W))
         {
             // 수근수근이수근
             sceneEnd = true;

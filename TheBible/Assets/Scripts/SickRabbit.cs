@@ -86,7 +86,7 @@ public class SickRabbit : MonoBehaviour
             }
         }
 
-        if (fillAmount >= 1.0f)
+        if (fillAmount >= 9.0f)
         {
             CureKingAnim.SetBool("cure", true);
             audio.Play();

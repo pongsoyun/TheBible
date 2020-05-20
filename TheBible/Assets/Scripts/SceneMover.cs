@@ -30,7 +30,7 @@ public class SceneMover : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (!sceneStart && isPortalScene && Input.GetKeyDown(KeyCode.W) && collision.gameObject.CompareTag("Player"))
+        if (!sceneStart && isPortalScene && Input.GetKey(KeyCode.W) && collision.gameObject.CompareTag("Player"))
         {
             GameManager.instance.mainBGM.Pause();
             GameManager.instance.Player.SetActive(false);
