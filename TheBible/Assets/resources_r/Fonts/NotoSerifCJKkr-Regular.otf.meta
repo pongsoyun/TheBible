@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 21e486091bebe4837bafa0ec504eaf50
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Serif CJK KR
+  fontNames:
+  - Noto Serif CJK KR
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 0df631efee1104cc08c1c927bc284a1a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
