@@ -7831,7 +7831,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.947, y: -5.62}
+  m_AnchoredPosition: {x: 0.54, y: -5.62}
   m_SizeDelta: {x: 141.266, y: 818.78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &371399843
@@ -7854,18 +7854,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 1671a050342e445fca63a8a00c5556cf, type: 3}
-    m_FontSize: 14
+    m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 3
-    m_MaxSize: 300
+    m_MinSize: 1
+    m_MaxSize: 10
     m_Alignment: 4
     m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "The End.\n\n\n\n\n\n\n\n2020 Graduation Exhibition,\nGlobal Media, Soongsil
+  m_Text: "The End.\n\n\n\n\n\n\n\nGraduation Exhibition,\nGlobal Media, Soongsil
     University \n\n\n\n\n\n\n\n\n\n\n\n- PM -\nSoyun Bang\n\n\n\n\n\n\n\n\n\n- Designer
     -\nJisung Park\n\n\n\n\n\n\n\n\n\n- Sub Developer -\nSoyun Bang\n\n\n\n\n\n\n\n\n\n-
     Main Developer -\nDongho Shin\n\n\n\n\n\n\n\n\n\n- Production -\nSoyun Bang\nJisung
@@ -14456,7 +14456,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 663096846}
   m_LocalRotation: {x: -0.07523801, y: -0.0038919086, z: 0.0002935206, w: -0.99715793}
-  m_LocalPosition: {x: -274.8152, y: -16.399492, z: 40.098362}
+  m_LocalPosition: {x: -275.15997, y: -16.399494, z: 40.10105}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 343923931}
@@ -54138,8 +54138,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938914395}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 173.23, y: -20.16, z: 49.7}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 173.97, y: -20.27, z: 49.7}
+  m_LocalScale: {x: 0.58, y: 0.58, z: 0.5}
   m_Children: []
   m_Father: {fileID: 262664814}
   m_RootOrder: 9
@@ -59564,7 +59564,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -14.53667, y: 10.038145}
+  m_Offset: {x: -10.73, y: 10.038145}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
