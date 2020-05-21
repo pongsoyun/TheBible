@@ -62,6 +62,7 @@ public class GameManager : Singleton<GameManager>
 
     private void MovingSpawnSpot()
     {
+        Player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         if (gameOverX < FlagCliff.position.x)
         {
             // FlagPond에서 죽었을 경우
