@@ -81,7 +81,15 @@ public class WaveGameManager : Singleton<WaveGameManager>, IGameProcess
         {
             WaveSpawn();
             RenderPlayerHp();
-            EnemyCountText.text = $"남은 토끼 수 : {waveLimit - killCount}";
+            if(waveLimit - killCount < 0)
+            {
+                EnemyCountText.text = $"남은 토끼 수 : 0";
+            }
+            else
+            {
+                EnemyCountText.text = $"남은 토끼 수 : {waveLimit - killCount}";
+            }
+            
         }
         else if (state.Equals(GameState.Fail))
         {
