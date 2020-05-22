@@ -2,6 +2,11 @@
 
 위 레포는 숭실대학교 글로벌미디어학부 2020 졸업전시 팀 <언행일치>개발 작품, 'The Bible'의 레포입니다.
 
+## 시연 영상(click -> youtube)
+[![숭실대학교 글로벌미디어학부 2020 졸업전시 - The Bible, 방소윤 신동호 박지성](http://img.youtube.com/vi/nFq5-_GaEqg/0.jpg)](http://www.youtube.com/watch?v=nFq5-_GaEqg "숭실대학교 글로벌미디어학부 2020 졸업전시 - The Bible, 방소윤 신동호 박지성")
+
+[작품 설명 Detail](https://www.notion.so/The-Bible-Guide-1d3c665a485e424eaa702bba95ae2f8f)
+
 ## 팀원 소개
 
 ### 개발
