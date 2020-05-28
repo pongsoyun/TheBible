@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -44,13 +45,14 @@ public class ColliderEventTrigger : MonoBehaviour
             else
             {
                 Player.isPlayed = false;
+                Player.eventClear();
                 transform.position = new Vector3(Player.transform.position.x - 1.15f, Player.transform.position.y + 0.2f, transform.position.z);
             }
         }
 
         else if (isDestroy)
         {
-            transform.position = Vector3.Lerp(transform.position, new Vector3(60f, transform.position.y, transform.position.z), 0.0009f);
+            transform.position = Vector3.Lerp(transform.position, new Vector3(60f, transform.position.y, transform.position.z), 0.0002f);
             Destroy(gameObject, 4f);
         }
 
@@ -63,7 +65,9 @@ public class ColliderEventTrigger : MonoBehaviour
 
     void DebugEvent()
     {
-        Debug.Log("EventTriggerON");
+        try
+        {
+            Debug.Log($"{gameObject.name} : EventTriggerON");
         if (Input.GetKey(KeyCode.E))
         {
             cureAmount += 0.01f;
@@ -75,10 +79,17 @@ public class ColliderEventTrigger : MonoBehaviour
         if (cureAmount >= 15.0f)
         {
             Debug.Log("isPet True!");
-            MiniRbAnim.SetBool("Cure", true); // animation 변경(Cured RB으로)
+
+                MiniRbAnim.SetBool("Cure", true); // animation 변경(Cured RB으로)
+
             cureAudio.Play();
             isPet = true;
             cureAmount = 0;
+        }
+        }
+        catch (Exception e)
+        {
+
         }
     }
     void OnTriggerEnter2D(Collider2D collision)

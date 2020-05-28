@@ -91,7 +91,7 @@ public class CharacterMove : MonoBehaviour
 
             animator.SetFloat("speed", Mathf.Abs(Input.GetAxis("Horizontal")));
         }
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKey(KeyCode.E) && ActivateEvent != null)
         {
             if (!magicAudio.isPlaying)
             {

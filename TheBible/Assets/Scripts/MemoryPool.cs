@@ -26,6 +26,11 @@ public class MemoryPool : IEnumerable, System.IDisposable
     private bool isRigidBody = false;
     private bool isDispose = false;
 
+    public GameObject this[int index]
+    {
+        get => itemList[index];
+    }
+
     public MemoryPool(GameObject prefab, int count, int maxCount)
     {
         this.prefab = prefab;
